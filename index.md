@@ -2,9 +2,9 @@
 layout: default
 ---
 
-## Flowstake - Proof of Activity Blockchain Network
+## Proof of Activity Blockchain Network
 
-> - Proof of Activity transactions on the Flowstake blockchain
+> - FlowStake - Proof of Activity transactions on the Ethereum blockchain.
 > - [github.com/flowstake](https://github.com/flowstake)
 
 ## Activity Consensus Mechanism
