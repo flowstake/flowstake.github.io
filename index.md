@@ -42,7 +42,7 @@ layout: default
 ### Blockchain Consensus Mechanism 
 
 ```js
-// Javascript code from Block.js.
+// Javascript code from ### Block.js
 class Block {
     constructor(index, previousHash, timestamp, data, hash) {
         this.index = index;
@@ -55,14 +55,14 @@ class Block {
 ```
 
 ```js
-// Javascript code from calculateHash.js 
+// Javascript code from ### calculateHash.js 
 var calculateHash = (index, previousHash, timestamp, data) => {
     return CryptoJS.SHA256(index + previousHash + timestamp + data).toString();
 };
 ```
 
 ```js
-// Javascript code from generateNextBlock.js 
+// Javascript code from ### generateNextBlock.js 
 var generateNextBlock = (blockData) => {
     var previousBlock = getLatestBlock();
     var nextIndex = previousBlock.index + 1;
