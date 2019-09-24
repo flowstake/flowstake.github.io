@@ -6,7 +6,7 @@ layout: default
 # Activity Consensus Mechanism
  
 - Mechanism for data analysis & activity validation. 
-- Network reputation to accounts generating activity transactions.
+- Blockchain network to generating Proof of Activity transactions.
 - [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 
@@ -15,6 +15,7 @@ layout: default
 > - Utilizing Blockchain technology to create a record of activity.
 > - Proof of Activity as Stake - validate, sign & activity transactions.
 > - Stake activity on the blockchain with Flowstake Activity Nodes
+> - Generate block rewards for 'mining' activity. 
 
 
 ### Hybrid Consensus Blockchain Mechanism 
@@ -55,9 +56,9 @@ end
 
 * * *
 
-### Small image
+### Blockchain Image
 
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
+![Blockchain](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bitcoin_Block_Data.svg/1600px-Bitcoin_Block_Data.svg)
 
 ### Large image
 
