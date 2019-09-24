@@ -111,9 +111,9 @@ var replaceChain = (newBlocks) => {
     }
 };
 ```
-####
+#### chain_http.js
 ```js
-// Javascript code from [chain_http.js]
+// Javascript code from [nativechain_http.js]
 var initHttpServer = () => {
     var app = express();
     app.use(bodyParser.json());
