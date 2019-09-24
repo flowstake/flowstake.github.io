@@ -33,29 +33,44 @@ layout: default
 |:-------------|:-----------------------------|:-------|
 | PoW          | Proof of Work                |  [Read](https://en.bitcoin.it/wiki/Proof_of_work)  |
 | PoS          | Proof of Stake               |  [Read](https://en.bitcoin.it/wiki/Proof_of_Stake)  |
-| DPoS         | Delegated Proof of Stake     |  [Read](https://en.bitcoinwiki.org/wiki/DPoS)  |
+| DPoS         | Delegated Proof of Stake     |  [Read](https://docs.bitshares.org/en/master/technology/dpos.html)  |
 | PoA          | Proof of Activity            |  [Read](https://eprint.iacr.org/2014/452.pdf)  |
 | PoA          | Proof of Authority           |  [Read](https://en.wikipedia.org/wiki/Proof_of_authority)   |
 
+* * *
 
-### Hybrid Consensus Blockchain Mechanism 
+### Blockchain Consensus Mechanism 
 
 ```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
+// Javascript code from Block.js.
+class Block {
+    constructor(index, previousHash, timestamp, data, hash) {
+        this.index = index;
+        this.previousHash = previousHash.toString();
+        this.timestamp = timestamp;
+        this.data = data;
+        this.hash = hash.toString();
+    }
 }
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+```js
+// Javascript code from calculateHash.js 
+var calculateHash = (index, previousHash, timestamp, data) => {
+    return CryptoJS.SHA256(index + previousHash + timestamp + data).toString();
+};
 ```
 
-### There's a horizontal rule below this.
+```js
+// Javascript code from generateNextBlock.js 
+var generateNextBlock = (blockData) => {
+    var previousBlock = getLatestBlock();
+    var nextIndex = previousBlock.index + 1;
+    var nextTimestamp = new Date().getTime() / 1000;
+    var nextHash = calculateHash(nextIndex, previousBlock.hash, nextTimestamp, blockData);
+    return new Block(nextIndex, previousBlock.hash, nextTimestamp, blockData, nextHash);
+};
+```
 
 * * *
 
