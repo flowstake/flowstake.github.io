@@ -3,22 +3,20 @@ layout: default
 ---
 
 
-[Link to another page](./another-page.html).
-
-[Link to Flow](./flow.html).
-
-
 # Activity Consensus Mechanism
  
 - Mechanism for data analysis & activity validation. 
 - Network reputation to accounts generating activity transactions.
 
+[Upload Strava activity (.tcx / .gpx / .fit)](./another-page.html).
+
 
 ## Proof of Activity as Stake
 
-> Utilizing Blockchain technology to encrypt proof of activity.
-> Proof of Activity as Stake - validate, sign & activity. 
-> 
+> Utilizing Blockchain technology to create a record of activity.
+> Proof of Activity as Stake - validate, sign & activity transactions.
+> Stake activity on the blockchain with Flowstake Activity Nodes
+
 
 ### Hybrid Consensus Blockchain Mechanism 
 
