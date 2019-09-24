@@ -40,7 +40,7 @@ layout: default
 
 * * *
 
-### Blockchain Consensus Mechanism 
+### Blockchain Proof of Work Consensus Mechanism 
 #### Block.js
 
 ```js
