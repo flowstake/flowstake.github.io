@@ -4,7 +4,7 @@ layout: default
 
 ## Flowstake - Blockchain Activity Network
 
-> - Stake activity on the Flowstake blockchain
+> - Stake activity transactions on the Flowstake blockchain
 
 ## Activity Consensus Mechanism
  
