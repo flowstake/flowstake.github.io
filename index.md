@@ -4,8 +4,8 @@ layout: default
 
 ## Activity Staking Blockchain Network
 
-> - Proof of Activity staking with Smart Contracts 
-> - Proof of Activity transactions on the Ethereum blockchain
+> - Proof of Activity staking with Ethereum Smart Contracts 
+> - Proof of Activity transactions encrypted into Proof of Work blockchains
 > - [github.com/flowstake](https://github.com/flowstake)
 
 ## Activity Consensus Mechanism
