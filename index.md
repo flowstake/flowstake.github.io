@@ -5,7 +5,7 @@ layout: default
 ## Flowstake - Blockchain Activity Network
 
 > - Stake activity transactions on the Flowstake blockchain
-> - https://github.com/flowstake
+> - [github.com/flowstake](https://github.com/flowstake)
 
 ## Activity Consensus Mechanism
  
