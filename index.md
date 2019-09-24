@@ -48,12 +48,13 @@ end
 
 ###### Header 6
 
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
+| Blockchain   | Consensus Mechanism          | Link |
+|:-------------|:-----------------------------|:-----|
+| PoW          | Proof of Work                |  ok  |
+| PoS          | Proof of Stake               |  ok  |
+| DPoS         | Delegated Proof of Stake     |  ok  |
+| PoA          | Proof of Activity            |  ok  |
+| PoA          | Proof of Authority           |  ok  |
 
 ### There's a horizontal rule below this.
 
@@ -77,17 +78,12 @@ end
 
 - level 1 item
   - level 2 item
-  - level 2 item
-    - level 3 item
     - level 3 item
 - level 1 item
   - level 2 item
-  - level 2 item
-  - level 2 item
 - level 1 item
   - level 2 item
-  - level 2 item
-- level 1 item
+
 
 ### Small image
 
@@ -98,22 +94,17 @@ end
 ![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
-### Definition lists can be used with HTML syntax.
+### About
 
 <dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
+<dt>Project</dt>
+<dd>Flowstake</dd>
+<dt>Developed</dt>
+<dd>2019</dd>
+<dt>Location</dt>
+<dd>Global</dd>
 </dl>
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
 
 ```
 The final element.
