@@ -2,9 +2,9 @@
 layout: default
 ---
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
+
 [Link to Flow](./flow.html).
 
 
@@ -16,11 +16,11 @@ Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 ## Proof of Activity as Stake
 
-> Utilizing Blockchain technology, to validate, encrypt and stake
-> Proof of Activity as Stake - 
+> Utilizing Blockchain technology to encrypt proof of activity.
+> Proof of Activity as Stake - validate, sign & activity. 
 > 
 
-### Header 3
+### Hybrid Consensus Blockchain Mechanism 
 
 ```js
 // Javascript code with syntax highlighting.
