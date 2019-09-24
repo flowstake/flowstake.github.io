@@ -41,10 +41,9 @@ layout: default
 * * *
 
 ### Blockchain Proof of Work Consensus Mechanism 
-#### Block.js
-
+##### Block.js
 ```js
-// Javascript code from ### Block.js
+// Javascript code from [Block.js]
 class Block {
     constructor(index, previousHash, timestamp, data, hash) {
         this.index = index;
@@ -55,20 +54,16 @@ class Block {
     }
 }
 ```
-
-#### calculateHash.js
-
+##### calculateHash.js
 ```js
-// Javascript code from ### calculateHash.js 
+// Javascript code from [calculateHash.js]
 var calculateHash = (index, previousHash, timestamp, data) => {
     return CryptoJS.SHA256(index + previousHash + timestamp + data).toString();
 };
 ```
-
-#### generateNextBlock.js
-
+##### generateNextBlock.js
 ```js
-// Javascript code from ### generateNextBlock.js 
+// Javascript code from [generateNextBlock.js]
 var generateNextBlock = (blockData) => {
     var previousBlock = getLatestBlock();
     var nextIndex = previousBlock.index + 1;
@@ -77,18 +72,16 @@ var generateNextBlock = (blockData) => {
     return new Block(nextIndex, previousBlock.hash, nextTimestamp, blockData, nextHash);
 };
 ```
-#### blockchainarray.js
-
+##### blockchainarray.js
 ```js
-// Javascript code from ### blockchainarray.js 
+// Javascript code from [blockchainarray.js]
 var getGenesisBlock = () => {
     return new Block(0, "0", 1465154705, "my genesis block!!", "816534932c2b7154836da6afc367695e6337db8a921823784c14378abed4f7d7");
 };
 
 var blockchain = [getGenesisBlock()];
 ```
-
-#### isValidNewBlock.js
+##### isValidNewBlock.js
 ```js
 // Javascript code from [isValidNewBlock.js]
 var isValidNewBlock = (newBlock, previousBlock) => {
@@ -105,11 +98,48 @@ var isValidNewBlock = (newBlock, previousBlock) => {
     return true;
 };
 ```
+#### replaceChain.js
+```js
+// Javascript code from [replaceChain.js]
+var replaceChain = (newBlocks) => {
+    if (isValidChain(newBlocks) && newBlocks.length > blockchain.length) {
+        console.log('Received blockchain is valid. Replacing current blockchain with received blockchain');
+        blockchain = newBlocks;
+        broadcast(responseLatestMsg());
+    } else {
+        console.log('Received blockchain invalid');
+    }
+};
+```
+####
+```js
+// Javascript code from [chain_http.js]
+var initHttpServer = () => {
+    var app = express();
+    app.use(bodyParser.json());
+
+    app.get('/blocks', (req, res) => res.send(JSON.stringify(blockchain)));
+    app.post('/mineBlock', (req, res) => {
+        var newBlock = generateNextBlock(req.body.data);
+        addBlock(newBlock);
+        broadcast(responseLatestMsg());
+        console.log('block added: ' + JSON.stringify(newBlock));
+        res.send();
+    });
+    app.get('/peers', (req, res) => {
+        res.send(sockets.map(s => s._socket.remoteAddress + ':' + s._socket.remotePort));
+    });
+    app.post('/addPeer', (req, res) => {
+        connectToPeers([req.body.peer]);
+        res.send();
+    });
+    app.listen(http_port, () => console.log('Listening http on port: ' + http_port));
+};
+```
 
 ### Blockchain Diagram
 
 ![Blockchain](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bitcoin_Transaction_Visual.svg/1200px-Bitcoin_Transaction_Visual.svg.png)
-
 
 ### About
 
@@ -123,7 +153,6 @@ var isValidNewBlock = (newBlock, previousBlock) => {
 <dt>Contact</dt>
 <dd>Flowstake@gmail.com</dd>
 </dl>
-
 
 ```
 Flowstake - 2019
