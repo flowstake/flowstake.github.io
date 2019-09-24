@@ -2,22 +2,40 @@
 layout: default
 ---
 
-# Flowstake - Blockchain Activity Network
+### Flowstake - Blockchain Activity Network
 
 > - Stake activity on the Flowstake blockchain
 
-# Activity Consensus Mechanism
+### Activity Consensus Mechanism
  
 - Mechanism for data analysis & activity validation. 
 - Blockchain network to generating Proof of Activity transactions.
 - [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 
-## Proof of Activity as Stake
+### Proof of Activity as Stake
 
 > - Utilizing Blockchain technology to create a record of activity.
 > - Proof of Activity as Stake - validate, sign & activity transactions.
 > - Generate block rewards for 'mining' activity. 
+
+
+### Problem to Solve
+
+*   Validate identity, record activity & upload activity metrics. 
+*   Generate digital transaction & sync activity metrics into blockchain.
+*   Staking contract for verified activity via smart contract.
+
+
+### Technology Layers
+
+| Blockchain   | Consensus Mechanism          | Link |
+|:-------------|:-----------------------------|:-------|
+| PoW          | Proof of Work                |  [Read](https://en.bitcoin.it/wiki/Proof_of_work)  |
+| PoS          | Proof of Stake               |  [Read](https://en.bitcoin.it/wiki/Proof_of_Stake)  |
+| DPoS         | Delegated Proof of Stake     |  [Read](https://en.bitcoinwiki.org/wiki/DPoS)  |
+| PoA          | Proof of Activity            |  [Read](https://eprint.iacr.org/2014/452.pdf)  |
+| PoA          | Proof of Authority           |  [Read](https://en.wikipedia.org/wiki/Proof_of_authority)   |
 
 
 ### Hybrid Consensus Blockchain Mechanism 
@@ -36,23 +54,6 @@ GitHubPages::Dependencies.gems.each do |gem, version|
   s.add_dependency(gem, "= #{version}")
 end
 ```
-
-### Technology Layers
-
-| Blockchain   | Consensus Mechanism          | Link |
-|:-------------|:-----------------------------|:-------|
-| PoW          | Proof of Work                |  [Read](https://en.bitcoin.it/wiki/Proof_of_work)  |
-| PoS          | Proof of Stake               |  [Read](https://en.bitcoin.it/wiki/Proof_of_Stake)  |
-| DPoS         | Delegated Proof of Stake     |  [Read](https://en.bitcoinwiki.org/wiki/DPoS)  |
-| PoA          | Proof of Activity            |  [Read](https://eprint.iacr.org/2014/452.pdf)  |
-| PoA          | Proof of Authority           |  [Read](https://en.wikipedia.org/wiki/Proof_of_authority)   |
-
-
-#### Problem to Solve
-
-*   Validate identity, record activity & upload activity metrics. 
-*   Generate digital transaction & sync activity metrics into blockchain.
-*   Staking contract for verified activity via smart contract.
 
 ### There's a horizontal rule below this.
 
