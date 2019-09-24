@@ -88,7 +88,6 @@ var getGenesisBlock = () => {
 var blockchain = [getGenesisBlock()];
 ```
 
-
 #### isValidNewBlock.js
 ```js
 // Javascript code from [isValidNewBlock.js]
@@ -107,9 +106,6 @@ var isValidNewBlock = (newBlock, previousBlock) => {
 };
 ```
 
-
-* * *
-
 ### Blockchain Diagram
 
 ![Blockchain](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bitcoin_Transaction_Visual.svg/1200px-Bitcoin_Transaction_Visual.svg.png)
@@ -124,6 +120,8 @@ var isValidNewBlock = (newBlock, previousBlock) => {
 <dd>2019</dd>
 <dt>Location</dt>
 <dd>Global</dd>
+<dt>Contact</dt>
+<dd>Flowstake@gmail.com</dd>
 </dl>
 
 
