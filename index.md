@@ -34,6 +34,17 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
+###### Technology Layers
+
+| Blockchain   | Consensus Mechanism          | Tested |
+|:-------------|:-----------------------------|:-------|
+| PoW          | Proof of Work                |   Yes  |
+| PoS          | Proof of Stake               |   Yes  |
+| DPoS         | Delegated Proof of Stake     |   Yes  |
+| PoA          | Proof of Activity            |   Yes  |
+| PoA          | Proof of Authority           |   No   |
+
+
 #### Header 4
 
 *   This is an unordered list following a header.
@@ -45,16 +56,6 @@ end
 1.  This is an ordered list following a header.
 2.  This is an ordered list following a header.
 3.  This is an ordered list following a header.
-
-###### Header 6
-
-| Blockchain   | Consensus Mechanism          | Link |
-|:-------------|:-----------------------------|:-----|
-| PoW          | Proof of Work                |  ok  |
-| PoS          | Proof of Stake               |  ok  |
-| DPoS         | Delegated Proof of Stake     |  ok  |
-| PoA          | Proof of Activity            |  ok  |
-| PoA          | Proof of Authority           |  ok  |
 
 ### There's a horizontal rule below this.
 
