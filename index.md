@@ -7,7 +7,7 @@ layout: default
  
 - Mechanism for data analysis & activity validation. 
 - Network reputation to accounts generating activity transactions.
-- [Upload Strava activity (.tcx / .gpx / .fit)](./https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava.html).
+- [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 
 ## Proof of Activity as Stake
