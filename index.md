@@ -10,8 +10,8 @@ layout: default
 
 ## Activity Consensus Mechanism
  
-- Mechanism for activity data analysis & validation. 
-- Blockchain network to generating Proof of Activity signatures.
+- Consensus mechanism for data analysis & activity validation. 
+- Network protocol generating Proof of Activity signatures.
 - [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 
@@ -19,7 +19,7 @@ layout: default
 
 > - Utilizing Blockchain technology to create a record of activity.
 > - Proof of Activity as Stake - validate, sign & activity transactions.
-> - Generate block rewards for 'mining' activity. 
+> - Stake block rewards from 'mining' activity. 
 
 
 ### Problem to Solve
