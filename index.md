@@ -34,57 +34,26 @@ GitHubPages::Dependencies.gems.each do |gem, version|
 end
 ```
 
-###### Technology Layers
+### Technology Layers
 
-| Blockchain   | Consensus Mechanism          | Tested |
+| Blockchain   | Consensus Mechanism          | Link |
 |:-------------|:-----------------------------|:-------|
-| PoW          | Proof of Work                |   Yes  |
-| PoS          | Proof of Stake               |   Yes  |
-| DPoS         | Delegated Proof of Stake     |   Yes  |
-| PoA          | Proof of Activity            |   Yes  |
-| PoA          | Proof of Authority           |   No   |
+| PoW          | Proof of Work                |  [Read](https://en.bitcoin.it/wiki/Proof_of_work)  |
+| PoS          | Proof of Stake               |  [Read](https://en.bitcoin.it/wiki/Proof_of_Stake)  |
+| DPoS         | Delegated Proof of Stake     |  [Read](https://en.bitcoinwiki.org/wiki/DPoS)  |
+| PoA          | Proof of Activity            |  [Read](https://eprint.iacr.org/2014/452.pdf)  |
+| PoA          | Proof of Authority           |  [Read](https://en.wikipedia.org/wiki/Proof_of_authority)   |
 
 
-#### Header 4
+#### Problem to Solve
 
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
+*   Validate identity, record activity & upload activity metrics. 
+*   Generate digital transaction & sync activity metrics into blockchain.
+*   Staking contract for verified activity via smart contract.
 
 ### There's a horizontal rule below this.
 
 * * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-
 
 ### Small image
 
