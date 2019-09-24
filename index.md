@@ -12,9 +12,9 @@ layout: default
 
 ## Proof of Activity as Stake
 
-> Utilizing Blockchain technology to create a record of activity.
-> Proof of Activity as Stake - validate, sign & activity transactions.
-> Stake activity on the blockchain with Flowstake Activity Nodes
+> - Utilizing Blockchain technology to create a record of activity.
+> - Proof of Activity as Stake - validate, sign & activity transactions.
+> - Stake activity on the blockchain with Flowstake Activity Nodes
 
 
 ### Hybrid Consensus Blockchain Mechanism 
