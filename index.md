@@ -2,18 +2,18 @@
 layout: default
 ---
 
-### Flowstake - Blockchain Activity Network
+## Flowstake - Blockchain Activity Network
 
 > - Stake activity on the Flowstake blockchain
 
-### Activity Consensus Mechanism
+## Activity Consensus Mechanism
  
 - Mechanism for data analysis & activity validation. 
 - Blockchain network to generating Proof of Activity transactions.
 - [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 
-### Proof of Activity as Stake
+## Proof of Activity as Stake
 
 > - Utilizing Blockchain technology to create a record of activity.
 > - Proof of Activity as Stake - validate, sign & activity transactions.
