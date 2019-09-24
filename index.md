@@ -2,6 +2,9 @@
 layout: default
 ---
 
+# Flowstake - Blockchain Activity Network
+
+> - Stake activity on the Flowstake blockchain
 
 # Activity Consensus Mechanism
  
@@ -14,7 +17,6 @@ layout: default
 
 > - Utilizing Blockchain technology to create a record of activity.
 > - Proof of Activity as Stake - validate, sign & activity transactions.
-> - Stake activity on the blockchain with Flowstake Activity Nodes
 > - Generate block rewards for 'mining' activity. 
 
 
@@ -78,5 +80,5 @@ end
 
 
 ```
-The final element.
+Flowstake - Copyright 2019
 ```
