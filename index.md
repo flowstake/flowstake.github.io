@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Flowstake - Blockchain Activity Network
+## Flowstake - Proof of Activity Blockchain Network
 
 > - Proof of Activity transactions on the Flowstake blockchain
 > - [github.com/flowstake](https://github.com/flowstake)
