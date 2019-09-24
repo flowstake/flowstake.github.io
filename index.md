@@ -99,7 +99,7 @@ var isValidNewBlock = (newBlock, previousBlock) => {
     return true;
 };
 ```
-#### replaceChain.js
+##### replaceChain.js
 ```js
 // Javascript code from [replaceChain.js]
 var replaceChain = (newBlocks) => {
@@ -112,7 +112,7 @@ var replaceChain = (newBlocks) => {
     }
 };
 ```
-#### chain_http.js
+##### chain_http.js
 ```js
 // Javascript code from [nativechain_http.js]
 var initHttpServer = () => {
