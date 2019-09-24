@@ -5,20 +5,20 @@ layout: default
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
-[Link to another page](./another-page.html).
+[Link to Flow](./flow.html).
 
 
 # Activity Consensus Mechanism
-
-- Verifies and Validates Activity Data 
-- Adds Consistency & Reputation to Accounts Processing more Activity Transactions 
+ 
+- Mechanism for data analysis & activity validation. 
+- Network reputation to accounts generating activity transactions.
 
 
 ## Proof of Activity as Stake
 
-> Utilizing Blockchain technology, Proof of Activity as Stake
->
-> When something is important enough, you do it even if the odds are not in your favor.
+> Utilizing Blockchain technology, to validate, encrypt and stake
+> Proof of Activity as Stake - 
+> 
 
 ### Header 3
 
