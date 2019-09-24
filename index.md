@@ -2,15 +2,16 @@
 layout: default
 ---
 
-## Proof of Activity Blockchain Network
+## Activity Staking Blockchain Network
 
-> - FlowStake - Proof of Activity transactions on the Ethereum blockchain.
+> - Proof of Activity staking with Smart Contracts 
+> - Proof of Activity transactions on the Ethereum blockchain
 > - [github.com/flowstake](https://github.com/flowstake)
 
 ## Activity Consensus Mechanism
  
-- Mechanism for data analysis & activity validation. 
-- Blockchain network to generating Proof of Activity transactions.
+- Mechanism for activity data analysis & validation. 
+- Blockchain network to generating Proof of Activity signatures.
 - [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 
