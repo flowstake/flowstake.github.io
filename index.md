@@ -59,9 +59,9 @@ end
 
 * * *
 
-### Blockchain Image
+### Blockchain Diagram
 
-![Blockchain](https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Bitcoin_Block_Data.svg/1600px-Bitcoin_Block_Data.svg)
+![Blockchain](https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Bitcoin_Transaction_Visual.svg/1200px-Bitcoin_Transaction_Visual.svg.png)
 
 ### Large image
 
@@ -81,5 +81,5 @@ end
 
 
 ```
-Flowstake - Copyright 2019
+Flowstake - 2019
 ```
