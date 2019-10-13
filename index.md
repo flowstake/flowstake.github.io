@@ -28,6 +28,26 @@ layout: default
 *   Generate digital transaction & sync activity metrics into blockchain.
 *   Staking contract for verified activity via smart contract.
 
+### Data Source / Activity Information Schema
+
+> - Strava - API References http://developers.strava.com/docs/reference/
+
+
+##### Sourcing Activity Data
+```js
+// Source Activity Strava Profile
+https://www.strava.com/activities/2744688834
+```
+```js
+// Exporting Strava Activity in the .TCX format 
+https://www.strava.com/activities/2744688834
+```
+
+#### Garmin Training Center XML Format - (.TCX / .GPX / .FIT) 
+
+- Training Center XML (TCX) is a data exchange format introduced in 2007 as part of Garmin's Training Center product. The XML is similar to GPX since it exchanges GPS tracks, but treats a track as an Activity rather than simply a series of GPS points. TCX provides standards for transferring heart rate, running cadence, bicycle cadence, calories in the detailed track. It also provides summary data in the form of laps.
+- https://en.wikipedia.org/wiki/Training_Center_XML
+- https://www8.garmin.com/xmlschemas/
 
 ### Technology Layers
 
