@@ -37,15 +37,16 @@ layout: default
 ### Data Source / Activity Information Schema
 
 - Strava - API References 
-* http://developers.strava.com/docs/reference/
-* http://developers.strava.com/docs/reference/#api-Activities
-* http://developers.strava.com/docs/reference/#api-Athletes
-* http://developers.strava.com/docs/reference/#api-Routes
+- [developers.strava](http://developers.strava.com/docs/reference/)
+- [reference/#api-Activities](http://developers.strava.com/docs/reference/#api-Activities)
+- [reference/#api-Athletes](http://developers.strava.com/docs/reference/#api-Athletes)
+- [reference/#api-Routes](http://developers.strava.com/docs/reference/#api-Routes)
 
 ### Sourcing Activity Data
 ```js
 // Source Activity Strava Profile
 https://www.strava.com/activities/2744688834
+[strava.com/activities/](https://www.strava.com/activities/2744688834)
 ```
 ```js
 // Exporting Strava Activity in the .TCX format 
