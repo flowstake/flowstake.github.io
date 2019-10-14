@@ -78,16 +78,16 @@ layout: default
 
 ### Concepts
 
-Cryptographic Hash Function - [wiki/Cryptographic_hash_function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
-Distributed Hash Table - [wiki/Distributed_hash_table](https://en.m.wikipedia.org/wiki/Distributed_hash_table)
-Trusted Timestamping - [wiki/Trusted_timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping)
-Tragedy of the Commons - [wiki/Tragedy of the commons](https://en.wikipedia.org/wiki/Tragedy_of_the_commons)
-Point of Interest - [wiki/Point of Interest](https://en.wikipedia.org/wiki/Point_of_interest)
-Proof of Activity - [Proof of Activity](http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf)
-Cryptographic Hash Function - [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
-Garmin XML Schemas - [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
-GPS Exchange Format - [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
-[Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
+* Cryptographic Hash Function - [wiki/Cryptographic_hash_function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+* Distributed Hash Table - [wiki/Distributed_hash_table](https://en.m.wikipedia.org/wiki/Distributed_hash_table)
+* Trusted Timestamping - [wiki/Trusted_timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping)
+* Tragedy of the Commons - [wiki/Tragedy of the commons](https://en.wikipedia.org/wiki/Tragedy_of_the_commons)
+* Point of Interest - [wiki/Point of Interest](https://en.wikipedia.org/wiki/Point_of_interest)
+* Proof of Activity - [Proof of Activity](http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf)
+* Cryptographic Hash Function - [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+* Garmin XML Schemas - [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
+* GPS Exchange Format - [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
+* [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 #### Garmin Training Center XML Format - (.TCX / .GPX / .FIT) 
 
