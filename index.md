@@ -63,30 +63,29 @@ layout: default
 
 ### Development Tools & Resources 
 
-* Strava API - https://www.strava.com/settings/api
-* Retrieve Activity Data - https://www.strava.com/activities/2744688834
-* Export GPX - https://www.strava.com/activities/2744688834/export_gpx
-* Export TCX - https://www.strava.com/activities/2744688834/export_tcx
-* Share Activity Route - https://www.strava.com/routes/22211617
-* IPFS Hash QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
-* IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
-* PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
-* CasperLabs - https://casperlabs.io
-* CasperLabs Devnet - http://devnet-graphql.casperlabs.io:40403/graphql
-* CasperLabs Explorer - https://explorer.casperlabs.io/#/explorer
-* GraphQL - https://graphql.org/
+* [Strava API](https://www.strava.com/settings/api)
+* [Retrieve Activity Data](https://www.strava.com/activities/2744688834)
+* [Export_GPX](https://www.strava.com/activities/2744688834/export_gpx)
+* [Export_TCX](https://www.strava.com/activities/2744688834/export_tcx)
+* [Share Activity Route](https://www.strava.com/routes/22211617)
+* [IPFS Hash QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd](https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd)
+* [PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV)](https://github.com/flowstake/Waddle)
+* [CasperLabs](https://casperlabs.io)
+* [CasperLabs Devnet](http://devnet-graphql.casperlabs.io:40403/graphql)
+* [CasperLabs Explorer] - https://explorer.casperlabs.io/#/explorer
+* [GraphQL] - https://graphql.org/
 
 ### Concepts
 
-* Cryptographic Hash Function - [wiki/Cryptographic_hash_function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
-* Distributed Hash Table - [wiki/Distributed_hash_table](https://en.m.wikipedia.org/wiki/Distributed_hash_table)
-* Trusted Timestamping - [wiki/Trusted_timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping)
-* Tragedy of the Commons - [wiki/Tragedy of the commons](https://en.wikipedia.org/wiki/Tragedy_of_the_commons)
-* Point of Interest - [wiki/Point of Interest](https://en.wikipedia.org/wiki/Point_of_interest)
-* Proof of Activity - [Proof of Activity](http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf)
-* Cryptographic Hash Function - [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
-* Garmin XML Schemas - [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
-* GPS Exchange Format - [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
+* [Cryptographic_hash_function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+* [Distributed_hash_table](https://en.m.wikipedia.org/wiki/Distributed_hash_table)
+* [Trusted_timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping)
+* [Tragedy of the commons](https://en.wikipedia.org/wiki/Tragedy_of_the_commons)
+* [Point of Interest](https://en.wikipedia.org/wiki/Point_of_interest)
+* [Proof of Activity](http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf)
+* [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+* [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
+* [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
 * [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 #### Garmin Training Center XML Format - (.TCX / .GPX / .FIT) 
