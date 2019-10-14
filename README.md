@@ -35,8 +35,9 @@ Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelratio
     - Hashing activity from sports tracking apps into IPFS.
     - Parsing activity data & digitally signing it into the network.
     
->- Example Activity w/ Heatbeat Data    
-Resources - https://www.strava.com/settings/api
+   
+Resources - Development Tools  Example Activity w/ Heatbeat Data 
+* Strava API - https://www.strava.com/settings/api
 * Retrieve Activity Data - https://www.strava.com/activities/2744688834
 * Export GPX - https://www.strava.com/activities/2744688834/export_gpx
 * Export TCX - https://www.strava.com/activities/2744688834/export_tcx
@@ -45,9 +46,11 @@ Resources - https://www.strava.com/settings/api
 * IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
 * PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
 * CasperLabs - http://devnet-graphql.casperlabs.io:40403/graphql
-* GraphQL - https://graphql.org/learn/
+* GraphQL - https://graphql.org/learn
 
 Concepts
 * Point of Interest - https://en.wikipedia.org/wiki/Point_of_interest
 * Proof of Activity - http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf
 * Cryptographic Hash Function - https://en.wikipedia.org/wiki/Cryptographic_hash_function
+* Garmin XML Schemas https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas
+* GPS Exchange Format - https://en.wikipedia.org/wiki/GPS_Exchange_Format
