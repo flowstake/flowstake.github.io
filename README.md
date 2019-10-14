@@ -36,10 +36,14 @@ Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelratio
     - Parsing activity data & digitally signing it into the network.
     
 >- Example Activity w/ Heatbeat Data    
->- Resources - https://www.strava.com/settings/api
->- Retrieve Activity Data - https://www.strava.com/activities/2744688834
->- Export GPX - https://www.strava.com/activities/2744688834/export_gpx
->- Export TCX - https://www.strava.com/activities/2744688834/export_tcx
->- Share Activity Route - https://www.strava.com/routes/22211617
->- IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
->- IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+Resources - https://www.strava.com/settings/api
+* Retrieve Activity Data - https://www.strava.com/activities/2744688834
+* Export GPX - https://www.strava.com/activities/2744688834/export_gpx
+* Export TCX - https://www.strava.com/activities/2744688834/export_tcx
+* Share Activity Route - https://www.strava.com/routes/22211617
+* IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+* IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+* PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
+* CasperLabs - http://devnet-graphql.casperlabs.io:40403/graphql
+* GraphQL - https://graphql.org/learn/
+* Point of Interest - https://en.wikipedia.org/wiki/Point_of_interest
