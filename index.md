@@ -3,10 +3,10 @@ layout: default
 ---
 
 # Flowstake / Hashrun
-* [github.com/flowstake](https://github.com/flowstake)
 ## Activity Staking Blockchain Network
-> - Public, Immutable, Activity Records
-> - Activity Files Encrypted into IPFS
+- [github.com/flowstake](https://github.com/flowstake)
+- Public, Immutable, Activity Records
+- Activity Files Encrypted into IPFS
 
 > - Proof of Activity staking with FlowStake Smart Contract
 > - Proof of Activity transactions hashed with Proof of Work blockchain timestamps
@@ -45,7 +45,7 @@ layout: default
 - Analyzing data for Max Accelration, Max Speed & Activity Duration
 
 * Proof of Activity as a Stake - P2P Validators
-* * To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
+* To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
 
 > - Hashing activity from sports tracking apps into IPFS.
 > - Parsing activity data & digitally signing it into the network.
@@ -75,26 +75,26 @@ Example Activity w/ Heatbeat Data
 * PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
 * CasperLabs Devnet - http://devnet-graphql.casperlabs.io:40403/graphql
 * CasperLabs Explorer - https://explorer.casperlabs.io/#/explorer
-* CasperLabs 
+* CasperLabs - 
 * GraphQL - https://graphql.org/learn
 
 ### Concepts
 
-Cryptographic Hash Function - https://en.wikipedia.org/wiki/Cryptographic_hash_function
-Distributed Hash Table - https://en.m.wikipedia.org/wiki/Distributed_hash_table
-Trusted Timestamping - https://en.wikipedia.org/wiki/Trusted_timestamping
-Tragedy of the Commons - https://en.wikipedia.org/wiki/Tragedy_of_the_commons
-Point of Interest - https://en.wikipedia.org/wiki/Point_of_interest
-Proof of Activity - http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf
-Cryptographic Hash Function - https://en.wikipedia.org/wiki/Cryptographic_hash_function
-Garmin XML Schemas https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas
-GPS Exchange Format - https://en.wikipedia.org/wiki/GPS_Exchange_Format
+Cryptographic Hash Function - [wiki/Cryptographic_hash_function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+Distributed Hash Table - [wiki/Distributed_hash_table](https://en.m.wikipedia.org/wiki/Distributed_hash_table)
+Trusted Timestamping - [wiki/Trusted_timestamping](https://en.wikipedia.org/wiki/Trusted_timestamping)
+Tragedy of the Commons - [wiki/Tragedy of the commons](https://en.wikipedia.org/wiki/Tragedy_of_the_commons)
+Point of Interest - [wiki/Point of Interest](https://en.wikipedia.org/wiki/Point_of_interest)
+Proof of Activity - [Proof of Activity](http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf)
+Cryptographic Hash Function - [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+Garmin XML Schemas - [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
+GPS Exchange Format - [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
 
 #### Garmin Training Center XML Format - (.TCX / .GPX / .FIT) 
 
 > - Training Center XML (TCX) is a data exchange format introduced in 2007 as part of Garmin's Training Center product. The XML is similar to GPX since it exchanges GPS tracks, but treats a track as an Activity rather than simply a series of GPS points. TCX provides standards for transferring heart rate, running cadence, bicycle cadence, calories in the detailed track. It also provides summary data in the form of laps.
-> - https://en.wikipedia.org/wiki/Training_Center_XML
-> - https://www8.garmin.com/xmlschemas/
+> - [Training Center XML](https://en.wikipedia.org/wiki/Training_Center_XML)
+> - [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/)
 
 ### Data Source / Activity Information Schema
 
