@@ -4,16 +4,22 @@ Activity Staking Blockchain Network
 
 Public, Immutable, Activity Records
 
-Activity Files Encrypted into IPFS
-Capser Proof of Stake
-Smart Contract Staking
+* Activity Files Encrypted into IPFS
+* Escrow Time Release Proof of Activity Smart Contract 
+* Hybrid Proof of Stake / Proof of Authority 
 
-Activity Verified on the Blockchain
-Validator nodes verify and store hashes using IPFS.
+Activity Verified on the Blockchain Network
+Validator nodes verify and store hashes using the IPFS protocol.
 IPFS protocol generates secure & reliable records for proof of activity.
 
-Parsing activity data into distributed encrypted ledgers with Blockchain technology. 
 Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
+Parsing activity data into distributed encrypted ledgers with Blockchain technology. 
+
+Example Activity w/ Heatbeat Data
+Retrieve the data from the activity - https://www.strava.com/activities/2744688834
+Export GPX - https://www.strava.com/activities/2744688834/export_gpx
+Export TCX - https://www.strava.com/activities/2744688834/export_tcx
+Share Activity Route - https://www.strava.com/routes/22211617
 
 Example smart contract - Staking ETH into escrow time based contract to prove activity to the network on every 24hrs. 
 Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
@@ -33,6 +39,3 @@ Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelratio
     - Proving human activity to stake reputation on the Proof of Activity as a Stake network.
     - Hashing activity from sports tracking apps into IPFS.
     - Parsing activity data & digitally signing it into the network.
-    
-    
- 
