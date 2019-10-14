@@ -73,7 +73,9 @@ Example Activity w/ Heatbeat Data
 * IPFS Hash QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
 * IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
 * PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
-* CasperLabs - http://devnet-graphql.casperlabs.io:40403/graphql
+* CasperLabs Devnet - http://devnet-graphql.casperlabs.io:40403/graphql
+* CasperLabs Explorer - https://explorer.casperlabs.io/#/explorer
+* CasperLabs 
 * GraphQL - https://graphql.org/learn
 
 ### Concepts
@@ -118,7 +120,6 @@ GPS Exchange Format - https://en.wikipedia.org/wiki/GPS_Exchange_Format
 ```js
 // Source Activity Strava Profile
 https://www.strava.com/activities/2744688834
-[strava.com/activities/](https://www.strava.com/activities/2744688834)
 // Exporting Strava Activity in the .TCX format 
 https://www.strava.com/activities/2744688834/export_tcx
 // Exporting Strava Activity in the .GPX format 
