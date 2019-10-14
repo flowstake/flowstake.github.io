@@ -2,31 +2,91 @@
 layout: default
 ---
 
+# Flowstake / Hashrun
+* [github.com/flowstake](https://github.com/flowstake)
 ## Activity Staking Blockchain Network
+> - Public, Immutable, Activity Records
+> - Activity Files Encrypted into IPFS
 
-> - Proof of Activity staking with Ethereum Smart Contracts 
-> - Proof of Activity transactions encrypted into Proof of Work blockchains
-> - [github.com/flowstake](https://github.com/flowstake)
+> - Proof of Activity staking with FlowStake Smart Contract
+> - Proof of Activity transactions hashed with Proof of Work blockchain timestamps
 
 ## Activity Consensus Mechanism
- 
-- Consensus mechanism for data analysis & activity validation. 
-- Network protocol generating Proof of Activity signatures.
+- Smart Contract dApp for activity timestamp, data analysis & identity activity attestation. 
 - [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
-
 ## Proof of Activity as Stake
-
 > - Utilizing Blockchain technology to create a record of activity.
-> - Proof of Activity as Stake - validate, sign & activity transactions.
-> - Stake block rewards from 'mining' activity. 
-
+> - Proof of Activity as Stake - hash, validate & stake activity transactions.
+> - Stake block rewards from activity 'mining'. 
 
 ### Problem to Solve
-
-*   Validate identity, record activity & upload activity metrics. 
+*   Verify / attest identity, record activity data, key signature & activity validation. 
 *   Generate digital transaction & sync activity metrics into blockchain.
 *   Staking contract for verified activity via smart contract.
+
+#### Casper Proof of Stake - Smart Contract 
+> - Escrow Time Release Proof of Activity Smart Contract
+> - Hybrid Proof of Stake / Proof of Activity
+> - Activity timestamp verified on the blockchain network
+
+#### Proof of Activity Validators 
+- Operate a validator node to stake the network
+- Hashes are stored using the IPFS protocol
+- Validator nodes verify and stake activity transactions
+
+### IPFS Hashing for Proof of Activity - Trusted Timestamping
+> - IPFS protocol generates secure & reliable records for proof of activity. 
+> - Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices. 
+> - Parsing activity data into distributed encrypted ledgers with Blockchain technology.
+
+- Smart contract staking token of interest into escrow time based contract to prove activity to the network on every 24hrs.
+- Trackpoint metrics analyze 1 minute segments
+- Analyzing data for Max Accelration, Max Speed & Activity Duration
+
+* Proof of Activity as a Stake - P2P Validators
+* * To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
+
+> - Hashing activity from sports tracking apps into IPFS.
+> - Parsing activity data & digitally signing it into the network.
+> - Proving human activity to peers & validators across the network.
+> - Building activity reputation consistently on the PoA as Stake network. 
+
+- Smart Contract - Proof of Activity as a Stake Time Release Escrow 
+- Token Generation Event - Network Protocol Generates Tokens for Validating Activity Time, Activity Hash Trackpoint Data
+
+> - Throughput requirements for live records - 1 min / 60 seconds - (60 tracepoints)
+> - Live Active Validator - 1 hour / 60 mins / 3600 seconds (3,600 transactions)
+> - Live Active Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 transactions)
+
+* Proof of Activity - Token Generation Event as a result of hybrid computational networks, recording and encrypting activity information, second per second track points.
+
+### Development Tools & Resources 
+
+Example Activity w/ Heatbeat Data
+
+* Strava API - https://www.strava.com/settings/api
+* Retrieve Activity Data - https://www.strava.com/activities/2744688834
+* Export GPX - https://www.strava.com/activities/2744688834/export_gpx
+* Export TCX - https://www.strava.com/activities/2744688834/export_tcx
+* Share Activity Route - https://www.strava.com/routes/22211617
+* IPFS Hash QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+* IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+* PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
+* CasperLabs - http://devnet-graphql.casperlabs.io:40403/graphql
+* GraphQL - https://graphql.org/learn
+
+### Concepts
+
+Cryptographic Hash Function - https://en.wikipedia.org/wiki/Cryptographic_hash_function
+Distributed Hash Table - https://en.m.wikipedia.org/wiki/Distributed_hash_table
+Trusted Timestamping - https://en.wikipedia.org/wiki/Trusted_timestamping
+Tragedy of the Commons - https://en.wikipedia.org/wiki/Tragedy_of_the_commons
+Point of Interest - https://en.wikipedia.org/wiki/Point_of_interest
+Proof of Activity - http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf
+Cryptographic Hash Function - https://en.wikipedia.org/wiki/Cryptographic_hash_function
+Garmin XML Schemas https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas
+GPS Exchange Format - https://en.wikipedia.org/wiki/GPS_Exchange_Format
 
 #### Garmin Training Center XML Format - (.TCX / .GPX / .FIT) 
 
@@ -42,17 +102,6 @@ layout: default
 - [/#api-Athletes](http://developers.strava.com/docs/reference/#api-Athletes)
 - [/#api-Routes](http://developers.strava.com/docs/reference/#api-Routes)
 
-### Sourcing Activity Data
-```js
-// Source Activity Strava Profile
-https://www.strava.com/activities/2744688834
-[strava.com/activities/](https://www.strava.com/activities/2744688834)
-// Exporting Strava Activity in the .TCX format 
-https://www.strava.com/activities/2744688834/export_tcx
-// Exporting Strava Activity in the .GPX format 
-https://www.strava.com/activities/2744688834/export_gpx
-```
-
 ### Technology Layers
 
 | Blockchain   | Consensus Mechanism          | Link |
@@ -64,6 +113,17 @@ https://www.strava.com/activities/2744688834/export_gpx
 | PoA          | Proof of Authority           |  [Read](https://en.wikipedia.org/wiki/Proof_of_authority)   |
 
 * * *
+
+### Sourcing Activity Data
+```js
+// Source Activity Strava Profile
+https://www.strava.com/activities/2744688834
+[strava.com/activities/](https://www.strava.com/activities/2744688834)
+// Exporting Strava Activity in the .TCX format 
+https://www.strava.com/activities/2744688834/export_tcx
+// Exporting Strava Activity in the .GPX format 
+https://www.strava.com/activities/2744688834/export_gpx
+```
 
 ### Blockchain Proof of Work Consensus Mechanism 
 ##### Block.js
