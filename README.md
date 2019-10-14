@@ -20,6 +20,9 @@ Example Activity w/ Heatbeat Data
 * Export GPX - https://www.strava.com/activities/2744688834/export_gpx
 * Export TCX - https://www.strava.com/activities/2744688834/export_tcx
 * Share Activity Route - https://www.strava.com/routes/22211617
+* IPFS add ..
+* IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+* https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
 
 Example smart contract - Staking ETH into escrow time based contract to prove activity to the network on every 24hrs. 
 Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
