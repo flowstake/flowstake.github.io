@@ -2,18 +2,19 @@
 layout: default
 ---
 
-# Flowstake / Hashrun
 ## Activity Staking Blockchain Network
-- [github.com/flowstake](https://github.com/flowstake)
-- Public, Immutable, Activity Records
-- Activity Files Encrypted into IPFS
+> - Public, Immutable, Activity Records
+> - Public Activity Data Hashed into IPFS protocol
+> - Proof of Activity as Stake Consensus Mechanism
 
-> - Proof of Activity staking with FlowStake Smart Contract
-> - Proof of Activity transactions hashed with Proof of Work blockchain timestamps
+## Flowstake Smart Contract  
+- [github.com/flowstake](https://github.com/flowstake)
+- Activity Files Encrypted into IPFS
+- Cryptocurrency Staking with FlowStake Smart Contract
+- Proof of Activity timestamps hashed with IPFS
 
 ## Activity Consensus Mechanism
-- Smart Contract dApp for activity timestamp, data analysis & identity activity attestation. 
-- [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
+- Smart Contract for hashing activity timestamp, proof of identity / activity attestation signatures. 
 
 ## Proof of Activity as Stake
 > - Utilizing Blockchain technology to create a record of activity.
@@ -25,24 +26,20 @@ layout: default
 *   Generate digital transaction & sync activity metrics into blockchain.
 *   Staking contract for verified activity via smart contract.
 
-#### Casper Proof of Stake - Smart Contract 
+#### Proof of Stake - Smart Contract 
 > - Escrow Time Release Proof of Activity Smart Contract
 > - Hybrid Proof of Stake / Proof of Activity
 > - Activity timestamp verified on the blockchain network
 
-#### Proof of Activity Validators 
+#### Proof of Activity - Validators 
 - Operate a validator node to stake the network
 - Hashes are stored using the IPFS protocol
 - Validator nodes verify and stake activity transactions
 
-### IPFS Hashing for Proof of Activity - Trusted Timestamping
+### Proof of Activity - IPFS Trusted Timestamping
 > - IPFS protocol generates secure & reliable records for proof of activity. 
 > - Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices. 
 > - Parsing activity data into distributed encrypted ledgers with Blockchain technology.
-
-- Smart contract staking token of interest into escrow time based contract to prove activity to the network on every 24hrs.
-- Trackpoint metrics analyze 1 minute segments
-- Analyzing data for Max Accelration, Max Speed & Activity Duration
 
 * Proof of Activity as a Stake - P2P Validators
 * To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
@@ -54,6 +51,9 @@ layout: default
 
 - Smart Contract - Proof of Activity as a Stake Time Release Escrow 
 - Token Generation Event - Network Protocol Generates Tokens for Validating Activity Time, Activity Hash Trackpoint Data
+- Smart contract token staking into escrow time based contract to prove activity to the network on every 24hrs.
+- Analyzing data for Max Acceleration, Max Speed & Activity Duration
+- Trackpoint metrics analyze 1 minute segments
 
 > - Throughput requirements for live records - 1 min / 60 seconds - (60 tracepoints)
 > - Live Active Validator - 1 hour / 60 mins / 3600 seconds (3,600 transactions)
@@ -63,8 +63,6 @@ layout: default
 
 ### Development Tools & Resources 
 
-Example Activity w/ Heatbeat Data
-
 * Strava API - https://www.strava.com/settings/api
 * Retrieve Activity Data - https://www.strava.com/activities/2744688834
 * Export GPX - https://www.strava.com/activities/2744688834/export_gpx
@@ -73,10 +71,10 @@ Example Activity w/ Heatbeat Data
 * IPFS Hash QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
 * IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
 * PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
+* CasperLabs - https://casperlabs.io
 * CasperLabs Devnet - http://devnet-graphql.casperlabs.io:40403/graphql
 * CasperLabs Explorer - https://explorer.casperlabs.io/#/explorer
-* CasperLabs - 
-* GraphQL - https://graphql.org/learn
+* GraphQL - https://graphql.org/
 
 ### Concepts
 
@@ -89,6 +87,7 @@ Proof of Activity - [Proof of Activity](http://netecon.seas.harvard.edu/NetEcon1
 Cryptographic Hash Function - [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
 Garmin XML Schemas - [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
 GPS Exchange Format - [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
+[Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 #### Garmin Training Center XML Format - (.TCX / .GPX / .FIT) 
 
@@ -126,7 +125,7 @@ https://www.strava.com/activities/2744688834/export_tcx
 https://www.strava.com/activities/2744688834/export_gpx
 ```
 
-### Blockchain Proof of Work Consensus Mechanism 
+### Proof of Work - Blockchain Consensus Mechanism 
 ##### Block.js
 ```js
 // Javascript code from [Block.js]
