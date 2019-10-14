@@ -1,26 +1,21 @@
-# Flowstake / Hashrun
-
-## Activity Staking Blockchain Network
-
-### Public, Immutable, Activity Records
-
-* Activity Files Encrypted into IPFS
-* Escrow Time Release Proof of Activity Smart Contract 
+### FlowStake / Hashrun - Activity Staking Blockchain Network
+* Public, Immutable, Activity Records
+* Public Activity Files Hashed into IPFS protocol
+* Proof of Activity as Stake Consensus Mechanism
 * Hybrid Proof of Stake / Proof of Activity
-
-* Activity verified on the blockchain network
-* Operate a validator node or stake the network 
-* Validator nodes verify and store hashes using the IPFS protocol.
 
 IPFS protocol generates secure & reliable records for proof of activity.
 Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
 Parsing activity data into distributed encrypted ledgers with Blockchain technology.
 
-Example smart contract - Staking ETH into escrow time based contract to prove activity to the network on every 24hrs. 
+Proof of Activity Smart Contract - Staking ETH into escrow smart contract with time based release to prove consistent, recoccuring runtime / activity on timechain.
 Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
 
 -  Proof of Activity as a Stake - Validators
-    - To ensure network consensus & valid activity data, each node must process transactions to secure network activity.
+    * To ensure network consensus & valid activity data, each node must process transactions to secure network activity.
+    * Activity timestamp hash verified on the blockchain network
+    * Operate a validator node to stake the network 
+    * Validator nodes verify proof of activity IPFS timestamps
 
 - Mining and Encrypting Activity Real Time
     - Requirements - Trackpoint Data
@@ -30,12 +25,11 @@ Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelratio
         - Live Active Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 transactions) 
 
 - Token Generation Event - Network Protocol Generates Tokens for Verified Activity Time
-    - Proof of Activity - Token Generation Event as a result of hybrid computational networks, recording and encrypting activity information, second per second track points.
-    - Proving human activity to stake reputation on the Proof of Activity as a Stake network.
-    - Hashing activity from sports tracking apps into IPFS.
-    - Parsing activity data & digitally signing it into the network.
+- Proof of Activity - Token Generation Event as a result of hybrid computational networks, recording and encrypting activity information, second per second track points.
+- Proving human activity to stake reputation on the Proof of Activity as a Stake network.
+- Hashing activity from sports tracking apps into IPFS.
+- Parsing activity data & digitally signing it into the network.
     
-   
 Resources - Development Tools  Example Activity w/ Heatbeat Data 
 * Strava API - https://www.strava.com/settings/api
 * Retrieve Activity Data - https://www.strava.com/activities/2744688834
