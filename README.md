@@ -8,8 +8,7 @@ IPFS protocol generates secure & reliable records for proof of activity.
 Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
 Parsing activity data into distributed encrypted ledgers with Blockchain technology.
 
-Proof of Activity Smart Contract - Staking ETH into escrow smart contract with time based release to prove consistent, recoccuring runtime / activity on timechain.
-Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
+Proof of Activity Smart Contract - Staking ETH into escrow smart contract with time based release to prove consistent, recoccuring runtime / activity on timechain. Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
 
 -  Proof of Activity as a Stake - Validators
     * To ensure network consensus & valid activity data, each node must process transactions to secure network activity.
