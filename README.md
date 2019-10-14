@@ -8,9 +8,9 @@
 * Escrow Time Release Proof of Activity Smart Contract 
 * Hybrid Proof of Stake / Proof of Activity
 
-Activity verified on the blockchain network
-Operate a validator node or stake the network 
-Validator nodes verify and store hashes using the IPFS protocol.
+* Activity verified on the blockchain network
+* Operate a validator node or stake the network 
+* Validator nodes verify and store hashes using the IPFS protocol.
 
 IPFS protocol generates secure & reliable records for proof of activity.
 Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
