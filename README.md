@@ -8,21 +8,13 @@
 * Escrow Time Release Proof of Activity Smart Contract 
 * Hybrid Proof of Stake / Proof of Authority 
 
->- Activity verified on the blockchain network
+Activity verified on the blockchain network
 Operate a validator node or stake the network 
 Validator nodes verify and store hashes using the IPFS protocol.
 IPFS protocol generates secure & reliable records for proof of activity.
 
 Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
-Parsing activity data into distributed encrypted ledgers with Blockchain technology. 
-
-### Example Activity w/ Heatbeat Data
-* Retrieve Activity Data - https://www.strava.com/activities/2744688834
-* Export GPX - https://www.strava.com/activities/2744688834/export_gpx
-* Export TCX - https://www.strava.com/activities/2744688834/export_tcx
-* Share Activity Route - https://www.strava.com/routes/22211617
-* IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
-* https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+Parsing activity data into distributed encrypted ledgers with Blockchain technology.
 
 Example smart contract - Staking ETH into escrow time based contract to prove activity to the network on every 24hrs. 
 Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
@@ -43,6 +35,12 @@ Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelratio
     - Hashing activity from sports tracking apps into IPFS.
     - Parsing activity data & digitally signing it into the network.
     
-   
-
-Resources - https://www.strava.com/settings/api
+    
+>- Resources - https://www.strava.com/settings/api
+### Example Activity w/ Heatbeat Data
+* Retrieve Activity Data - https://www.strava.com/activities/2744688834
+* Export GPX - https://www.strava.com/activities/2744688834/export_gpx
+* Export TCX - https://www.strava.com/activities/2744688834/export_tcx
+* Share Activity Route - https://www.strava.com/routes/22211617
+* IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+* https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
