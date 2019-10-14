@@ -2,36 +2,37 @@
 
 Activity Staking Blockchain Network
 
+Public, Immutable, Activity Records
 
-Activity Files Encrypted into IPFS 
+Activity Files Encrypted into IPFS
+Capser Proof of Stake
+Smart Contract Staking
 
-Full Activity Processed Into the Blockchain
-Master-nodes verify and store ledgers using IPFS + digital flowstake smart contract signature.
+Activity Verified on the Blockchain
+Validator nodes verify and store hashes using IPFS.
+IPFS protocol generates secure & reliable records for proof of activity.
 
-Parsing activity data into distributed encrypted ledgers via activity streaming protocol through IPFS.
-Record trackpoints of GPS & accelerometer information into sensors built into mobile devices & wearable devices connected via rP2P or through https / ipfs.
-Digital signatures into each blocktime to verify with activity staking contract.
-Time Based Records & Staking via smart contract on the Ethereum blockchain.
-Trackpoint metrics analyzed segments analyzed, tokens generated 1 per min.
-P2P private IPFS nodes building secure, reliable sports records for proof of activity.
+Parsing activity data into distributed encrypted ledgers with Blockchain technology. 
+Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
 
--  Proof of Activity - Masternode
-    - Network consensus, validators must mine for 15 days to secure network Activity 
-    - Network consents, validators must mine / process 6 hours of activity 
+Example smart contract - Staking ETH into escrow time based contract to prove activity to the network on every 24hrs. 
+Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
+
+-  Proof of Activity as a Stake - Validators
+    - To ensure network consensus & valid activity data, each node must process transactions to secure network activity.
 
 - Mining and Encrypting Activity Real Time
-    - Requirements - Blockchain Codebase
-    - Smart Contract Signing Digital Activity
-    - Activity Mining to Generate Transactions 
-        - Activity Requirements for Digital Signature - 1 min / 60 seconds - (60 tracepoints)
-        - Active Validator - 60 mins / 3600 seconds (3,600 transactions)
-        - Active Master Node - 24 hours / 1440 minutes 
+    - Requirements - Trackpoint Data
+    - Smart Contract - Mining Activity to Generate Blocks
+        - Throughput Requirements for Sigining Activity Live - 1 min / 60 seconds - (60 tracepoints)
+        - Live Active Validator - 1 hour / 60 mins / 3600 seconds (3,600 transactions)
+        - Live Active Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 transactions) 
 
-- Blockchain Mining - Network Protocol Generates Tokens for Activity Time
-    - Token Generation Event as the Utility of Proof of Activity
-    - Token Generation Event as a result of Proof of Activity, Proof of Elapsed Time & Proof of Work hybrid computational networks, securely recording and encrypting activity information, trace & track points real time from wearable devices. 
-    - Tokens rewards, are activity minutes human activity in combination with Proof of Authority & Staking Consensus to generate time tokens that can be held in a wallet to generate tokens 
-
-- Signing Activity with Mobile Wallet & Scanning Proof of Authority QR Codes to improve network consensus
-- Embedding Activity Digital Signatures into Activity Data
-- Zero Knowledge Proof of Activity as a Stake
+- Token Generation Event - Network Protocol Generates Tokens for Verified Activity Time
+    - Proof of Activity - Token Generation Event as a result of hybrid computational networks, recording and encrypting activity information, second per second track points.
+    - Proving human activity to stake reputation on the Proof of Activity as a Stake network.
+    - Hashing activity from sports tracking apps into IPFS.
+    - Parsing activity data & digitally signing it into the network.
+    
+    
+ 
