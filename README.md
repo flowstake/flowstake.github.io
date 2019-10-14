@@ -1,3 +1,3 @@
 # Flowstake 
 
-Blockchain Activity Network
+Activity Staking Blockchain Network
