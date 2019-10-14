@@ -35,12 +35,11 @@ Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelratio
     - Hashing activity from sports tracking apps into IPFS.
     - Parsing activity data & digitally signing it into the network.
     
-    
->- * Resources * - https://www.strava.com/settings/api
->- Example Activity w/ Heatbeat Data
->- * Retrieve Activity Data - https://www.strava.com/activities/2744688834
->- * Export GPX - https://www.strava.com/activities/2744688834/export_gpx
->- * Export TCX - https://www.strava.com/activities/2744688834/export_tcx
->- * Share Activity Route - https://www.strava.com/routes/22211617
->- * IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
->- * https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+>- Example Activity w/ Heatbeat Data    
+>- Resources - https://www.strava.com/settings/api
+>- Retrieve Activity Data - https://www.strava.com/activities/2744688834
+>- Export GPX - https://www.strava.com/activities/2744688834/export_gpx
+>- Export TCX - https://www.strava.com/activities/2744688834/export_tcx
+>- Share Activity Route - https://www.strava.com/routes/22211617
+>- IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
+>- IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
