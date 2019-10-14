@@ -1,4 +1,4 @@
-# Flowstake 
+# Flowstake / Hashrun
 
 Activity Staking Blockchain Network
 
