@@ -46,4 +46,8 @@ Resources - https://www.strava.com/settings/api
 * PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
 * CasperLabs - http://devnet-graphql.casperlabs.io:40403/graphql
 * GraphQL - https://graphql.org/learn/
+
+Concepts
 * Point of Interest - https://en.wikipedia.org/wiki/Point_of_interest
+* Proof of Activity - http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf
+* Cryptographic Hash Function - https://en.wikipedia.org/wiki/Cryptographic_hash_function
