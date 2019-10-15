@@ -58,8 +58,8 @@ layout: default
 * [PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV)](https://github.com/flowstake/Waddle)
 * [CasperLabs](https://casperlabs.io)
 * [CasperLabs Devnet](http://devnet-graphql.casperlabs.io:40403/graphql)
-* [CasperLabs Explorer] - https://explorer.casperlabs.io/#/explorer
-* [GraphQL] - https://graphql.org/
+* [CasperLabs Explorer](https://explorer.casperlabs.io/#/explorer)
+* [GraphQL](https://graphql.org/)
 
 ### Concepts
 
