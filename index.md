@@ -122,6 +122,8 @@ Exporting Activity Manually as (.TCX / .GPX)
 * Exporting Strava Activity in the .GPX format 
 * https://www.strava.com/activities/2744688834/export_gpx
 
+## Strava http API
+
 ```bash
 // Bashing cURL
 curl -X GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=true" -H "accept: application/json" -H "authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
@@ -129,32 +131,105 @@ curl -X GET "https://www.strava.com/api/v3/activities/2780342099?include_all_eff
 $ http GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=" "Authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
 ```
 * [$ http GET "https://www.strava.com/api/v3/activities/2780342099](./http_GET.md)
-```js
-// Javascript GET /activities/{id}
-var StravaApiV3 = require('strava_api_v3');
-var defaultClient = StravaApiV3.ApiClient.instance;
-
-// Configure OAuth2 access token for authorization: strava_oauth
-var strava_oauth = defaultClient.authentications['strava_oauth'];
-strava_oauth.accessToken = "YOUR ACCESS TOKEN"
-
-var api = new StravaApiV3.ActivitiesApi()
-
-var id = 789; // {Long} The identifier of the activity.
-
-var opts = { 
-  'includeAllEfforts': true // {Boolean} To include all segments efforts.
-};
-
-var callback = function(error, data, response) {
-  if (error) {
-    console.error(error);
-  } else {
-    console.log('API called successfully. Returned data: ' + data);
-  }
-};
-api.getActivityById(id, opts, callback);
 ```
+// Recommended to Build in Docker container 
+```
+## Key Value Storage
+
+This is an example of a simple string-base key-value smart contract and it's usage.
+
+## Requirements
+#### Install Rust
+```bash 
+$ brew install rust
+```
+
+#### Install IPFS
+```bash 
+$ tar xvfz go-ipfs.tar.gz
+$ cd go-ipfs
+$ ./install.sh
+```
+
+#### Upload Data / Files to IPFS 
+```bash
+$ ipfs add Proof_of_Activity_as_a_Stake.gpx
+$ added QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk Proof_of_Activity_as_a_Stake.gpx
+```
+# Usage
+
+## Step 1 - Compile smart contracts.
+```bash
+$ cargo build --release
+```
+
+## Step 2 - Save value under a key.
+Make sure to run scripts in the root directory!
+```bash
+$ ./scripts/put.sh "Activity Hash" "QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk"
+```
+
+## Step 3 - Check the value.
+```bash
+$ ./scripts/get.sh "Activity Hash"
+```
+Value of the counter should be `QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk`.
+
+## Step 4 - Update the value.
+```bash
+$ ./scripts/put.sh "Activity Hash" "QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk"
+```
+
+## Step 5 - Check the value again.
+```bash
+$ ./scripts/get.sh "Activity Hash"
+```
+Value of the counter should be `QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk`.
+
+## GraphQL
+You can check the value of the counter using devnet's GraphQL console:
+https://devnet-graphql.casperlabs.io
+
+Go to and then:
+
+### Check latest block hash in 
+```
+query {
+  dagSlice(depth: 1) {
+      blockHash
+  }
+}
+```
+
+### Get public key of your account
+```bash
+$ cat keys/key.public.hex.key
+```
+
+### Check the counter value.
+Put block hash under `blockHashBase16Prefix` and your public key under `keyBase`. Put your key in `pathSegments` like in the example.
+```
+query {
+  globalState(
+    blockHashBase16Prefix: "96720f16a215b5e55f1a7475256370f48efa932248b7bcd633d29413a5c1f033"
+    StateQueries: [
+      {
+        keyType: Address
+        keyBase16: "64d0c86f888e925731cae4398c6ea86d26a14e2574e70b36bd4eeaec3a292cde"
+        pathSegments: ["answer"]
+      }
+    ]
+  ) {
+    value {
+      __typename
+      ... on IntValue {
+        int: value
+      }
+    }
+  }
+}
+```
+
 
 ### Proof of Work - Blockchain Consensus Mechanism 
 ##### Block.js
