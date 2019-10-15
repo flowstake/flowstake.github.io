@@ -29,6 +29,26 @@ Proof of Activity Smart Contract - Staking ETH into escrow smart contract with t
 - Hashing activity from sports tracking apps into IPFS.
 - Parsing activity data & digitally signing it into the network.
     
+### Local Installation - 
+On macOS, HTTPie can be installed via Homebrew (recommended):
+$ brew install httpie
+
+==> Downloading https://homebrew.bintray.com/bottles/httpie-1.0.3.mojave.bottle.tar.gz
+==> Downloading from https://akamai.bintray.com/24/2436432e8ee1efe7f6c19c501af35aba453dabe3b9a9f88bed4e22a795bc6d1c?__gda__=exp
+######################################################################## 100.0%
+==> Pouring httpie-1.0.3.mojave.bottle.tar.gz
+🍺  /usr/local/Cellar/httpie/1.0.3: 946 files, 11.0MB
+
+Below is an example request to the Strava API using HTTPie, along with sample response headers for a successful and rate-limited request:
+
+Example request
+
+$ http 'https://www.strava.com/api/v3/athlete' \
+    'Authorization:Bearer 83ebeabdec09f6670863766f792ead24d61fe3f9'
+ 
+
+
+    
 Resources - Development Tools  Example Activity w/ Heatbeat Data 
 * Strava API - https://www.strava.com/settings/api
 * Retrieve Activity Data - https://www.strava.com/activities/2744688834
