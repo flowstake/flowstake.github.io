@@ -8,7 +8,7 @@ IPFS protocol generates secure & reliable records for proof of activity.
 Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
 Parsing activity data into distributed encrypted ledgers with Blockchain technology.
 
-Proof of Activity Smart Contract - Staking ETH into escrow smart contract with time based release to prove consistent, recoccuring runtime / activity on timechain. Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
+Proof of Activity Smart Contract - Staking proof of activity events into escrow smart contracts with time based release to prove consistent, recoccuring runtime / activity on timechain. Trackpoint metrics analyze 1 minute segments - analyzing data for Max Accelration, Max Speed & Activity Duration
 
 -  Proof of Activity as a Stake - Validators
     * To ensure network consensus & valid activity data, each node must process transactions to secure network activity.
@@ -29,10 +29,14 @@ Proof of Activity Smart Contract - Staking ETH into escrow smart contract with t
 - Hashing activity from sports tracking apps into IPFS.
 - Parsing activity data & digitally signing it into the network.
     
-### Local Installation - 
+    
+#### Resources - Development Tools
+* Strava API - https://www.strava.com/settings/api
+    
+### Local Installation - macOS Mojave 10.14.4
 On macOS, HTTPie can be installed via Homebrew (recommended):
-$ brew install httpie
 
+* $ brew install httpie
 ==> Downloading https://homebrew.bintray.com/bottles/httpie-1.0.3.mojave.bottle.tar.gz
 ==> Downloading from https://akamai.bintray.com/24/2436432e8ee1efe7f6c19c501af35aba453dabe3b9a9f88bed4e22a795bc6d1c?__gda__=exp
 ######################################################################## 100.0%
@@ -44,9 +48,49 @@ Below is an example request to the Strava API using HTTPie, along with sample re
 Example request
 
 $ http 'https://www.strava.com/api/v3/athlete' \
-    'Authorization:Bearer 83ebeabdec09f6670863766f792ead24d61fe3f9'
+    'Authorization:Bearer d4cc0724eed83ffddcb8715d7fd83d3588724cc5'
  
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, private, must-revalidate
+Connection: keep-alive
+Content-Encoding: gzip
+Content-Type: application/json; charset=utf-8
+Date: Tue, 15 Oct 2019 05:06:16 GMT
+ETag: W/"4c2a3238f8480def275c8d6b6633bf4d"
+Referrer-Policy: strict-origin-when-cross-origin
+Status: 200 OK
+Transfer-Encoding: chunked
+Vary: Origin
+Via: 1.1 linkerd
+X-Content-Type-Options: nosniff
+X-Download-Options: noopen
+X-FRAME-OPTIONS: DENY
+X-Permitted-Cross-Domain-Policies: none
+X-RateLimit-Limit: 600,30000
+X-RateLimit-Usage: 1,1
+X-Request-Id: 595c898e-dd45-47b6-b310-576be98dd2a9
+X-XSS-Protection: 1; mode=block
 
+{
+    "badge_type_id": 0,
+    "city": "Providence",
+    "country": "United States",
+    "created_at": "2015-09-19T03:59:51Z",
+    "firstname": "Renat",
+    "follower": null,
+    "friend": null,
+    "id": 11405488,
+    "lastname": "Razumov",
+    "premium": false,
+    "profile": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/11405488/3777188/5/large.jpg",
+    "profile_medium": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/11405488/3777188/5/medium.jpg",
+    "resource_state": 2,
+    "sex": "M",
+    "state": "Rhode Island",
+    "summit": false,
+    "updated_at": "2019-10-15T02:26:50Z",
+    "username": null
+}
 
     
 Resources - Development Tools  Example Activity w/ Heatbeat Data 
