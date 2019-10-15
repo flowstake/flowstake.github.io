@@ -5,50 +5,41 @@ layout: default
 ## Activity Staking Blockchain Network
 > - Public, Immutable, Activity Records
 > - Public Activity Data Hashed into IPFS protocol
-> - Proof of Activity as Stake Consensus Mechanism
-
-## Flowstake Smart Contract  
-- [github.com/flowstake](https://github.com/flowstake)
-- Activity Files Encrypted into IPFS
-- Cryptocurrency Staking with FlowStake Smart Contract
-- Proof of Activity timestamps hashed with IPFS
-
-## Activity Consensus Mechanism
-- Smart Contract for hashing activity timestamp, proof of identity / activity attestation signatures. 
+> - [github.com/flowstake](https://github.com/flowstake)
 
 ## Proof of Activity as Stake
-> - Utilizing Blockchain technology to create a record of activity.
+> - Utilizing Blockchain technology to create a timestamped record of activity.
 > - Proof of Activity as Stake - hash, validate & stake activity transactions.
-> - Stake block rewards from activity 'mining'. 
+> - Each activity is a node, staking runtime to validate proof of activity. 
 
 ### Problem to Solve
-*   Verify / attest identity, record activity data, key signature & activity validation. 
-*   Generate digital transaction & sync activity metrics into blockchain.
+*   Verify / attest identity, record / hash activity data, digitally sign hashes for activity validation. 
+*   Distributed activity attestations & sync activity metrics into blockchain.
 *   Staking contract for verified activity via smart contract.
 
-#### Proof of Stake - Smart Contract 
-> - Escrow Time Release Proof of Activity Smart Contract
+### Proof of Stake - Smart Contract 
 > - Hybrid Proof of Stake / Proof of Activity
+> - Escrow Time Release Proof of Activity Smart Contract
 > - Activity timestamp verified on the blockchain network
 
-#### Proof of Activity - Validators 
+### Proof of Activity - Validators 
+- Proof of Activity as a Stake - P2P Validators
+- To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
 - Operate a validator node to stake the network
 - Hashes are stored using the IPFS protocol
 - Validator nodes verify and stake activity transactions
 
 ### Proof of Activity - IPFS Trusted Timestamping
 > - IPFS protocol generates secure & reliable records for proof of activity. 
-> - Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices. 
-> - Parsing activity data into distributed encrypted ledgers with Blockchain technology.
+> - Compiling GPS + Activity trackpoints & accelerometer data from sensors on mobile & wearable devices. 
+> - Parsing activity data into hashes recorded on distributed encrypted ledgers with Blockchain technology.
 
-* Proof of Activity as a Stake - P2P Validators
-* To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
-
+### Proof of Activity - IPFS Activity Hashing 
 > - Hashing activity from sports tracking apps into IPFS.
-> - Parsing activity data & digitally signing it into the network.
-> - Proving human activity to peers & validators across the network.
+> - Proving human activity from peers & validators across the network.
 > - Building activity reputation consistently on the PoA as Stake network. 
 
+### Proof of Activity - Staking Smart Contract
 - Smart Contract - Proof of Activity as a Stake Time Release Escrow 
 - Token Generation Event - Network Protocol Generates Tokens for Validating Activity Time, Activity Hash Trackpoint Data
 - Smart contract token staking into escrow time based contract to prove activity to the network on every 24hrs.
@@ -63,11 +54,6 @@ layout: default
 
 ### Development Tools & Resources 
 
-* [Strava API](https://www.strava.com/settings/api)
-* [Retrieve Activity Data](https://www.strava.com/activities/2744688834)
-* [Export_GPX](https://www.strava.com/activities/2744688834/export_gpx)
-* [Export_TCX](https://www.strava.com/activities/2744688834/export_tcx)
-* [Share Activity Route](https://www.strava.com/routes/22211617)
 * [IPFS Hash QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd](https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd)
 * [PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV)](https://github.com/flowstake/Waddle)
 * [CasperLabs](https://casperlabs.io)
@@ -86,21 +72,27 @@ layout: default
 * [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
 * [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
 * [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
-* [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
+
+### Data Source / Activity Information Schema
+
+#### Strava API References 
+
+- [developers.strava](http://developers.strava.com/docs/reference/)
+- [/#api-Activities](http://developers.strava.com/docs/reference/#api-Activities)
+- [/#api-Athletes](http://developers.strava.com/docs/reference/#api-Athletes)
+- [/#api-Routes](http://developers.strava.com/docs/reference/#api-Routes)
+- [Strava API](https://www.strava.com/settings/api)
+- [Retrieve Activity Data](https://www.strava.com/activities/2744688834)
+- [Export_GPX](https://www.strava.com/activities/2744688834/export_gpx)
+- [Export_TCX](https://www.strava.com/activities/2744688834/export_tcx)
+- [Share Activity Route](https://www.strava.com/routes/22211617)
+- [Upload Strava activity (.tcx / .gpx / .fit)](https://support.strava.com/hc/en-us/articles/223297187-How-to-get-your-Activities-to-Strava).
 
 #### Garmin Training Center XML Format - (.TCX / .GPX / .FIT) 
 
 > - Training Center XML (TCX) is a data exchange format introduced in 2007 as part of Garmin's Training Center product. The XML is similar to GPX since it exchanges GPS tracks, but treats a track as an Activity rather than simply a series of GPS points. TCX provides standards for transferring heart rate, running cadence, bicycle cadence, calories in the detailed track. It also provides summary data in the form of laps.
 > - [Training Center XML](https://en.wikipedia.org/wiki/Training_Center_XML)
 > - [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/)
-
-### Data Source / Activity Information Schema
-
-- Strava API References 
-- [developers.strava](http://developers.strava.com/docs/reference/)
-- [/#api-Activities](http://developers.strava.com/docs/reference/#api-Activities)
-- [/#api-Athletes](http://developers.strava.com/docs/reference/#api-Athletes)
-- [/#api-Routes](http://developers.strava.com/docs/reference/#api-Routes)
 
 ### Technology Layers
 
