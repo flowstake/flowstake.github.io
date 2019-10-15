@@ -107,14 +107,38 @@ layout: default
 * * *
 
 ### Sourcing Activity Data
+// Javascript GET /activities/{id}
 ```js
-// Source Activity Strava Profile
-https://www.strava.com/activities/2744688834
-// Exporting Strava Activity in the .TCX format 
-https://www.strava.com/activities/2744688834/export_tcx
-// Exporting Strava Activity in the .GPX format 
-https://www.strava.com/activities/2744688834/export_gpx
+var StravaApiV3 = require('strava_api_v3');
+var defaultClient = StravaApiV3.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: strava_oauth
+var strava_oauth = defaultClient.authentications['strava_oauth'];
+strava_oauth.accessToken = "YOUR ACCESS TOKEN"
+
+var api = new StravaApiV3.ActivitiesApi()
+
+var id = 789; // {Long} The identifier of the activity.
+
+var opts = { 
+  'includeAllEfforts': true // {Boolean} To include all segments efforts.
+};
+
+var callback = function(error, data, response) {
+  if (error) {
+    console.error(error);
+  } else {
+    console.log('API called successfully. Returned data: ' + data);
+  }
+};
+api.getActivityById(id, opts, callback);
 ```
+#### Source Activity Strava Profile
+* https://www.strava.com/activities/2744688834
+#### Exporting Strava Activity in the .TCX format 
+* https://www.strava.com/activities/2744688834/export_tcx
+#### Exporting Strava Activity in the .GPX format 
+* https://www.strava.com/activities/2744688834/export_gpx
 
 ### Proof of Work - Blockchain Consensus Mechanism 
 ##### Block.js
