@@ -106,9 +106,17 @@ layout: default
 
 * * *
 
-### Sourcing Activity Data
-// Javascript GET /activities/{id}
+### Sourcing Activity Data with Javascript
+
+#### Source Activity Strava Profile
+* https://www.strava.com/activities/2744688834
+#### Exporting Strava Activity in the .TCX format 
+* https://www.strava.com/activities/2744688834/export_tcx
+#### Exporting Strava Activity in the .GPX format 
+* https://www.strava.com/activities/2744688834/export_gpx
+
 ```js
+// Javascript GET /activities/{id}
 var StravaApiV3 = require('strava_api_v3');
 var defaultClient = StravaApiV3.ApiClient.instance;
 
@@ -133,12 +141,6 @@ var callback = function(error, data, response) {
 };
 api.getActivityById(id, opts, callback);
 ```
-#### Source Activity Strava Profile
-* https://www.strava.com/activities/2744688834
-#### Exporting Strava Activity in the .TCX format 
-* https://www.strava.com/activities/2744688834/export_tcx
-#### Exporting Strava Activity in the .GPX format 
-* https://www.strava.com/activities/2744688834/export_gpx
 
 ### Proof of Work - Blockchain Consensus Mechanism 
 ##### Block.js
