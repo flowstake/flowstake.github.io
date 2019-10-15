@@ -128,7 +128,7 @@ curl -X GET "https://www.strava.com/api/v3/activities/2780342099?include_all_eff
 // Http Request 
 $ http GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=" "Authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
 ```
-
+* [$ http GET "https://www.strava.com/api/v3/activities/2780342099](./http_GET.md)
 ```js
 // Javascript GET /activities/{id}
 var StravaApiV3 = require('strava_api_v3');
