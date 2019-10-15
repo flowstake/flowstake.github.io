@@ -108,11 +108,11 @@ layout: default
 
 ### Sourcing Activity Data with Javascript
 
-#### Source Activity Strava Profile
+* Source Activity Strava Profile
 * https://www.strava.com/activities/2744688834
-#### Exporting Strava Activity in the .TCX format 
+* Exporting Strava Activity in the .TCX format 
 * https://www.strava.com/activities/2744688834/export_tcx
-#### Exporting Strava Activity in the .GPX format 
+* Exporting Strava Activity in the .GPX format 
 * https://www.strava.com/activities/2744688834/export_gpx
 
 ```js
