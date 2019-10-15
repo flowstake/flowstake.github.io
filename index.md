@@ -114,12 +114,20 @@ layout: default
 
 ### Sourcing Activity Data with Javascript
 
+Exporting Activity Manually as (.TCX / .GPX)
 * Source Activity Strava Profile
 * https://www.strava.com/activities/2744688834
 * Exporting Strava Activity in the .TCX format 
 * https://www.strava.com/activities/2744688834/export_tcx
 * Exporting Strava Activity in the .GPX format 
 * https://www.strava.com/activities/2744688834/export_gpx
+
+```bash
+// Bashing cURL
+curl -X GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=true" -H "accept: application/json" -H "authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
+// Http Request 
+$ http GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=" "Authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
+```
 
 ```js
 // Javascript GET /activities/{id}
