@@ -77,11 +77,17 @@ layout: default
 
 #### Strava API References 
 
-- [developers.strava](http://developers.strava.com/docs/reference/)
+- [Strava Developers](https://developers.strava.com)
+- [Strava API](https://www.strava.com/settings/api)
+- [Getting Started Guide](https://developers.strava.com/docs/getting-started)
+- [API Documentation](https://developers.strava.com/docs/reference)
+- [Create & Manage Your App](https://strava.com/settings/api)
+- [Explore the API Playground](https://developers.strava.com/playground)
+- [Libraries](https://developers.strava.com/docs/#client-code)
 - [/#api-Activities](http://developers.strava.com/docs/reference/#api-Activities)
 - [/#api-Athletes](http://developers.strava.com/docs/reference/#api-Athletes)
 - [/#api-Routes](http://developers.strava.com/docs/reference/#api-Routes)
-- [Strava API](https://www.strava.com/settings/api)
+
 - [Retrieve Activity Data](https://www.strava.com/activities/2744688834)
 - [Export_GPX](https://www.strava.com/activities/2744688834/export_gpx)
 - [Export_TCX](https://www.strava.com/activities/2744688834/export_tcx)
