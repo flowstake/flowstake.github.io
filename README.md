@@ -35,16 +35,23 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
 ### Docker Runtime Container
 
 * Install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/)
-* Docker Pull Commands
-$ docker pull casperlabs/client
-$ docker pull casperlabs/buildenv
-$ docker pull casperlabs/grpcwebproxy
-$ docker pull casperlabs/node
-$ docker pull casperlabs/execution-engine
-$ docker pull casperlabs/explorer
-$ docker pull casperlabs/key-generator
 
-### Strava API - https://www.strava.com/settings/api
+### [CasperLabs Tech Spec](https://techspec.casperlabs.io)
+* [clarity.casperlabs.io](https://clarity.casperlabs.io/#/)
+* [capserlabs dockerhub](https://hub.docker.com/u/casperlabs)
+* [devnet-graphql.casperlabs.io](http://devnet-graphql.casperlabs.io:40403/graphql)
+
+* Docker Container 
+* Docker Pull Commands
+* $ docker pull casperlabs/client
+* $ docker pull casperlabs/buildenv
+* $ docker pull casperlabs/grpcwebproxy
+* $ docker pull casperlabs/node
+* $ docker pull casperlabs/execution-engine
+* $ docker pull casperlabs/explorer
+* $ docker pull casperlabs/key-generator
+
+### [Strava API](https://www.strava.com/settings/api)
     
 #### Local Installation - macOS Mojave 10.14.4
 On macOS, HTTPie can be installed via Homebrew (recommended):
