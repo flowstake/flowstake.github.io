@@ -131,13 +131,14 @@ curl -X GET "https://www.strava.com/api/v3/activities/2780342099?include_all_eff
 $ http GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=" "Authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
 ```
 // Recommended to Build in Docker container 
-```
+
 
 ## Docker Runtime Container
 
 * Install Docker for MacOS
 * Run Docker Pull Commands
 * [CapserLabs DockerHub](https://hub.docker.com/u/casperlabs)
+* [Casper Node network simulation in Docker Container](https://github.com/flowstake/CasperLabs/tree/dev/hack/docker)
 
 ```bash 
 $ docker pull casperlabs/client
