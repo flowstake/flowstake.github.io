@@ -123,14 +123,12 @@ Exporting Activity Manually as (.TCX / .GPX)
 * https://www.strava.com/activities/2744688834/export_gpx
 
 ## Accessing Strava API
-
+[$ http GET](./http_GET.md)
 ```bash
 // Bashing cURL
 curl -X GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=true" -H "accept: application/json" -H "authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
 // Http Request 
 $ http GET "https://www.strava.com/api/v3/activities/2780342099?include_all_efforts=" "Authorization: Bearer cb5467187bfa67b219cb6359c0bb86a0499fccc3"
-```
-* [$ http GET "https://www.strava.com/api/v3/activities/2780342099](./http_GET.md)
 ```
 // Recommended to Build in Docker container 
 ```
@@ -149,7 +147,6 @@ $ docker pull casperlabs/node
 $ docker pull casperlabs/execution-engine
 $ docker pull casperlabs/explorer
 $ docker pull casperlabs/key-generator
-
 ```
 
 ## Key Value Storage
@@ -234,7 +231,7 @@ query {
       {
         keyType: Address
         keyBase16: "64d0c86f888e925731cae4398c6ea86d26a14e2574e70b36bd4eeaec3a292cde"
-        pathSegments: ["answer"]
+        pathSegments: ["QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk"]
       }
     ]
   ) {
