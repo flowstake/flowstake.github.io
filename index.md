@@ -143,10 +143,13 @@ $ http GET "https://www.strava.com/api/v3/activities/2780342099?include_all_effo
 
 ```bash 
 $ docker pull casperlabs/client
+$ docker pull casperlabs/buildenv
 $ docker pull casperlabs/grpcwebproxy
 $ docker pull casperlabs/node
 $ docker pull casperlabs/execution-engine
-$ docker pull casperlabs/client
+$ docker pull casperlabs/explorer
+$ docker pull casperlabs/key-generator
+
 ```
 
 ## Key Value Storage
