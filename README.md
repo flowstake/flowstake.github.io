@@ -36,11 +36,13 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
 
 * Install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/)
 * Docker Pull Commands
-* docker pull casperlabs/client 
-* docker pull casperlabs/grpcwebproxy
-* docker pull casperlabs/node
-* docker pull casperlabs/execution-engine
-* docker pull casperlabs/client
+$ docker pull casperlabs/client
+$ docker pull casperlabs/buildenv
+$ docker pull casperlabs/grpcwebproxy
+$ docker pull casperlabs/node
+$ docker pull casperlabs/execution-engine
+$ docker pull casperlabs/explorer
+$ docker pull casperlabs/key-generator
 
 ### Strava API - https://www.strava.com/settings/api
     
