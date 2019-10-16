@@ -36,8 +36,15 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
     
 ## Resources - Development Tools
 
-
 ### [IPFS.io](https://ipfs.io)
+* Download IPFS for your platform
+* macOS and Linux
+* After downloading, untar the archive, and move the ipfs binary somewhere in your executables $PATH using the install.sh script:
+```bash
+$ tar xvfz go-ipfs.tar.gz
+$ cd go-ipfs
+$ ./install.sh
+```
 
 ### Docker Runtime Container
 
@@ -50,6 +57,7 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
 
 * Docker Container 
 * Docker Pull Commands
+```bash
 * $ docker pull casperlabs/client
 * $ docker pull casperlabs/buildenv
 * $ docker pull casperlabs/grpcwebproxy
@@ -57,6 +65,7 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
 * $ docker pull casperlabs/execution-engine
 * $ docker pull casperlabs/explorer
 * $ docker pull casperlabs/key-generator
+```
 
 ### [Strava API](https://www.strava.com/settings/api)
     
