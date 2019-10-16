@@ -35,7 +35,7 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
 ### Docker Runtime Container
 
 * Install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/)
-Docker Pull Commands
+* Docker Pull Commands
 * docker pull casperlabs/client 
 * docker pull casperlabs/grpcwebproxy
 * docker pull casperlabs/node
