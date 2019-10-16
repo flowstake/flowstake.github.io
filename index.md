@@ -122,7 +122,7 @@ Exporting Activity Manually as (.TCX / .GPX)
 * Exporting Strava Activity in the .GPX format 
 * https://www.strava.com/activities/2744688834/export_gpx
 
-## Strava http API
+## Accessing Strava API
 
 ```bash
 // Bashing cURL
@@ -134,6 +134,19 @@ $ http GET "https://www.strava.com/api/v3/activities/2780342099?include_all_effo
 ```
 // Recommended to Build in Docker container 
 ```
+
+## Docker Runtime Container
+
+* Install Docker for MacOS
+* Run Docker Pull Commands
+```bash 
+$ docker pull casperlabs/client
+$ docker pull casperlabs/grpcwebproxy
+$ docker pull casperlabs/node
+$ docker pull casperlabs/execution-engine
+$ docker pull casperlabs/client
+```
+
 ## Key Value Storage
 
 This is an example of a simple string-base key-value smart contract and it's usage.
