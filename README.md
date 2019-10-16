@@ -4,6 +4,10 @@
 * Proof of Activity as Stake Consensus Mechanism
 * Hybrid Proof of Stake / Proof of Activity
 
+## Proof of Activity 
+
+Data ownership, Content addressed storage, Hash addressed Activity Trackpoints
+IPFS has given the users the power of content-addressed storage.
 IPFS protocol generates secure & reliable records for proof of activity.
 Compiling trackpoints of GPS & accelerometer data from sensors on mobile & wearable devices.
 Parsing activity data into distributed encrypted ledgers with Blockchain technology.
