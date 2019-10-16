@@ -34,7 +34,7 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
 - Parsing activity data & digitally signing it into the network.
     
     
-## Resources - Development Tools
+## Install Resources - Development Tools
 
 ### [IPFS.io](https://ipfs.io)
 * [Download IPFS for your platform](https://dist.ipfs.io/#go-ipfs)
@@ -87,21 +87,20 @@ $ http 'https://www.strava.com/api/v3/athlete' \
     'Authorization:Bearer d4cc0724eed83ffddcb8715d7fd83d3588724cc5'
 ```
 
-Resources - Development Tools  Example Activity w/ Heatbeat Data 
-* Strava API - https://www.strava.com/settings/api
-* Retrieve Activity Data - https://www.strava.com/activities/2744688834
-* Export GPX - https://www.strava.com/activities/2744688834/export_gpx
-* Export TCX - https://www.strava.com/activities/2744688834/export_tcx
-* Share Activity Route - https://www.strava.com/routes/22211617
-* IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
-* IPFS.io - https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd
-* PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV) - https://github.com/flowstake/Waddle
-* CasperLabs - http://devnet-graphql.casperlabs.io:40403/graphql
-* GraphQL - https://graphql.org/learn
+Sources - Development Tools 
+* [Strava API](https://www.strava.com/settings/api)
+* [Retrieve Activity Data](https://www.strava.com/activities/2744688834)
+* [Export GPX](https://www.strava.com/activities/2744688834/export_gpx)
+* [Export TCX](https://www.strava.com/activities/2744688834/export_tcx)
+* [Share Activity Route](https://www.strava.com/routes/22211617)
+* [IPFS Hash  QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd](https://ipfs.io/ipfs/QmPfUsyaYuQpDfXKUeHczn7wZ5MUWrDDmQVwsBvVKFamnd)
+* [CasperLabs GraphQL Devnet](http://devnet-graphql.casperlabs.io:40403/graphql)
+* [GraphQL](https://graphql.org/learn)
+* [PHP Library for parsing running GPS activities (.TCX .GPX .PWX .CSV)](https://github.com/flowstake/Waddle)
 
-Concepts
-* Point of Interest - https://en.wikipedia.org/wiki/Point_of_interest
-* Proof of Activity - http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf
-* Cryptographic Hash Function - https://en.wikipedia.org/wiki/Cryptographic_hash_function
-* Garmin XML Schemas https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas
-* GPS Exchange Format - https://en.wikipedia.org/wiki/GPS_Exchange_Format
+Related Research Concepts
+* [Point of Interest](https://en.wikipedia.org/wiki/Point_of_interest)
+* [Proof of Activity](http://netecon.seas.harvard.edu/NetEcon14/Papers/Bentov_netecon14.pdf)
+* [Cryptographic Hash Function](https://en.wikipedia.org/wiki/Cryptographic_hash_function)
+* [Garmin XML Schemas](https://www8.garmin.com/xmlschemas/index.jsp#/web/docs/xmlschemas)
+* [GPS Exchange Format](https://en.wikipedia.org/wiki/GPS_Exchange_Format)
