@@ -69,7 +69,7 @@ rustup target add wasm32-unknown-unknown
 * [devnet-graphql.casperlabs.io](http://devnet-graphql.casperlabs.io:40403/graphql)
 * [explorer.casperlabs.io](https://explorer.casperlabs.io/#/blocks)
 
-### Key Value Storage
+### Proof of Activity as a Stake - Key Value Storage
 * [casperlabs-kv-storage](https://github.com/zie1ony/casperlabs-kv-storage)
 * This is an example of a simple string-base key-value smart contract and it's usage.
 #### Step 1 - Compile smart contracts.
@@ -114,6 +114,7 @@ $ 64d0c86f888e925731cae4398c6ea86d26a14e2574e70b36bd4eeaec3a292cde
 * Put block hash under blockHashBase16Prefix and your public key under keyBase. 
 * Put your key in pathSegments like in the example.
 ```bash
+# Proof of Activity - IPFS Hash & Casper Key Value Storage
 query {
   globalState(
     blockHashBase16Prefix: "f6836d87da9f9efc7a5fe7707f894f7be225e8e19cbf61954a2870c58bdbb966"
@@ -139,6 +140,7 @@ query {
 
 1. API pull request from Strava for Athlete Activity with API Key 
 Rate Limits - 	600 requests every 15 minutes, 30000 daily	
+
 2.Export Activity / Create Subscription with Webhooks, cURL, Httpie or Postman.
 * Webhook Events API - http://developers.strava.com/docs/webhooks/
 * Webhook Example - https://developers.strava.com/docs/webhookexample/
@@ -150,6 +152,7 @@ Rate Limits - 	600 requests every 15 minutes, 30000 daily
 * [Strava Activity Data](https://www.strava.com/activities/2744688834)
 * [Export GPX](https://www.strava.com/activities/2744688834/export_gpx)
 * [Export TCX](https://www.strava.com/activities/2744688834/export_tcx)
+
 3. Generate Hash Addressed Proof of Activity with IPFS 
 * [IPFS Hash  QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk](https://ipfs.io/ipfs/QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk)
 ```bash
@@ -163,8 +166,35 @@ flowstake@flowstake:~/casperlabs-kv-storage$ ./scripts/put.sh "activity" "QmV65a
 Deployed with hash a096d6917bccc6df9f102f951e5ce68a3db15d49791405a6e28f557c7d6cbaa5
 ```
 5. Reference Activity Hashes with Blocks on CasperLabs DAG / BlockChain
-6. GraphQL Query for Proof of Activity Blocks
+```bash
+$ ./scripts/get.sh "Proof of Activity"
+```
+* Value of the counter should be QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk.
 
+6. GraphQL Query for Proof of Activity Blocks
+Write your query or mutation here
+```bash
+# Proof of Activity - IPFS & Casper Key Value Storage
+query {
+  globalState(
+    blockHashBase16Prefix: "f6836d87da9f9efc7a5fe7707f894f7be225e8e19cbf61954a2870c58bdbb966"
+    StateQueries: [
+      {
+        keyType: Address
+        keyBase16: "64d0c86f888e925731cae4398c6ea86d26a14e2574e70b36bd4eeaec3a292cde"
+        pathSegments: ["QmV65a2mcsNt7V4LDekgAtLaLn8Eptc9L9yKVH2XSYc6Fk"]
+      }
+    ]
+  ) {
+    value {
+      __typename
+      ... on IntValue {
+        int: value
+      }
+    }
+  }
+}
+```
 * Flowstake Public Key - Base(16)
 * 74172b5a649058a6b6048b7a1d1d527369ce20b1f7a2d262836bdc9889582689
 
