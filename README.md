@@ -37,7 +37,7 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
 ## Resources - Development Tools
 
 ### [IPFS.io](https://ipfs.io)
-* Download IPFS for your platform
+* [Download IPFS for your platform](https://dist.ipfs.io/#go-ipfs)
 * macOS and Linux
 * After downloading, untar the archive, and move the ipfs binary somewhere in your executables $PATH using the install.sh script:
 ```bash
