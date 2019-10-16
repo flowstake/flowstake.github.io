@@ -82,53 +82,11 @@ On macOS, HTTPie can be installed via Homebrew (recommended):
 Below is an example request to the Strava API using HTTPie, along with sample response headers for a successful and rate-limited request:
 
 Example request
-
+```bash
 $ http 'https://www.strava.com/api/v3/athlete' \
     'Authorization:Bearer d4cc0724eed83ffddcb8715d7fd83d3588724cc5'
- 
-HTTP/1.1 200 OK
-Cache-Control: max-age=0, private, must-revalidate
-Connection: keep-alive
-Content-Encoding: gzip
-Content-Type: application/json; charset=utf-8
-Date: Tue, 15 Oct 2019 05:06:16 GMT
-ETag: W/"4c2a3238f8480def275c8d6b6633bf4d"
-Referrer-Policy: strict-origin-when-cross-origin
-Status: 200 OK
-Transfer-Encoding: chunked
-Vary: Origin
-Via: 1.1 linkerd
-X-Content-Type-Options: nosniff
-X-Download-Options: noopen
-X-FRAME-OPTIONS: DENY
-X-Permitted-Cross-Domain-Policies: none
-X-RateLimit-Limit: 600,30000
-X-RateLimit-Usage: 1,1
-X-Request-Id: 595c898e-dd45-47b6-b310-576be98dd2a9
-X-XSS-Protection: 1; mode=block
+```
 
-{
-    "badge_type_id": 0,
-    "city": "Providence",
-    "country": "United States",
-    "created_at": "2015-09-19T03:59:51Z",
-    "firstname": "Renat",
-    "follower": null,
-    "friend": null,
-    "id": 11405488,
-    "lastname": "Razumov",
-    "premium": false,
-    "profile": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/11405488/3777188/5/large.jpg",
-    "profile_medium": "https://dgalywyr863hv.cloudfront.net/pictures/athletes/11405488/3777188/5/medium.jpg",
-    "resource_state": 2,
-    "sex": "M",
-    "state": "Rhode Island",
-    "summit": false,
-    "updated_at": "2019-10-15T02:26:50Z",
-    "username": null
-}
-
-    
 Resources - Development Tools  Example Activity w/ Heatbeat Data 
 * Strava API - https://www.strava.com/settings/api
 * Retrieve Activity Data - https://www.strava.com/activities/2744688834
