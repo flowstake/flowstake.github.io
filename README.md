@@ -2,7 +2,6 @@
 * Public, Immutable, Activity Records
 * Public Activity Files Hashed into IPFS protocol
 * Proof of Activity as Stake Consensus Mechanism
-* Hybrid Proof of Stake / Proof of Activity
 
 ## Proof of Activity 
 
