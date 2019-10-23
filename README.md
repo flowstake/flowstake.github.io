@@ -2,6 +2,7 @@
 * Public, Immutable, Activity Records
 * Public Activity Files Hashed into IPFS protocol
 * Proof of Activity as Stake Consensus Mechanism
+* Trustless, Geospatial, Smart Contracts
 
 ## Proof of Activity 
 
