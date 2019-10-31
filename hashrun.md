@@ -2,20 +2,43 @@
 layout: default
 ---
 
-## Activity Staking Blockchain Network
-> - Public, Immutable, Activity Records
-> - Public Activity Data Hashed into XYO Proof of Origin protocol
-> - Geospacical Attestations, Digital Signatures Hashes from Bound Witnesses 
-> - Proof of Origin protocol on XYO Network Hashing together Timestamps & Trackpoints
-> - [explore.xyo.network/#/dashboard/](https://explore.xyo.network/#/dashboard)
-> - [developers.xyo.network/docs/](https://developers.xyo.network/docs/en/explore-getting-started/)
-
-## Hashrun - XYO - Proof of Origin
+## Hashrun - Proof of Activity
 > - [github.com/flowstake/hashrun](https://github.com/flowstake/hashrun)
 > - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
 > - [github.com/flowstake](https://github.com/flowstake)
 
-## Proof of Activity as Stake
+## Activity Staking Blockchain Network
+- Public, Immutable, Activity Records
+- Public Activity Data - Hash Addressed Location Signatures
+- Handshakes Intersections into Timestamped, Trackpoints verifing Proof of Human Work
+
+### Proof of Stake - Smart Contract 
+> - Hybrid Proof of Stake / Proof of Activity
+> - Escrow Time Release Proof of Activity Smart Contract
+> - Activity Timestamp Verified on the Blockchain Network
+
+### Proof of Activity - Validators 
+> - Proof of Activity as a Stake - P2P Validators
+> - To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
+> - Operate a validator node to stake the network
+> - Hashes are stored using the XYO Proof of Origin protocol
+> - Validator nodes create bound witnesses and stake the longest chain of events
+
+## EOS.IO - Delegated Proof of Stake Blockchain
+> - [https://developers.eos.io](developers.eos.io)
+> - [https://github.com/EOSIO/eos](github.com/eosio)
+> - Smart contract key value storage, for cross platform immutable, persistant & activity records. 
+> - Open-source blockchain software protocol that provides developers & entrepreneurs to build high performance applications.
+
+### XYO Network - Proof of Origin Protocol
+- [explore.xyo.network/#/dashboard/](https://explore.xyo.network/#/dashboard)
+- [developers.xyo.network/docs/](https://developers.xyo.network/docs/en/explore-getting-started/)
+- Network Hashing together Timestamps & Trackpoints.
+- Decentralized network of devices that anonymously collect and validate geospatial data.
+- Cryptographic geospacical handshakes, generating hashes from bound witnesses.
+- Built upon a decentralized network of devices that anonymously collect and validate geospatial data, or data with a geographic component. At the center of it all sits one of the most exciting new cryptocurrencies that incentivizes the ecosystem - The XYO Token.
+
+## Proof of Activity as Stake - POS
 > - Utilizing Blockchain technology to create a timestamped record of activity.
 > - Proof of Activity as Stake - hash, validate & stake the longest chain of activity transactions.
 > - Each activity is a node, bounding witnesses, timestamping runtime & last known location to validate proof of activity. 
@@ -23,7 +46,12 @@ layout: default
 ### Problem to Solve
 #### Purpose Of Our Hackathon Project:
 
-* Reduce Tribalism and Encourage Interoperability within the Blockchain Ecosystem by using leading chainlayers EOS and XYO to visualize and share valid spatial data. 
+- Reduce Tribalism and Encourage Interoperability within the Blockchain Ecosystem by using leading chainlayers EOS and XYO to visualize and share valid spatial data. 
+
+## Distributed Athletic Community - DAC
+> - Distributed Athletic Community
+> - Generate Performance Records
+> - Immutable Data Storage & Persistanc
  
 #### Applications for DAO and DACs
 
@@ -32,38 +60,50 @@ layout: default
 * Enable EOS based DAOs and DACs to visualize relevant spatial and activity data of the human or autonomous actors within the DAO/DAC using data from XYO verified witness activity. 
 
 ### BACKEND UTILITY
-Write a script that uses the XYO protocol to generate GPS coordinates / hash addressed content to put into the EOS chain
-
-* $BASH script that can run locally on our machines
-* Build with EOS PoS / XYO Bound Witnessing
-* EOS Data Persistance
+> * Write a script that uses the XYO protocol to generate GPS coordinates / hash addressed content to put into the EOS chain
+> * $BASH script that can run locally on our machines
+> * Build with EOS PoS / XYO Bound Witnessing
+> * EOS Data Persistance
 
 ### FRONT END APP VIEWS
 * Deploying with XYO swift SDK on iPhone 7
 * https://developers.xyo.network/docs/en/SDK-Core-Swift/
-
 * Then we will use the data from the GPS coordinates over a series of trackpoints to complete “proof of origin + proof of human work = proof of activity”
 * Effectively we can use the XYO sdk (COIN app) to display the front end
 * We can Query the XYO chain and send that into EOS testnet
-
 *   Verify / attest identity, record / hash activity data, digitally sign hashes for activity validation. 
 *   Distributed activity attestations & sync activity metrics into blockchain.
 *   Staking contract for verified activity via smart contract.
 
-### Proof of Stake - Smart Contract 
-> - Hybrid Proof of Stake / Proof of Activity
-> - Escrow Time Release Proof of Activity Smart Contract
-> - Activity timestamp verified on the blockchain network
+## EOS - Delegated Proof of Stake Blockchain
+> - [https://developers.eos.io](developers.eos.io)
+> - [https://github.com/EOSIO/eos](github.com/eosio)
 
-### Proof of Activity - Validators 
-- Proof of Activity as a Stake - P2P Validators
-- To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
-- Operate a validator node to stake the network
-- Hashes are stored using the XYO Proof of Origin protocol
-- Validator nodes create bound witnesses and stake the longest chain of events
+### EOS - Key Value Storage & Data Persistance
 
-### XYO Network - Proof of Origin Protocol
-- Built upon a decentralized network of devices that anonymously collect and validate geospatial data, or data with a geographic component. At the center of it all sits one of the most exciting new cryptocurrencies that incentivizes the ecosystem - The XYO Token.
+#### Deploy EOS Wallets 
+* cleos wallet create --to-console
+* Creating wallet: default
+* Save password to use in the future to unlock this wallet.
+* Without password imported keys will not be retrievable.
+* "PW5Kewn9L76X8Fpd....................t42S9XCw2"
+
+#### Open EOS Wallets
+* cleos wallet open
+* cleos wallet list
+* Wallets:
+* [
+*   "default"
+* ]
+
+
+## XYO.NETWORK 
+
+### Install Mobile Application 
+* Android Devices - Google Play Store
+* [https://play.google.com/store/apps/details?id=network.xyo.app&hl=en_US](play.google.com/stores/network.xyo.app)
+* Apple Devices - Apple App Store
+* [https://apps.apple.com/us/app/xyo-network/id1453770624](apps.apple.com/us/app/xyo-network)
 
 ### XYO GraphQL Query
 
