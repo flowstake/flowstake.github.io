@@ -10,16 +10,15 @@ layout: default
 > - [explore.xyo.network/#/dashboard/](https://explore.xyo.network/#/dashboard)
 > - [developers.xyo.network/docs/](https://developers.xyo.network/docs/en/explore-getting-started/)
 
-## Hashrun - Proof of Origin
+## Hashrun - XYO - Proof of Origin
 > - [github.com/flowstake/hashrun](https://github.com/flowstake/hashrun)
 > - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
 > - [github.com/flowstake](https://github.com/flowstake)
 
-
 ## Proof of Activity as Stake
 > - Utilizing Blockchain technology to create a timestamped record of activity.
-> - Proof of Activity as Stake - hash, validate & stake activity transactions.
-> - Each activity is a node, staking timestamps, runtime & last known location to validate proof of activity. 
+> - Proof of Activity as Stake - hash, validate & stake the longest chain of activity transactions.
+> - Each activity is a node, bounding witnesses, timestamping runtime & last known location to validate proof of activity. 
 
 ### Problem to Solve
 #### Purpose Of Our Hackathon Project:
@@ -28,6 +27,8 @@ layout: default
  
 #### Applications for DAO and DACs
 
+* https://developers.eos.io/eosio-home/docs/installing-the-contract-development-toolkit
+* https://developers.eos.io/eosio-home/docs/data-persistence
 Enable EOS based DAOs and DACs to visualize relevant spatial and activity data of the human or autonomous actors within the DAO/DAC using data from XYO verified witness activity. 
 
 ### BACKEND UTILITY
@@ -35,7 +36,7 @@ Write a script that uses the XYO protocol to generate GPS coordinates / hash add
 
 * $BASH script that can run locally on our machines
 * Build with EOS PoS / XYO Bound Witnessing
-
+* EOS Data Persistance
 
 ### FRONT END APP VIEWS
 * Deploying with XYO swift SDK on iPhone 7
