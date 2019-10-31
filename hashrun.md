@@ -29,7 +29,7 @@ layout: default
 
 * https://developers.eos.io/eosio-home/docs/installing-the-contract-development-toolkit
 * https://developers.eos.io/eosio-home/docs/data-persistence
-Enable EOS based DAOs and DACs to visualize relevant spatial and activity data of the human or autonomous actors within the DAO/DAC using data from XYO verified witness activity. 
+* Enable EOS based DAOs and DACs to visualize relevant spatial and activity data of the human or autonomous actors within the DAO/DAC using data from XYO verified witness activity. 
 
 ### BACKEND UTILITY
 Write a script that uses the XYO protocol to generate GPS coordinates / hash addressed content to put into the EOS chain
