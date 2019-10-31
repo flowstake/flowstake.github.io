@@ -179,7 +179,10 @@ Public Key - Bound Witness
 
 #### Deploy EOS Wallets 
 
-* cleos wallet create --to-console
+```bash
+cleos wallet create --to-console
+```
+
 * Creating wallet: default
 * Save password to use in the future to unlock this wallet.
 * Without password imported keys will not be retrievable.
@@ -187,34 +190,42 @@ Public Key - Bound Witness
 
 #### Open EOS Wallets
 
-* cleos wallet open
-* cleos wallet list
-* Wallets:
-* [
-*   "default"
-* ]
+```bash
+cleos wallet open
+cleos wallet list
+```
 
 #### Unlock EOS Wallets
 
+```bash
 * cleos wallet unlock
+```
 
 #### Create EOS Wallets
 
-* cleos wallet create_key
+```bash
+cleos wallet create_key
+```
 
 #### Import EOS Wallets
 
-* cleos wallet import
-* enter the eosio development key provided below
-* 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+```bash
+cleos wallet import
+enter the eosio development key provided below
+5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+```
 
 ### Create EOS account
 
-* cleos create account eosio hashrun EOS5BZi9LEKHhNSa8qV9vZczYJkYgVuQzFgX5YNmKM6hP5Ku9dEBb
+```bash
+cleos create account eosio hashrun EOS5BZi9LEKHhNSa8qV9vZczYJkYgVuQzFgX5YNmKM6hP5Ku9dEBb
+```
 
 #### Get EOS account from Testnet
 
+```bash
 cleos get account hashrun
+```
 
 ### EOS Smart Contract Deployment 
 
@@ -222,37 +233,40 @@ cleos get account hashrun
 
 #### Step 1: Build directory & navigatation
 
+```bash
 mkdir sportsbook
 cd sportsbook
+```
 
 #### Step 2: Create and open a new file
-*Bash the Terminal 
+
 ```bash
 touch sportsbook.cpp
 ```
 
-### [Data Persistance Smart Contract - Sportsbook](https://rustup.rs/)
+### Step 3: Deploy [Smart Contract - Sportsbook](https://flowstake.webflow.io/)
+
 ```c++
 #include <eosio/eosio.hpp>
 
 using namespace eosio;
 
-class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
+class [[eosio::contract("sportsbook")]] sportsbook : public eosio::contract {
   public:
        
   private: 
   
 };
 ```
+
 #### Step 3: Write an Extended Standard Class and Include EOSIO
 
-*C++
-```bash
+```c++
 #include <eosio/eosio.hpp>
 
 using namespace eosio;
 
-class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
+class [[eosio::contract("sportsbook")]] sportsbook : public eosio::contract {
   public:
        
   private: 
@@ -261,7 +275,13 @@ class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
 ```
 #### Step 4: Create The Data Structure for the Table
 
-*C++
-```bash
+```c++
 struct person {};
 ```
+
+#### Step 5: 
+
+```c++
+
+```
+
