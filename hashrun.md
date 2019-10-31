@@ -8,7 +8,7 @@ layout: default
 > - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
 > - [github.com/flowstake](https://github.com/flowstake)
 
-## Activity Staking XYO & EOS Blockchain NetworkS
+## Activity Staking XYO & EOS Blockchain Networks
 - Public, Immutable, Activity Records
 - Public Activity Data - Hash Addressed Location Signatures
 - Handshakes Intersections into Timestamped, Trackpoints verifing Proof of Human Work
@@ -327,4 +327,3 @@ class [[eosio::contract("sportsbook")]] sportsbook : public eosio::contract {
     typedef eosio::multi_index<"people"_n, person> hash_index;
 };
 ```
-
