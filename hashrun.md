@@ -18,11 +18,11 @@ layout: default
 > - Activity Timestamp Verified on the Blockchain Network
 
 ### Proof of Activity - Validators 
-> - Proof of Activity as a Stake - P2P Validators
-> - To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
-> - Operate a validator node to stake the network
-> - Hashes are stored using the XYO Proof of Origin protocol
-> - Validator nodes create bound witnesses and stake the longest chain of events
+- Proof of Activity as a Stake - P2P Validators
+- To ensure reputable activity data, each node must validate completed activities (x) as transactions to secure network.
+- Operate a validator node to stake the network
+- Hashes are stored using the XYO Proof of Origin protocol
+- Validator nodes create bound witnesses and stake the longest chain of events
 
 ## EOS.IO - Delegated Proof of Stake Blockchain
 > - [https://developers.eos.io](developers.eos.io)
