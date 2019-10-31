@@ -2,13 +2,13 @@
 layout: default
 ---
 
-## Hashrun - Blockchain SportsBook - [Proof of Activity](
+## Hashrun - Blockchain SportsBook - [Proof of Activity](https://explore.xyo.network/#/explore/LastKnowLocation?publicKey=15msPzGS6HGEhefc1rVyz2xa2PcWxVonDSgySh49PAczVJbwoko14QvXMPZ3ymcyqSwjVsVE8TsXUTiPwFaTD6HjS1a&amount=100)
 > - [flowstake.webflow.io](https://flowstake.webflow.io)
 > - [github.com/flowstake/hashrun](https://github.com/flowstake/hashrun)
 > - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
 > - [github.com/flowstake](https://github.com/flowstake)
 
-## Activity Staking Blockchain Network
+## Activity Staking XYO & EOS Blockchain NetworkS
 - Public, Immutable, Activity Records
 - Public Activity Data - Hash Addressed Location Signatures
 - Handshakes Intersections into Timestamped, Trackpoints verifing Proof of Human Work
@@ -299,14 +299,14 @@ struct person {
  uint64_t primary_key() const { return key.value;}
 };
 ```
-#### Step 5: 
+#### Step 5: Configure the Multi-Index Table
 
 ```c++
 #include <eosio/eosio.hpp>
 
 using namespace eosio;
 
-class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
+class [[eosio::contract("sportsbook")]] sportsbook : public eosio::contract {
 
   public:
 
