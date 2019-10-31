@@ -221,7 +221,7 @@ enter the eosio development key provided below
 ```bash
 
 cleos create account eosio token {public-OwnerKey} {public-ActiveKey}
-cleos create account eosio hashrun EOS5BZi9LEKHhNSa8qV9vZczYJkYgVuQzFgX5YNmKM6hP5Ku9dEBb
+cleos create account eosio hashrun EOS5BZi9LEKHhNSa8qV9vZczYJkYgVuQzFgX5YNmKM6hP5Ku9dEBb PW5Hwj71vw3gYFSdYs2fKFALMvdActDoRqDomRSFEQFYUtR3RM68g
 ```
 
 #### Get EOS account from Testnet
