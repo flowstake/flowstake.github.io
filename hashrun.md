@@ -43,12 +43,12 @@ layout: default
 > - Proof of Activity as Stake - hash, validate & stake the longest chain of activity transactions.
 > - Each activity is a node, bounding witnesses, timestamping runtime & last known location to validate proof of activity. 
 
-### Problem to Solve
-#### Purpose Of Our Hackathon Project:
+## Problem to Solve
+### Purpose Of Our Hackathon Project:
 
 - Reduce Tribalism and Encourage Interoperability within the Blockchain Ecosystem by using leading chainlayers EOS and XYO to visualize and share valid spatial data. 
 
-## Distributed Athletic Community - DAC
+### Distributed Athletic Community - DAC
 > - Distributed Athletic Community
 > - Generate Performance Records
 > - Immutable Data Storage & Persistanc
@@ -95,6 +95,24 @@ layout: default
 * [
 *   "default"
 * ]
+
+#### Unlock EOS Wallets
+* cleos wallet unlock
+
+#### Create EOS Wallets
+* cleos wallet create_key
+
+#### Import EOS Wallets
+* cleos wallet import
+* enter the eosio development key provided below
+* 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
+
+### Create EOS account
+* cleos create account eosio hashrun EOS5BZi9LEKHhNSa8qV9vZczYJkYgVuQzFgX5YNmKM6hP5Ku9dEBb
+
+#### Get EOS account from Testnet
+cleos get account hashrun
+
 
 
 ## XYO.NETWORK 
