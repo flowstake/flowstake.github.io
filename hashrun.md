@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Hashrun - Proof of Activity
+## Hashrun - Blockchain SportsBook - Proof of Activity
 > - [flowstake.webflow.io](https://flowstake.webflow.io)
 > - [github.com/flowstake/hashrun](https://github.com/flowstake/hashrun)
 > - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
