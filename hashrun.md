@@ -22,6 +22,29 @@ layout: default
 > - Each activity is a node, staking timestamps, runtime & last known location to validate proof of activity. 
 
 ### Problem to Solve
+#### Purpose Of Our Hackathon Project:
+
+* Reduce Tribalism and Encourage Interoperability within the Blockchain Ecosystem by using leading chainlayers EOS and XYO to visualize and share valid spatial data. 
+ 
+#### Applications for DAO and DACs
+
+Enable EOS based DAOs and DACs to visualize relevant spatial and activity data of the human or autonomous actors within the DAO/DAC using data from XYO verified witness activity. 
+
+### BACKEND UTILITY
+Write a script that uses the XYO protocol to generate GPS coordinates / hash addressed content to put into the EOS chain
+
+* $BASH script that can run locally on our machines
+* Build with EOS PoS / XYO Bound Witnessing
+
+
+### FRONT END APP VIEWS
+* Deploying with XYO swift SDK on iPhone 7
+* https://developers.xyo.network/docs/en/SDK-Core-Swift/
+
+* Then we will use the data from the GPS coordinates over a series of trackpoints to complete “proof of origin + proof of human work = proof of activity”
+* Effectively we can use the XYO sdk (COIN app) to display the front end
+* We can Query the XYO chain and send that into EOS testnet
+
 *   Verify / attest identity, record / hash activity data, digitally sign hashes for activity validation. 
 *   Distributed activity attestations & sync activity metrics into blockchain.
 *   Staking contract for verified activity via smart contract.
