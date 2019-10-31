@@ -165,16 +165,20 @@ Public Key - Bound Witness
 * Last Known Location
 
 ## EOS - Delegated Proof of Stake Blockchain
+
 > - [https://developers.eos.io](developers.eos.io)
 > - [https://github.com/EOSIO/eos](github.com/eosio)
 
 ### EOS - Key Value Storage & Data Persistance
+
 - [https://github.com/flowstake/eosio.contracts](github.com/flowstake/eosio.contracts)
 
 ### EOS - Smart Contract Token 
+
 - [contract/eosio.token/](https://github.com/flowstake/eosio.contracts/blob/master/contracts/eosio.token/include/eosio.token/eosio.token.hpp)
 
 #### Deploy EOS Wallets 
+
 * cleos wallet create --to-console
 * Creating wallet: default
 * Save password to use in the future to unlock this wallet.
@@ -182,6 +186,7 @@ Public Key - Bound Witness
 * "PW5Kewn9L76X8Fpd....................t42S9XCw2"
 
 #### Open EOS Wallets
+
 * cleos wallet open
 * cleos wallet list
 * Wallets:
@@ -190,23 +195,73 @@ Public Key - Bound Witness
 * ]
 
 #### Unlock EOS Wallets
+
 * cleos wallet unlock
 
 #### Create EOS Wallets
+
 * cleos wallet create_key
 
 #### Import EOS Wallets
+
 * cleos wallet import
 * enter the eosio development key provided below
 * 5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3
 
 ### Create EOS account
+
 * cleos create account eosio hashrun EOS5BZi9LEKHhNSa8qV9vZczYJkYgVuQzFgX5YNmKM6hP5Ku9dEBb
 
 #### Get EOS account from Testnet
+
 cleos get account hashrun
 
-### EOS Contract Deployment - 
-#### Step 1:
+### EOS Smart Contract Deployment 
+
+* - [contract/eosio.token/](https://github.com/flowstake/eosio.contracts/blob/master/contracts/eosio.token/include/eosio.token/eosio.token.hpp)
+
+#### Step 1: Build directory & navigatation
+
 mkdir sportsbook
 cd sportsbook
+
+#### Step 2: Create and open a new file
+*Bash the Terminal 
+```bash
+touch sportsbook.cpp
+```
+
+### [Data Persistance Smart Contract - Sportsbook](https://rustup.rs/)
+```c++
+#include <eosio/eosio.hpp>
+
+using namespace eosio;
+
+class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
+  public:
+       
+  private: 
+  
+};
+```
+#### Step 3: Write an Extended Standard Class and Include EOSIO
+
+*C++
+```bash
+#include <eosio/eosio.hpp>
+
+using namespace eosio;
+
+class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
+  public:
+       
+  private: 
+  
+};
+```
+#### Step 4: Create The Data Structure for the Table
+
+*C++
+```bash
+struct person {};
+```
