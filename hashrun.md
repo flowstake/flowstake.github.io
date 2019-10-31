@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Hashrun - Blockchain SportsBook - Proof of Activity
+## Hashrun - Blockchain SportsBook - [Proof of Activity](
 > - [flowstake.webflow.io](https://flowstake.webflow.io)
 > - [github.com/flowstake/hashrun](https://github.com/flowstake/hashrun)
 > - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
@@ -279,9 +279,52 @@ class [[eosio::contract("sportsbook")]] sportsbook : public eosio::contract {
 struct person {};
 ```
 
+```c++
+struct person {
+ name key; 
+};
+```
+
+```c++
+struct person {
+ name key;
+ std::string first_name;
+ std::string last_name;
+ std::string hash:BLOCK_HASH;
+ std::string chain:PUBLIC_KEY;
+ std::string where:PUBLIC_KEY
+ std::string geohash:GEOHASH;
+ std::string near:LAT,LNG;
+ 
+ uint64_t primary_key() const { return key.value;}
+};
+```
 #### Step 5: 
 
 ```c++
+#include <eosio/eosio.hpp>
 
+using namespace eosio;
+
+class [[eosio::contract("addressbook")]] addressbook : public eosio::contract {
+
+  public:
+
+  private:
+    struct [[eosio::table]] person {
+      name key;
+      std::string first_name;
+      std::string last_name;
+      std::string hash:BLOCK_HASH;
+      std::string chain:PUBLIC_KEY;
+      std::string where:PUBLIC_KEY
+      std::string geohash:GEOHASH;
+      std::string near:LAT,LNG;
+
+      uint64_t primary_key() const { return key.value;}
+    };
+  
+    typedef eosio::multi_index<"people"_n, person> hash_index;
+};
 ```
 
