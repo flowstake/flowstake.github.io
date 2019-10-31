@@ -5,8 +5,6 @@ layout: default
 ## Hashrun - Blockchain SportsBook - [Proof of Activity](https://explore.xyo.network/#/explore/LastKnowLocation?publicKey=15msPzGS6HGEhefc1rVyz2xa2PcWxVonDSgySh49PAczVJbwoko14QvXMPZ3ymcyqSwjVsVE8TsXUTiPwFaTD6HjS1a&amount=100)
 > - [flowstake.webflow.io](https://flowstake.webflow.io)
 > - [github.com/flowstake/hashrun](https://github.com/flowstake/hashrun)
-> - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
-> - [github.com/flowstake](https://github.com/flowstake)
 
 ## Activity Staking XYO & EOS Blockchain Networks
 - Public, Immutable, Activity Records
@@ -173,20 +171,23 @@ Public Key - Bound Witness
 
 - [https://github.com/flowstake/eosio.contracts](github.com/flowstake/eosio.contracts)
 
-### EOS - Smart Contract Token 
+### EOS - Smart Contracts 
 
 - [contract/eosio.token/](https://github.com/flowstake/eosio.contracts/blob/master/contracts/eosio.token/include/eosio.token/eosio.token.hpp)
+- [contract/eosio.system/](https://github.com/flowstake/eosio.contracts/tree/master/contracts/eosio.system) 
+
 
 #### Deploy EOS Wallets 
 
 ```bash
 cleos wallet create --to-console
-```
 
-* Creating wallet: default
-* Save password to use in the future to unlock this wallet.
-* Without password imported keys will not be retrievable.
-* "PW5Kewn9L76X8Fpd....................t42S9XCw2"
+"/usr/local/Cellar/eosio/1.8.5/opt/eosio/bin/keosd" launched
+Creating wallet: default
+Save password to use in the future to unlock this wallet.
+Without password imported keys will not be retrievable.
+"PW5Hwj71vw3gYFSdYs2fKFALMvdActDoRqDomRSFEQFYUtR3RM68g"
+```
 
 #### Open EOS Wallets
 
@@ -218,6 +219,8 @@ enter the eosio development key provided below
 ### Create EOS account
 
 ```bash
+
+cleos create account eosio token {public-OwnerKey} {public-ActiveKey}
 cleos create account eosio hashrun EOS5BZi9LEKHhNSa8qV9vZczYJkYgVuQzFgX5YNmKM6hP5Ku9dEBb
 ```
 
@@ -327,3 +330,5 @@ class [[eosio::contract("sportsbook")]] sportsbook : public eosio::contract {
     typedef eosio::multi_index<"people"_n, person> hash_index;
 };
 ```
+
+##### FlowStake 2019 
