@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## Activity Staking Blockchain Network
+### [FlowStake](https://flowstake.github.io/hashrun) / [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
 > - Public, Immutable, Activity Records
 > - Public Activity Data Hashed into IPFS protocol
 > - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
