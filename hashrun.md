@@ -167,9 +167,54 @@ Public Key - Bound Witness
 > - [https://developers.eos.io](developers.eos.io)
 > - [https://github.com/EOSIO/eos](github.com/eosio)
 
+## EOS - [Setting Up your Development Environment](https://developers.eos.io/eosio-home/docs/getting-the-software)
+
+> - [https://developers.eos.io/eosio-home/docs/setting-up-your-environment](https://developers.eos.io/eosio-home/docs/setting-up-your-environment)
+
+### Step 1: Install Binaries 
+
+- Use pre-built binaries. For you to get started as quickly as possible this is the best option. Building from source is an option but will set you back an hour or more and you may encounter build errors.
+- The below commands will download binaries for respective operating systems.
+
+#### Mac OS X Brew Install: Shell
+```bash
+brew tap eosio/eosio
+brew install eosio
+```
+
+#### Ubuntu 18.04 Debian Package Install: Shell
+```bash
+wget https://github.com/EOSIO/eos/releases/download/v1.7.0/eosio_1.7.0-1-ubuntu-18.04_amd64.deb
+sudo apt install ./eosio_1.7.0-1-ubuntu-18.04_amd64.deb
+```
+
+#### Ubuntu 16.04 Debian Package Install: Shell
+```bash
+wget https://github.com/EOSIO/eos/releases/download/v1.7.0/eosio_1.7.0-1-ubuntu-16.04_amd64.deb
+sudo apt install ./eosio_1.7.0-1-ubuntu-16.04_amd64.deb
+```
+
+### Step 2: Setup a development directory, stick to it.
+You're going to need to pick a directory to work from, it's suggested to create a contracts directory somewhere on your local drive.
+```bash
+mkdir contracts
+cd contracts
+```
+
+### Step 3: Enter your local directory below.
+Get the path of that directory and save it for later, as you're going to need it, you can use the following command to get your absolute path.
+```bash
+pwd
+```
+Enter the absolute path to your contract directory below, and it will be inserted throughout the documentation to make your life a bit easier. This functionality requires cookies
+
+### 
+
+
+
 ### EOS - Key Value Storage & Data Persistance
 
-- [https://github.com/flowstake/eosio.contracts](github.com/flowstake/eosio.contracts)
+- [https://github.com/flowstake/eosio.contracts](https://github.com/flowstake/eosio.contracts)
 
 ### EOS - Smart Contracts 
 
