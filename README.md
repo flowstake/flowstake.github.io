@@ -20,7 +20,7 @@ Proof of Activity Smart Contract - Staking proof of activity events into escrow 
     * Operate a validator node to stake the network 
     * Validator nodes verify proof of activity IPFS timestamps
 
-- Mining and Encrypting Activity Real Time
+- Hashing and Encrypting Activity Real Time
     - Requirements - Trackpoint Data
     - Smart Contract - Mining Activity to Generate Blocks
         - Throughput Requirements for Sigining Activity Live - 1 min / 60 seconds - (60 tracepoints)
