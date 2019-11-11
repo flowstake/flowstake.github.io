@@ -1,4 +1,4 @@
-### [FlowStake](https://flowstake.github.io/) / [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
+### [FlowStake](https://flowstake.github.io/) + [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
 * Public, Immutable, Activity Records
 * Public Activity Files Hashed into IPFS protocol
 * Proof of Activity as Stake Consensus Mechanism
