@@ -1,4 +1,4 @@
-### [FlowStake](https://flowstake.github.io/hashrun) / [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
+### [FlowStake](https://flowstake.github.io/) / [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
 * Public, Immutable, Activity Records
 * Public Activity Files Hashed into IPFS protocol
 * Proof of Activity as Stake Consensus Mechanism
@@ -226,6 +226,7 @@ Example request
 ```bash
 $ http 'https://www.strava.com/api/v3/athlete' \
     'Authorization:Bearer d4cc0724eed83ffddcb8715d7fd83d3588724cc5'
+```
 
 ### Docker Runtime Container
 * Install [Docker for MacOS](https://docs.docker.com/docker-for-mac/install/)
