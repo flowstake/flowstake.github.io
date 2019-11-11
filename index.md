@@ -5,9 +5,9 @@ layout: default
 ### [FlowStake](https://flowstake.github.io/hashrun) / [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
 > - Public, Immutable, Activity Records
 > - Public Activity Data Hashed into IPFS protocol
-> - [github.com/flowstake/readme](https://github.com/flowstake/flowstake.github.io/blob/master/README.md)
-> - [github.com/flowstake](https://github.com/flowstake)
-
+> - [flowstake.github.io](https://flowstake.github.io/)
+> - [flowstake.github.io/hashrun](https://flowstake.github.io/hashrun)
+> - [flowstake.github.io/README.md](https://flowstake.github.io/blob/master/README.md)
 
 ## Proof of Activity as Stake
 > - Utilizing Blockchain technology to create a timestamped record of activity.
