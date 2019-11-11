@@ -7,9 +7,11 @@ layout: default
 > - [flowstake.github.io/hashrun](https://flowstake.github.io/hashrun)
 > - [flowstake.github.io/README.md](https://flowstake.github.io/blob/master/README.md)
 
+### Blockchain Sportsbook - Flowstake Ledger
 > - Public, Immutable, Activity Records
 > - Public Activity Data Hashed into IPFS protocol
 > - Hash Addressed Content uploaded into Casper DAG
+
 
 ## Proof of Activity as Stake
 > - Utilizing Blockchain technology to create a timestamped record of activity.
