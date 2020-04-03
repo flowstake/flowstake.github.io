@@ -2,10 +2,9 @@
 layout: default
 ---
 
-### [FlowStake](https://flowstake.github.io/hashrun) / [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
+### [FlowStake](https://github.com/flowstake/flowstake.github.io) / [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
 > - [flowstake.github.io](https://flowstake.github.io/)
 > - [flowstake.github.io/hashrun](https://flowstake.github.io/hashrun)
-> - [flowstake.github.io/README.md](https://flowstake.github.io/blob/master/README.md)
 
 ### Flowstake - Sports Ledger
 > - Public, Immutable, Activity Records
