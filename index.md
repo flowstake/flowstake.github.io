@@ -51,6 +51,7 @@ layout: default
 - Analyzing data for Max Acceleration, Max Speed & Activity Duration
 - Trackpoint metrics analyze 1 minute segments
 
+### Activity Polling Rate
 > - Throughput requirements for live records - 1 min / 60 seconds - (60 tracepoints)
 > - Live Active Validator - 1 hour / 60 mins / 3600 seconds (3,600 transactions)
 > - Live Active Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 transactions)
