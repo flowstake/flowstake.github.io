@@ -252,7 +252,7 @@ $ docker pull casperlabs/key-generator
 
 Both GPX (GPS Exchange Format) and TCX (Training Center XML) are file formats commonly used in the context of GPS and fitness-related activities to store and exchange data. These formats are used to represent information about tracks, waypoints, routes, and other related data gathered during activities like running, cycling, hiking, or any other outdoor pursuits.
 
-GPX (GPS Exchange Format):
+### GPX (GPS Exchange Format):
 XML-based Format: GPX is an XML-based format, which means it uses a structured markup language to store data in a human-readable and machine-readable way.
 
 Compatibility: GPX is widely supported by various GPS devices, applications, and online platforms. It has become a standard format for exchanging GPS data.
@@ -279,7 +279,7 @@ xml
 </gpx>
 ```
 
-TCX (Training Center XML):
+### TCX (Training Center XML):
 Specifically Designed for Fitness Data: TCX is a proprietary XML-based format developed by Garmin specifically for storing fitness-related data. It is commonly used for activities such as running, cycling, and other workouts.
 
 Data Types: TCX files focus on fitness-related data, including information about laps, heart rate, speed, cadence, and power. It's more tailored to the needs of athletes and fitness enthusiasts.
@@ -289,7 +289,7 @@ Compatibility: While TCX is widely supported by Garmin devices and software, it 
 Example:
 
 xml
-Copy code
+```bash
 <TrainingCenterDatabase>
   <Activities>
     <Activity Sport="Running">
@@ -300,4 +300,5 @@ Copy code
     </Activity>
   </Activities>
 </TrainingCenterDatabase>
+```
 In summary, GPX is a more generic and widely adopted format for GPS data exchange, while TCX is specifically designed for fitness-related activities with a focus on data commonly associated with workouts and training. The choice between the two depends on the devices and applications you are using and their compatibility with each format. Many platforms and tools support both formats, allowing users flexibility in choosing the one that best fits their needs.
