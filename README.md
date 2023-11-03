@@ -264,7 +264,7 @@ Open Standard: GPX is an open standard, which means that the specifications for 
 Example:
 
 xml
-Copy code
+```bash
 <gpx version="1.1" creator="Some Application">
   <trk>
     <name>Example Track</name>
@@ -277,6 +277,8 @@ Copy code
     </trkseg>
   </trk>
 </gpx>
+```
+
 TCX (Training Center XML):
 Specifically Designed for Fitness Data: TCX is a proprietary XML-based format developed by Garmin specifically for storing fitness-related data. It is commonly used for activities such as running, cycling, and other workouts.
 
