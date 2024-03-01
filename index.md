@@ -1,4 +1,4 @@
-### [FlowStake](https://flowstake.github.io/) + [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
+### [FlowStake v1](https://flowstake.github.io/) + [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
 
 ## Flowstake V2
 * Proof of Activity Staking Network with Public, Immutable, Activity Records
