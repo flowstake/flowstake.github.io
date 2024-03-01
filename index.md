@@ -23,17 +23,16 @@
 - Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
 - Parsing activity data into trackpoints with threshold signatures built on distributed encrypted ledgers.
 - Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, reoccuring runtime / activity on timechain. 
-
 - Each trackpoint is required to be consecutiveliy recorded & encrypted into trackpoints, attested in 1 minute segments
     * Analyzing data for Max Accel, Max Speed & Activity Duration
 
--  Proof of Activity as a Stake - Validators
+####  Proof of Activity as a Stake - Validators
     * To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
     * Activity timestamp hash verified on the blockchain network
     * Operate a validator node to stake the network 
     * Validator nodes verify proof of activity with attestation signature, timestamp validation / node validation, 
 
-- Hashing and Encrypting Activity Real Time
+#### Hashing and Encrypting Activity Real Time
     - Requirements - Trackpoint Timestamp Data
     - Smart Contract - Mining Activity to Generate Blocks
         - Block Requirements for Sigining Activity Live - 1 min / 60 seconds - (60 tracepoints)
@@ -41,8 +40,9 @@
         - 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 transactions) 
 
 ### Requirements for Flowstake Smart Contracts
-* Identity Verification 
-   - Confirming participants identity to verify attestations during activity.
+* Reputable Identity & Performance
+* Identity Attestation 
+    - Use ZK Proofs to Attest to Identity (Drivers License + Passport)
 * Activity Attestation
    - Activity attestation, digital threshold signatures syncronized with validators nodes. 
 * 1 Trackpoint per Second with 1:1 Sync recording at minimum of 1 TPS
@@ -87,7 +87,9 @@ Threshold signatures can be included in the code to facilitate group attestation
 
 4. Signature Verification: The generated threshold signature can be verified using the corresponding public key. The verification process ensures that the signature is valid and authenticates the group attestation.
 
-#### Here's a simplified example of how you might implement threshold signatures using the BLS threshold signature scheme in JavaScript using the @chainsafe/bls library:
+#### Here's a simplified example of how to implement threshold signatures using the BLS threshold signature scheme in JavaScript using the @chainsafe/bls library:
+
+### [flowstake/bls](https://github.com/flowstake/bls)
 
 ```javascript 
 const { SecretKey, PublicKey, Signature } = require('@chainsafe/bls');
@@ -126,7 +128,6 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 * This code snippet demonstrates the key generation, message signing, and signature verification process using BLS threshold signatures. You can adapt this implementation to suit your specific requirements and integrate it into your application for group attestation purposes.
 
 
-
 ### Theoretical Limitations of Performances 
 * Running Speed & Acceleration
 * Top speed of 43.99 kilometers per hour (27.33 miles per hour) Usain Bolt (2009) 
@@ -135,8 +136,7 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 **Top Speed** 
 - In 2009 Jamaican sprinter Usain Bolt set the world record in the 100-meter sprint at 9.58 seconds. 
  Speed is the arate at which an object (or person) moves through time. It is represented mathematically s speed = d/t (in which d is distance and t is time). Bolt’s speed during his world-record run was 10.44 meters per second, 37.58 kilometers per hour or 23.35 miles per hour.
-- In 2011 Belgian scientists used lasers to measure Bolt’s performance in the different stages of a 100-meter race held in September that year. They found that, 67.13 meters into the race, Bolt reached a top speed of 43.99 kilometers per hour (27.33 miles per hour). He finis
-
+- In 2011 Belgian scientists used lasers to measure Bolt’s performance in the different stages of a 100-meter race held in September that year. They found that, 67.13 meters into the race, Bolt reached a top speed of 43.99 kilometers per hour (27.33 miles per hour).
 
 
 ### Sources 
@@ -144,8 +144,6 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 - https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights
 
 - https://en.wikipedia.org/wiki/Public_key_infrastructure
-
-
 
 - Thomas Vanderstraeten
 testing-the-cryptorun-smart-contract-a-tale-of-obsessive-perfection-84ded25f1636
