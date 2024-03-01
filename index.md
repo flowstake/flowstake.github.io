@@ -19,12 +19,14 @@
 ### Hashed Timelock Contract + Threshold Signature (HTLC + TSS) 
 * Hashed Timelock Activity Contract (HTLC) is a transactional agreement used to automatically unlock transfers via threshold signature. 
 
-### Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
-* Parsing activity data into distributed encrypted ledgers.
+### Activity Data Capture
 
-Proof of Activity Smart Contracts - Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, recoccuring runtime / activity on timechain. Each trackpoint is required to be consecutiveliy recorded & encrypted into trackpoints, attested in 1 minute segments - 
+- Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
+- Parsing activity data into trackpoints with threshold signatures built on distributed encrypted ledgers.
+- Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, reoccuring runtime / activity on timechain. 
 
-Analyzing data for Max Accel, Max Speed (classMaxSpeed) & Activity Duration
+- Each trackpoint is required to be consecutiveliy recorded & encrypted into trackpoints, attested in 1 minute segments
+    * Analyzing data for Max Accel, Max Speed (classMaxSpeed) & Activity Duration
 
 -  Proof of Activity as a Stake - Validators
     * To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
