@@ -58,7 +58,7 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 | 2024-03-03 10:45  |	10600	      | DEF456...            | Unstaking	          | 500 FST tokens	         |     Inactive	      | Unstaked by Validator 2  |
 | 2024-03-05 14:20  |	10610	      | GHI789...            | Slashing	              | 20 FST tokens	         |     Slashed	      | Penalty for Validator 3  |
 
-This ledger format helps to maintain a transparent record of PoS activities, including staking, rewards, unstaking, and slashing, providing insights into the network's operation and validator behavior. Additionally, it facilitates auditing and analysis of the PoS blockchain network.
+* This ledger format helps to maintain a transparent record of PoS activities, including staking, rewards, unstaking, and slashing, providing insights into the network's operation and validator behavior. Additionally, it facilitates auditing and analysis of the PoS blockchain network.
 
 ### Hashed Timelock Contract (HTLC) 
 * Hashed Timelock Contract (HTLC) is a transactional agreement used to produce conditional payments. A payment wherein the receiver is required to acknowledge the receipt of payment before a predetermined time or a preset deadline.
@@ -96,38 +96,38 @@ This ledger format helps to maintain a transparent record of PoS activities, inc
 ### Requirements for Flowstake Smart Contracts
 * Reputable Identity & Performance
 * Identity Attestation 
-    - Use ZK Proofs to Attest to Identity (Drivers License + Passport)
+    * Use ZK Proofs to Attest to Identity (Drivers License + Passport)
 * Activity Attestation
-   - Activity attestation, digital threshold signatures syncronized with validators nodes. 
+    * Activity attestation, digital threshold signatures syncronized with validators nodes. 
 * 1 Trackpoint per Second with 1:1 Sync recording at minimum of 1 TPS
    * GPS Trackpoints
    * Heartbeat Data
    * Proof of Activity Attestation Signature 
 
 ### Smart Contracts for Flowstake 
-    - Stakeholders interacting with smart contract 
-        - Flowstake - non-profit beneficiary of dontations
-        - Donors - participants and contributors
-        - Bridge - bridge data from GPS + attestation to smart contract
-        - Hacker - malicious party
+* Stakeholders interacting with smart contract 
+    * Flowstake - non-profit beneficiary of dontations
+    * Donors - participants and contributors
+    * Bridge - bridge data from GPS + attestation to smart contract
+    * Hacker - malicious party
 
 #### Smart Contract Lifecycle
-    - Ongoing Activity:
-    - Completed / Accomplished:
-    - Failed:
+* Ongoing Activity:
+* Completed / Accomplished:
+* Failed:
 
 ##### Smart Contract State
-    - Donations lock
-        - Impossible for donor to send ETH to smart contract during on-going challenge.
-    - Value lock
-        - Impossible for Flowstake to withdraw all ETH after successful challenge, or withdraw individual donation after failed challenge
-    - Theft
-        - Impossible for the hacker to withdraw all the ETH after successful challenge or to withdraw individua donations after a failed challenge
-    - Cheating 
-        - Impossible for Flowstake, to with draw all the ETH donations if the challenge is not in a complete or failed state.
-    - Failing update
-        - Query the bridge, 
-    - Failing database query from bridge
+* Donations lock
+    * Impossible for donor to send ETH to smart contract during on-going challenge.
+* Value lock
+    * Impossible for Flowstake to withdraw all ETH after successful challenge, or withdraw individual donation after failed challenge
+* Theft
+    * Impossible for the hacker to withdraw all the ETH after successful challenge or to withdraw individua donations after a failed challenge
+* Cheating 
+    * Impossible for Flowstake, to with draw all the ETH donations if the challenge is not in a complete or failed state.
+* Failing update
+* Query the bridge, 
+    * Failing database query from bridge
 
 #### Theshold Signatures
 
