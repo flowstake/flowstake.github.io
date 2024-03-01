@@ -87,7 +87,7 @@ Threshold signatures can be included in the code to facilitate group attestation
 
 4. Signature Verification: The generated threshold signature can be verified using the corresponding public key. The verification process ensures that the signature is valid and authenticates the group attestation.
 
-#### Here's a simplified example of how to implement threshold signatures using the BLS threshold signature scheme in JavaScript using the @chainsafe/bls library:
+#### Here's a simplified example of how to implement threshold signatures using the BLS BLS (Boneh-Lynn-Shacham) threshold signature scheme in JavaScript using the @chainsafe/bls library:
 
 ### [flowstake/bls](https://github.com/flowstake/bls)
 
