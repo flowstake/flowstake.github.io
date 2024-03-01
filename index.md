@@ -71,7 +71,7 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 * Each second a is trackpoint required to be recorded & encrypted into a block & attested in 1 minute block segments.
     * Analyzing data for Max Accel, Max Speed & Activity Duration
 
-####  Proof of Activity as a Stake - Validators
+#### **Validators** - Proof of Activity as a Stake
 * Validators - To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
     * Activity timestamp hash verified on the blockchain network
     * Operate a validator node to stake the network 
@@ -125,13 +125,13 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 
 Threshold signatures can be included in the code to facilitate group attestation by allowing multiple parties to jointly sign a message or data point. Here's how you can integrate threshold signatures into your code:
 
-1. Choose a Threshold Signature Scheme: Threshold signature scheme that suits Flowstake  requirements and security considerations. There are various threshold signature schemes available, including BLS (Boneh-Lynn-Shacham) threshold signatures, ECDSA (Elliptic Curve Digital Signature Algorithm) threshold signatures, and Schnorr threshold signatures.
+1. **Choose a Threshold Signature Scheme:** Threshold signature scheme that suits Flowstake  requirements and security considerations. There are various threshold signature schemes available, including BLS (Boneh-Lynn-Shacham) threshold signatures, ECDSA (Elliptic Curve Digital Signature Algorithm) threshold signatures, and Schnorr threshold signatures.
 
-2. Implement Key Generation: Generate the necessary keys for the threshold signature scheme. This involves distributing shares of the private key among participating parties while retaining the public key. The key generation process should ensure that the threshold number of parties is required to reconstruct the private key.
+2. **Implement Key Generation:** Generate the necessary keys for the threshold signature scheme. This involves distributing shares of the private key among participating parties while retaining the public key. The key generation process should ensure that the threshold number of parties is required to reconstruct the private key.
 
-3. Message Signing: When a message or data point needs to be signed for group attestation, the threshold signature algorithm is executed. Each party holding a share of the private key contributes to the signature generation process. The signature is produced without revealing individual private keys.
+3. **Message Signing:** When a message or data point needs to be signed for group attestation, the threshold signature algorithm is executed. Each party holding a share of the private key contributes to the signature generation process. The signature is produced without revealing individual private keys.
 
-4. Signature Verification: The generated threshold signature can be verified using the corresponding public key. The verification process ensures that the signature is valid and authenticates the group attestation.
+4. **Signature Verification:** The generated threshold signature can be verified using the corresponding public key. The verification process ensures that the signature is valid and authenticates the group attestation.
 
 
 ### [flowstake/bls](https://github.com/flowstake/bls)
