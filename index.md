@@ -5,6 +5,60 @@
 * Data ownership, Hash addressed activity, Immutable records
 * Hashed Timelock Smart Contracts
 * Proof of Activity as Stake 
+* PoS Activity Ledger
+
+Creating a proof of stake (PoS) activity ledger involves documenting the various transactions and activities within a PoS blockchain network. Below, I'll outline a simplified ledger format for tracking PoS activities:
+
+### PoS Activity Ledger
+
+1. Date and Time: Record the date and time of each activity.
+
+2. Block Number: Specify the block number associated with the activity.
+
+3. Validator/Public Key: Identify the validator or public key involved in the activity.
+
+4. Transaction Type: Describe the type of transaction or activity. This could include:
+
+* Staking: Depositing tokens into the PoS network for validation rights.
+* Reward Distribution: Distributing rewards to validators for validating blocks.
+* Unstaking: Withdrawing tokens from the PoS network.
+* Slashing: Penalty for validators failing to follow the consensus rules.
+
+5. Transaction Details:
+* For staking: Record the amount of tokens staked.
+* For reward distribution: Record the amount of rewards distributed.
+* For unstaking: Record the amount of tokens unstaked.
+* For slashing: Record the penalty amount.
+
+6. Validator Status: Indicate the status of the validator after the activity.
+* Active: Validator is actively participating in block validation.
+* Inactive: Validator is temporarily inactive, perhaps due to unstaking or penalties.
+* Slashed: Validator has been penalized for malicious behavior.
+
+7. Remarks/Notes: Include any additional information or notes regarding the transaction or validator status.
+
+### Technology Layers
+
+| Blockchain   | Consensus Mechanism          | Link |
+|:-------------|:-----------------------------|:-------|
+| PoW          | Proof of Work                |  [Read](https://en.bitcoin.it/wiki/Proof_of_work)  |
+| PoS          | Proof of Stake               |  [Read](https://en.bitcoin.it/wiki/Proof_of_Stake)  |
+| DPoS         | Delegated Proof of Stake     |  [Read](https://docs.bitshares.org/en/master/technology/dpos.html)  |
+| PoA          | Proof of Activity            |  [Read](https://eprint.iacr.org/2014/452.pdf)  |
+| PoA          | Proof of Authority           |  [Read](https://en.wikipedia.org/wiki/Proof_of_authority)   |
+
+* * *
+
+##### Sample PoS Activity Ledger:
+
+| Date & Time       |	Block Number  |	Validator/Public Key |	Transaction Type      |	Transaction Details	     | Validator Status   |	Remarks/Notes            |
+|:------------------|:----------------|:---------------------|:-----------------------|:-------------------------|:-------------------|:-------------------------|
+| 2024-03-01 12:00  |	10567	      | ABC123...            | Staking	              | 1000 FST tokens	         |     Active	      | Staked by Validator 1    |
+| 2024-03-02 08:30  |	10580	      | XYZ789...            | Reward Distribution	  | 50 FST tokens	         |     Active	      | Rewards for Block 10568  |
+| 2024-03-03 10:45  |	10600	      | DEF456...            | Unstaking	          | 500 FST tokens	         |     Inactive	      | Unstaked by Validator 2  |
+| 2024-03-05 14:20  |	10610	      | GHI789...            | Slashing	              | 20 FST tokens	         |     Slashed	      | Penalty for Validator 3  |
+
+This ledger format helps to maintain a transparent record of PoS activities, including staking, rewards, unstaking, and slashing, providing insights into the network's operation and validator behavior. Additionally, it facilitates auditing and analysis of the PoS blockchain network.
 
 ### Hashed Timelock Contract (HTLC) 
 * Hashed Timelock Contract (HTLC) is a transactional agreement used to produce conditional payments. A payment wherein the receiver is required to acknowledge the receipt of payment before a predetermined time or a preset deadline.
@@ -128,6 +182,9 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 * This code snippet demonstrates the key generation, message signing, and signature verification process using BLS threshold signatures. You can adapt this implementation to suit your specific requirements and integrate it into your application for group attestation purposes.
 
 
+
+### Extra Resources & Concepts
+
 ### Theoretical Limitations of Performances 
 * Running Speed & Acceleration
 * Top speed of 43.99 kilometers per hour (27.33 miles per hour) Usain Bolt (2009) 
@@ -142,11 +199,8 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 ### Sources 
 **Theoretical Limitations of Performances**
 - https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights
-
 - https://en.wikipedia.org/wiki/Public_key_infrastructure
 
-- Thomas Vanderstraeten
-testing-the-cryptorun-smart-contract-a-tale-of-obsessive-perfection-84ded25f1636
 
 -------------------
 
