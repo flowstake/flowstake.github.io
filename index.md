@@ -26,7 +26,7 @@
 - Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, reoccuring runtime / activity on timechain. 
 
 - Each trackpoint is required to be consecutiveliy recorded & encrypted into trackpoints, attested in 1 minute segments
-    * Analyzing data for Max Accel, Max Speed (classMaxSpeed) & Activity Duration
+    * Analyzing data for Max Accel, Max Speed & Activity Duration
 
 -  Proof of Activity as a Stake - Validators
     * To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
@@ -52,7 +52,7 @@
    * Proof of Activity Attestation Signature 
 
 ### Theoretical Limitations of Performances 
-** Running Speed & Acceleration ** 
+* Running Speed & Acceleration
 * Top speed of 43.99 kilometers per hour (27.33 miles per hour) Usain Bolt (2009) 
 * Top speed of 10.44 meters per second 
 
