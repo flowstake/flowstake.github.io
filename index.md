@@ -5,7 +5,6 @@
 * Data ownership, Hash addressed activity, Immutable records
 * Hashed Timelock Smart Contracts
 * Proof of Activity as Stake 
-* Zero Knowledge Identity Verification
 
 ### Hashed Timelock Contract (HTLC) 
 * Hashed Timelock Contract (HTLC) is a transactional agreement used to produce conditional payments. A payment wherein the receiver is required to acknowledge the receipt of payment before a predetermined time or a preset deadline.
@@ -51,6 +50,83 @@
    * Heartbeat Data
    * Proof of Activity Attestation Signature 
 
+### Smart Contracts for Flowstake 
+    - Stakeholders interacting with smart contract 
+        - Flowstake - non-profit beneficiary of dontations
+        - Donors - participants and contributors
+        - Bridge - bridge data from GPS + attestation to smart contract
+        - Hacker - malicious party
+
+#### Smart Contract Lifecycle
+    - Ongoing Activity:
+    - Completed / Accomplished:
+    - Failed:
+
+##### Smart Contract State
+    - Donations lock
+        - Impossible for donor to send ETH to smart contract during on-going challenge.
+    - Value lock
+        - Impossible for Flowstake to withdraw all ETH after successful challenge, or withdraw individual donation after failed challenge
+    - Theft
+        - Impossible for the hacker to withdraw all the ETH after successful challenge or to withdraw individua donations after a failed challenge
+    - Cheating 
+        - Impossible for Flowstake, to with draw all the ETH donations if the challenge is not in a complete or failed state.
+    - Failing update
+        - Query the bridge, 
+    - Failing database query from bridge
+
+#### Theshold Signatures
+
+Threshold signatures can be included in the code to facilitate group attestation by allowing multiple parties to jointly sign a message or data point. Here's how you can integrate threshold signatures into your code:
+
+1. Choose a Threshold Signature Scheme: Threshold signature scheme that suits Flowstake  requirements and security considerations. There are various threshold signature schemes available, including BLS (Boneh-Lynn-Shacham) threshold signatures, ECDSA (Elliptic Curve Digital Signature Algorithm) threshold signatures, and Schnorr threshold signatures.
+
+2. Implement Key Generation: Generate the necessary keys for the threshold signature scheme. This involves distributing shares of the private key among participating parties while retaining the public key. The key generation process should ensure that the threshold number of parties is required to reconstruct the private key.
+
+3. Message Signing: When a message or data point needs to be signed for group attestation, the threshold signature algorithm is executed. Each party holding a share of the private key contributes to the signature generation process. The signature is produced without revealing individual private keys.
+
+4. Signature Verification: The generated threshold signature can be verified using the corresponding public key. The verification process ensures that the signature is valid and authenticates the group attestation.
+
+#### Here's a simplified example of how you might implement threshold signatures using the BLS threshold signature scheme in JavaScript using the @chainsafe/bls library:
+
+```javascript 
+const { SecretKey, PublicKey, Signature } = require('@chainsafe/bls');
+
+// Number of parties required for threshold signature
+const threshold = 3;
+
+// Generate secret keys for each party
+const secretKeys = [];
+for (let i = 0; i < threshold; i++) {
+    secretKeys.push(SecretKey.fromKeygen());
+}
+
+// Aggregate secret keys to create a master secret key
+const masterSecretKey = SecretKey.aggregate(secretKeys);
+
+// Derive the corresponding public key
+const publicKey = masterSecretKey.toPublicKey();
+
+// Simulate message to be signed
+const message = 'Group attestation message';
+
+// Generate individual signatures from each party
+const signatures = secretKeys.map(secretKey => Signature.sign(message, secretKey));
+
+// Aggregate signatures to create a threshold signature
+const thresholdSignature = Signature.aggregate(signatures);
+
+// Verify the threshold signature using the public key
+const isValid = thresholdSignature.verify(message, publicKey);
+
+console.log('Threshold Signature:', thresholdSignature.toString());
+console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
+```
+
+* This code snippet demonstrates the key generation, message signing, and signature verification process using BLS threshold signatures. You can adapt this implementation to suit your specific requirements and integrate it into your application for group attestation purposes.
+
+
+
 ### Theoretical Limitations of Performances 
 * Running Speed & Acceleration
 * Top speed of 43.99 kilometers per hour (27.33 miles per hour) Usain Bolt (2009) 
@@ -61,6 +137,8 @@
  Speed is the arate at which an object (or person) moves through time. It is represented mathematically s speed = d/t (in which d is distance and t is time). Bolt’s speed during his world-record run was 10.44 meters per second, 37.58 kilometers per hour or 23.35 miles per hour.
 - In 2011 Belgian scientists used lasers to measure Bolt’s performance in the different stages of a 100-meter race held in September that year. They found that, 67.13 meters into the race, Bolt reached a top speed of 43.99 kilometers per hour (27.33 miles per hour). He finis
 
+
+
 ### Sources 
 **Theoretical Limitations of Performances**
 - https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights
@@ -69,8 +147,8 @@
 
 
 
-
-
+- Thomas Vanderstraeten
+testing-the-cryptorun-smart-contract-a-tale-of-obsessive-perfection-84ded25f1636
 
 -------------------
 
