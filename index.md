@@ -35,21 +35,9 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 * **Inactive:** Validator is temporarily inactive, perhaps due to unstaking or penalties.
 * **Slashed:** Validator has been penalized for malicious behavior.
 
-7. **Remarks/Notes:** Include any additional information or notes regarding the transaction or validator status.
+7. **Remarks/Notes:** Include any additional information or notes regarding the transaction or validator status. 
 
-### Technology Layers
-
-| Blockchain   | Consensus Mechanism          | Link |
-|:-------------|:-----------------------------|:-------|
-| PoW          | Proof of Work                |  [Read](https://en.bitcoin.it/wiki/Proof_of_work)  |
-| PoS          | Proof of Stake               |  [Read](https://en.bitcoin.it/wiki/Proof_of_Stake)  |
-| DPoS         | Delegated Proof of Stake     |  [Read](https://docs.bitshares.org/en/master/technology/dpos.html)  |
-| PoA          | Proof of Activity            |  [Read](https://eprint.iacr.org/2014/452.pdf)  |
-| PoA          | Proof of Authority           |  [Read](https://en.wikipedia.org/wiki/Proof_of_authority)   |
-
-* * *
-
-##### Sample PoS Activity Ledger:
+### Sample PoS Activity Ledger:
 
 | Date & Time       |	Block Number  |	Validator/Public Key |	Transaction Type      |	Transaction Details	     | Validator Status   |	Remarks/Notes            |
 |:------------------|:----------------|:---------------------|:-----------------------|:-------------------------|:-------------------|:-------------------------|
@@ -204,7 +192,6 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 ### Sources 
 - https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights
 - https://en.wikipedia.org/wiki/Public_key_infrastructure
-
 
 -------------------
 
