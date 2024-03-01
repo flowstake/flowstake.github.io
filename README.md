@@ -1,10 +1,85 @@
 ### [FlowStake](https://flowstake.github.io/) + [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
+
+## Flowstake V2
+* Proof of Activity Staking Network with Public, Immutable, Activity Records
+* Data ownership, Hash addressed activity, Immutable records
+* Hashed Timelock Smart Contracts
+* Proof of Activity as Stake 
+* Zero Knowledge Identity Verification
+
+### Hashed Timelock Contract (HTLC) 
+* Hashed Timelock Contract (HTLC) is a transactional agreement used to produce conditional payments. A payment wherein the receiver is required to acknowledge the receipt of payment before a predetermined time or a preset deadline.
+
+### Threshold Signature
+* Threshold cryptography, is a cryptosystem that protects information by encrypting it and distributing it among a cluster of fault-tolerant computers. The message is encrypted using a public key, and the corresponding private key is shared among the participating parties. With a threshold cryptosystem, in order to decrypt an encrypted message or to sign a message, several parties (more than some threshold number) must cooperate in the decryption or signature protocol.
+
+### Threshold signature scheme (TSS)
+* Threshold signature scheme is a method for generating a single digital signature from multiple signers.
+### Hashed Timelock Contract + Threshold Signature (HTLC + TSS) 
+* Hashed Timelock Activity Contract (HTLC) is a transactional agreement used to automatically unlock transfers via threshold signature. 
+
+### Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
+* Parsing activity data into distributed encrypted ledgers.
+
+Proof of Activity Smart Contracts - Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, recoccuring runtime / activity on timechain. Each trackpoint is required to be consecutiveliy recorded & encrypted into trackpoints, attested in 1 minute segments - 
+
+Analyzing data for Max Accel, Max Speed (classMaxSpeed) & Activity Duration
+
+-  Proof of Activity as a Stake - Validators
+    * To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
+    * Activity timestamp hash verified on the blockchain network
+    * Operate a validator node to stake the network 
+    * Validator nodes verify proof of activity with attestation signature, timestamp validation / node validation, 
+
+- Hashing and Encrypting Activity Real Time
+    - Requirements - Trackpoint Timestamp Data
+    - Smart Contract - Mining Activity to Generate Blocks
+        - Block Requirements for Sigining Activity Live - 1 min / 60 seconds - (60 tracepoints)
+        - 1 Hour Validator - 1 hour / 60 mins / 3600 seconds (3,600 transactions)
+        - 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 transactions) 
+
+### Requirements for Flowstake Smart Contracts
+* Identity Verification 
+   - Confirming participants identity to verify attestations during activity.
+* Activity Attestation
+   - Activity attestation, digital threshold signatures syncronized with validators nodes. 
+* 1 Trackpoint per Second with 1:1 Sync recording at minimum of 1 TPS
+   * GPS Trackpoints
+   * Heartbeat Data
+   * Proof of Activity Attestation Signature 
+
+### Theoretical Limitations of Performances 
+** Running Speed & Acceleration ** 
+* Top speed of 43.99 kilometers per hour (27.33 miles per hour) Usain Bolt (2009) 
+* Top speed of 10.44 meters per second 
+
+**Top Speed** 
+- In 2009 Jamaican sprinter Usain Bolt set the world record in the 100-meter sprint at 9.58 seconds. 
+ Speed is the arate at which an object (or person) moves through time. It is represented mathematically s speed = d/t (in which d is distance and t is time). Bolt’s speed during his world-record run was 10.44 meters per second, 37.58 kilometers per hour or 23.35 miles per hour.
+- In 2011 Belgian scientists used lasers to measure Bolt’s performance in the different stages of a 100-meter race held in September that year. They found that, 67.13 meters into the race, Bolt reached a top speed of 43.99 kilometers per hour (27.33 miles per hour). He finis
+
+#### Sources 
+**Theoretical Limitations of Performances**
+- https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights
+- https://en.wikipedia.org/wiki/Public_key_infrastructure
+
+
+
+
+
+
+
+
+
+-------------------
+
+#### Flowstake V1
 * Public, Immutable, Activity Records
 * Public Activity Files Hashed into IPFS protocol
 * Proof of Activity as Stake Consensus Mechanism
 * Trustless, Geospatial, Smart Contracts
 
-## Proof of Activity 
+## Proof of Activity v1
 
 Data ownership, Content addressed storage, Hash addressed Activity Trackpoints
 IPFS has given the users the power of content-addressed storage.
