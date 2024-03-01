@@ -15,6 +15,7 @@
 
 ### Threshold signature scheme (TSS)
 * Threshold signature scheme is a method for generating a single digital signature from multiple signers.
+
 ### Hashed Timelock Contract + Threshold Signature (HTLC + TSS) 
 * Hashed Timelock Activity Contract (HTLC) is a transactional agreement used to automatically unlock transfers via threshold signature. 
 
