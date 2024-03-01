@@ -74,10 +74,10 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 
 ### Realtime Activity Data Capture
 
-- Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
-- Parsing activity data into trackpoints with threshold signatures built on distributed encrypted ledgers.
-- Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, reoccuring runtime / activity on timechain. 
-- Each trackpoint is required to be consecutiveliy recorded & encrypted into trackpoints, attested in 1 minute segments
+* Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
+* Parsing activity data into trackpoints with threshold signatures built on distributed encrypted ledgers.
+* Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, reoccuring runtime / activity on timechain. 
+* Each trackpoint is required to be consecutiveliy recorded & encrypted into trackpoints, attested in 1 minute segments
     * Analyzing data for Max Accel, Max Speed & Activity Duration
 
 ####  Proof of Activity as a Stake - Validators
@@ -87,11 +87,12 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
     * Validator nodes verify proof of activity with attestation signature, timestamp validation / node validation, 
 
 #### Hashing and Encrypting Activity Real Time
-    - Requirements - Trackpoint Timestamp Data
-    - Smart Contract - Mining Activity to Generate Blocks
-        - Block Requirements for Sigining Activity Live - 1 min / 60 seconds - (60 tracepoints)
-        - 1 Hour Validator - 1 hour / 60 mins / 3600 seconds (3,600 transactions)
-        - 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 transactions) 
+* Requirements - Trackpoint Timestamp Data
+    * Attesting Activity to Generate Blocks
+    * Block Requirements for Signing Activity Live
+        * 1 min / 60 seconds - (60 trackpoints)
+        * 1 Hour Validator - 1 hour / 60 mins / 3600 seconds (3,600 timestamp signatures)
+        * 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 timestamp signatures) 
 
 ### Requirements for Flowstake Smart Contracts
 * Reputable Identity & Performance
