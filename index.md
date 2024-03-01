@@ -11,31 +11,31 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 
 ### PoS Activity Ledger
 
-1. Date and Time: Record the date and time of each activity.
+1. **Date and Time:** Record the date and time of each activity.
 
-2. Block Number: Specify the block number associated with the activity.
+2. **Block Number:** Specify the block number associated with the activity.
 
-3. Validator/Public Key: Identify the validator or public key involved in the activity.
+3. **Validator/Public Key:** Identify the validator or public key involved in the activity.
 
-4. Transaction Type: Describe the type of transaction or activity. This could include:
+4. **Transaction Type:** Describe the type of transaction or activity. This could include:
 
-* Staking: Depositing tokens into the PoS network for validation rights.
-* Reward Distribution: Distributing rewards to validators for validating blocks.
-* Unstaking: Withdrawing tokens from the PoS network.
-* Slashing: Penalty for validators failing to follow the consensus rules.
+* **Staking:** Depositing tokens into the PoS network for validation rights.
+* **Reward Distribution:** Distributing rewards to validators for validating blocks.
+* **Unstaking:** Withdrawing tokens from the PoS network.
+* **Slashing:** Penalty for validators failing to follow the consensus rules.
 
-5. Transaction Details:
+5. **Transaction Details:**
 * For staking: Record the amount of tokens staked.
 * For reward distribution: Record the amount of rewards distributed.
 * For unstaking: Record the amount of tokens unstaked.
 * For slashing: Record the penalty amount.
 
-6. Validator Status: Indicate the status of the validator after the activity.
-* Active: Validator is actively participating in block validation.
-* Inactive: Validator is temporarily inactive, perhaps due to unstaking or penalties.
-* Slashed: Validator has been penalized for malicious behavior.
+6. **Validator Status:** Indicate the status of the validator after the activity.
+* **Active:** Validator is actively participating in block validation.
+* **Inactive:** Validator is temporarily inactive, perhaps due to unstaking or penalties.
+* **Slashed:** Validator has been penalized for malicious behavior.
 
-7. Remarks/Notes: Include any additional information or notes regarding the transaction or validator status.
+7. **Remarks/Notes:** Include any additional information or notes regarding the transaction or validator status.
 
 ### Technology Layers
 
@@ -95,10 +95,10 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
         * 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 timestamp signatures) 
 
 ### Requirements for Flowstake Smart Contracts
-* Reputable Identity & Performance
-* Identity Attestation 
-    * Use ZK Proofs to Attest to Identity (Drivers License + Passport)
-* Activity Attestation
+* Reputable Identity System
+* Proof of Identity Attestation / Validation
+    * Use ZK Proofs to Attest to Identity for Activities (Drivers License + Passport)
+* Proof of Activity Attestation
     * Activity attestation, digital threshold signatures syncronized with validators nodes. 
 * 1 Trackpoint per Second with 1:1 Sync recording at minimum of 1 TPS
    * GPS Trackpoints
@@ -117,7 +117,7 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 * Completed / Accomplished:
 * Failed:
 
-##### Smart Contract State
+#### Smart Contract State
 * Donations lock
     * Impossible for donor to send ETH to smart contract during on-going challenge.
 * Value lock
@@ -142,9 +142,10 @@ Threshold signatures can be included in the code to facilitate group attestation
 
 4. Signature Verification: The generated threshold signature can be verified using the corresponding public key. The verification process ensures that the signature is valid and authenticates the group attestation.
 
-#### Here's a simplified example of how to implement threshold signatures using the BLS BLS (Boneh-Lynn-Shacham) threshold signature scheme in JavaScript using the @chainsafe/bls library:
 
 ### [flowstake/bls](https://github.com/flowstake/bls)
+
+#### Here's a simplified example of how to implement threshold signatures using the BLS BLS (Boneh-Lynn-Shacham) threshold signature scheme in JavaScript using the @chainsafe/bls library:
 
 ```javascript 
 const { SecretKey, PublicKey, Signature } = require('@chainsafe/bls');
