@@ -1,13 +1,13 @@
 ### [FlowStake v1](https://flowstake.github.io/v1) + [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
 
 ## Flowstake V2
-* Proof of Activity Staking Network with Public, Immutable, Activity Records
-* Data ownership, Hash addressed activity, Immutable records
+* Activity Staking Network with Public, Immutable, Activity Records
+* Data ownership with Hash addressed activity
 * Hashed Timelock Smart Contracts
 * Proof of Activity as Stake 
 * PoS Activity Ledger
 
-Creating a proof of stake (PoS) activity ledger involves documenting the various transactions and activities within a PoS blockchain network. Below, I'll outline a simplified ledger format for tracking PoS activities:
+Creating a proof of stake (PoS) activity ledger involves documenting the various transactions and activities within a PoS blockchain network. Below, is an outline simplified ledger format for tracking PoS activities:
 
 ### PoS Activity Ledger
 
