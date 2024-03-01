@@ -19,7 +19,7 @@
 ### Hashed Timelock Contract + Threshold Signature (HTLC + TSS) 
 * Hashed Timelock Activity Contract (HTLC) is a transactional agreement used to automatically unlock transfers via threshold signature. 
 
-### Activity Data Capture
+### Realtime Activity Data Capture
 
 - Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
 - Parsing activity data into trackpoints with threshold signatures built on distributed encrypted ledgers.
@@ -61,13 +61,11 @@
  Speed is the arate at which an object (or person) moves through time. It is represented mathematically s speed = d/t (in which d is distance and t is time). Bolt’s speed during his world-record run was 10.44 meters per second, 37.58 kilometers per hour or 23.35 miles per hour.
 - In 2011 Belgian scientists used lasers to measure Bolt’s performance in the different stages of a 100-meter race held in September that year. They found that, 67.13 meters into the race, Bolt reached a top speed of 43.99 kilometers per hour (27.33 miles per hour). He finis
 
-#### Sources 
+### Sources 
 **Theoretical Limitations of Performances**
 - https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights
+
 - https://en.wikipedia.org/wiki/Public_key_infrastructure
-
-
-
 
 
 
@@ -76,13 +74,13 @@
 
 -------------------
 
-#### Flowstake V1
+## Flowstake V1
 * Public, Immutable, Activity Records
 * Public Activity Files Hashed into IPFS protocol
 * Proof of Activity as Stake Consensus Mechanism
 * Trustless, Geospatial, Smart Contracts
 
-## Proof of Activity v1
+### Proof of Activity v1
 
 Data ownership, Content addressed storage, Hash addressed Activity Trackpoints
 IPFS has given the users the power of content-addressed storage.
