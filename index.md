@@ -4,8 +4,16 @@ Activity Staking Blockchain Network
 * Activity Staking Network with Public, Immutable, Activity Records
 * Data ownership with Hash addressed activity
 * Hashed Timelock Smart Contracts
-* Proof of Activity as Stake 
-* PoS Activity Ledger
+* Proof of Activity as Stake (PoS) Activity Ledger
+* Threshold Signatures
+* Photographic Attestation
+
+### Core Concepts - Race / Performance Tracking 
+* Tracking Race Results for 5K, 10k, 1/2 Marathon & Marathon Events
+* Leaderboards with data perminance
+* Sponsorship Payouts - For completed race events
+* Digital Signature Attestation - Bib RFID Chip crossing finishline
+* Photographic Attestation - Photo captured across finishline
 
 Creating a proof of stake (PoS) activity ledger involves documenting the various transactions and activities within a PoS blockchain network. Below, is an outline simplified ledger format for tracking PoS activities:
 
@@ -373,7 +381,7 @@ if __name__ == "__main__":
 * Top speed of 43.99 kilometers per hour (27.33 miles per hour) Usain Bolt (2009) 
 * Top speed of 10.44 meters per second 
 
-##### Top Speed
+#### Top Speed
 * In 2009 Jamaican sprinter Usain Bolt set the world record in the 100-meter sprint at 9.58 seconds. 
  Speed is the arate at which an object (or person) moves through time. It is represented mathematically s speed = d/t (in which d is distance and t is time). Bolt’s speed during his world-record run was 10.44 meters per second, 37.58 kilometers per hour or 23.35 miles per hour.
 * In 2011 Belgian scientists used lasers to measure Bolt’s performance in the different stages of a 100-meter race held in September that year. They found that, 67.13 meters into the race, Bolt reached a top speed of 43.99 kilometers per hour (27.33 miles per hour).
@@ -387,6 +395,7 @@ if __name__ == "__main__":
 - [Public Key Infastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure)
 
 -------------------
+
 ### [FlowStake v1](https://flowstake.github.io/v1) + [Hashrun](https://flowstake.github.io/hashrun)
 
 ## Flowstake V1
