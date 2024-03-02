@@ -1,4 +1,4 @@
-### [FlowStake v1](https://flowstake.github.io/v1) + [Hashrun](https://flowstake.github.io/hashrun) - Activity Staking Blockchain Network
+Activity Staking Blockchain Network
 
 ## Flowstake V2
 * Activity Staking Network with Public, Immutable, Activity Records
@@ -387,6 +387,7 @@ if __name__ == "__main__":
 - [Public Key Infastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure)
 
 -------------------
+### [FlowStake v1](https://flowstake.github.io/v1) + [Hashrun](https://flowstake.github.io/hashrun)
 
 ## Flowstake V1
 * Public, Immutable, Activity Records
