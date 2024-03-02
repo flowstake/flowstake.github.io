@@ -207,7 +207,8 @@ Benefits of Using IPFS:
 
 #### JSON Flowstake file format
 * The .TCX file format used by Strava for activity data can be converted into JSON format. Here's a simplified example of how you might structure the data in JSON:
-```JSON
+
+```json
 {
   "activity": {
     "id_hash": "1234567890",
