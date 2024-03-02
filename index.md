@@ -239,7 +239,7 @@ Benefits of Using IPFS:
 }
 ```
 
-### **Parse this .tcx file into JSON schema
+### Parse this .tcx file into JSON schema
 * This JSON structure represents an activity with various attributes such as ID, type, start time, total time, distance, calories burned, and an array of track points with their respective data including time, latitude, longitude, elevation, heart rate, and cadence.
 
 * To parse the .TCX file and extract relevant data points to populate this JSON structure. Depending on the complexity of your TCX file, you might need to handle additional attributes or nested structures.
@@ -300,7 +300,70 @@ if __name__ == "__main__":
 
 * This code is a basic example and may need modifications depending on the structure of your .tcx file and the specific data you want to extract. Additionally, error handling and more complex parsing might be necessary for real-world applications.
 
-
+```json
+{
+  "metadata": {
+    "time": "2023-10-14T12:59:31Z"
+  },
+  "tracks": [
+    {
+      "name": "11th Annual South Foster - 10K Race",
+      "type": "running",
+      "track_segment": [
+        {
+          "latitude": 41.785121,
+          "longitude": -71.720606,
+          "elevation": 163.0,
+          "time": "2023-10-14T12:59:31Z",
+          "heart_rate": 142
+        },
+        {
+          "latitude": 41.785116,
+          "longitude": -71.7206,
+          "elevation": 163.0,
+          "time": "2023-10-14T12:59:32Z",
+          "heart_rate": 142
+        },
+        {
+          "latitude": 41.785127,
+          "longitude": -71.72059,
+          "elevation": 163.0,
+          "time": "2023-10-14T12:59:33Z",
+          "heart_rate": 142
+        },
+        {
+          "latitude": 41.785108,
+          "longitude": -71.720605,
+          "elevation": 162.9,
+          "time": "2023-10-14T12:59:34Z",
+          "heart_rate": 142
+        },
+        {
+          "latitude": 41.785105,
+          "longitude": -71.720617,
+          "elevation": 162.8,
+          "time": "2023-10-14T12:59:35Z",
+          "heart_rate": 142
+        },
+        {
+          "latitude": 41.785104,
+          "longitude": -71.720619,
+          "elevation": 162.8,
+          "time": "2023-10-14T12:59:36Z",
+          "heart_rate": 142
+        },
+        {
+          "latitude": 41.785111,
+          "longitude": -71.720615,
+          "elevation": 162.8,
+          "time": "2023-10-14T12:59:37Z",
+          "heart_rate": 142
+        }
+      ]
+    }
+  ]
+}
+```
 
 ### Extra Resources & Concepts
 
