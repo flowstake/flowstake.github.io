@@ -3,28 +3,55 @@ Activity Staking Blockchain Network
 ## Flowstake V2
 * Activity Staking Network with Public, Immutable, Activity Records
 * Data ownership with Hash addressed activity
-* Hashed Timelock Smart Contracts
+* Hashed Timelock Smart Contracts for Sponsorship & Donations
 * Proof of Activity as Stake (PoS) Activity Ledger
-* Threshold Signatures
-* Photographic Attestation
+* Threshold Signatures with GPS Activity Attestation
+* Photographic Attestation w/ Digital Signatures
 
 ### Core Concepts - Race / Performance Tracking 
-* Tracking Race Results for 5K, 10k, 1/2 Marathon & Marathon Events
-* Leaderboards with data perminance
-* Sponsorship Payouts - For completed race events
-* Digital Signature Attestation - Bib RFID Chip crossing finishline
+* Race Results & Leaderboards for 5K, 10k, 1/2 Marathon & Marathon Running Events
+* Sponsorship Payouts - For completed race events via smart contract
+* Digital Signature Attestation - Attestation with hardware *RFID Chip on Bib crossing finishline / NFC on smartphone*
 * Photographic Attestation - Photo captured across finishline
+* Tracing GPS Coordinates - Tracking GPS Coordinates per Second
 
-Creating a proof of stake (PoS) activity ledger involves documenting the various transactions and activities within a PoS blockchain network. Below, is an outline simplified ledger format for tracking PoS activities:
+#### **Validators** - Proof of Activity as a Stake
+* Validators - To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
+    * Activity timestamp hash verified on the blockchain network.
+    * Operate a validator node to stake the network.
+    * Validator nodes verify proof of activity with attestation signature, timestamp validation / node validation.
+
+#### Recording, Attesting, Hashing, Encrypting Activity Real Time
+* Requirements - Trackpoint Timestamp Data
+    * Attesting Activity to Generate Blocks
+    * Block Requirements for Signing Activity Live
+        * 1 min / 60 seconds - (60 trackpoints)
+        * 1 Hour Validator - 1 hour / 60 mins / 3600 seconds (3,600 timestamp signatures)
+        * 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 timestamp signatures) 
+
+### Requirements for Flowstake Smart Contracts 
+* Proof of Identity for Race Attestation / Performance Validation
+    * Use ZK Proofs to Attest to Identity (Drivers License or Passport)
+* Proof of Activity Attestation
+    * Activity attestation, digital threshold signatures syncronized with validators nodes.
+   * Hardware & Sensors
+        * Finish Line Sensors (RFID Scanner)
+        * GPS Smartwatch
+            * Record GPS Trackpoints (GPS Coordinates)
+            * Heartbeat Data (BPM)
+   * Proof of Activity Attestation Signature
+        *  NFC Chip on smartphone
+        *  RFID Chip on Bib crossing finish line
+
+### HTLC Smart Contract Race Payouts
+* Locking funding into smart contract, releasing funds upon completion of activity with duration of Hashed Timelock (threshold signature).
 
 ### PoS Activity Ledger
+Creating a proof of stake (PoS) activity ledger involves documenting the various transactions and activities within a PoS blockchain network. Below, is an outline simplified ledger format for tracking PoS activities:
 
 1. **Date and Time:** Record the date and time of each activity.
-
 2. **Block Number:** Specify the block number associated with the activity.
-
 3. **Validator/Public Key:** Identify the validator or public key involved in the activity.
-
 4. **Transaction Type:** Describe the type of transaction or activity. This could include:
 
 * **Staking:** Depositing tokens into the PoS network for validation rights.
@@ -39,9 +66,9 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 * For slashing: Record the penalty amount.
 
 6. **Validator Status:** Indicate the status of the validator after the activity.
-* **Active:** Validator is actively participating in block validation.
-* **Inactive:** Validator is temporarily inactive, perhaps due to unstaking or penalties.
-* **Slashed:** Validator has been penalized for malicious behavior.
+* Active: Validator is actively participating in block validation.
+* Inactive: Validator is temporarily inactive, perhaps due to unstaking or penalties.
+* Slashed: Validator has been penalized for malicious behavior.
 
 7. **Remarks/Notes:** Include any additional information or notes regarding the transaction or validator status. 
 
@@ -59,38 +86,24 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 ### Hashed Timelock Contract (HTLC) 
 * Hashed Timelock Contract (HTLC) is a transactional agreement used to produce conditional payments. A payment wherein the receiver is required to acknowledge the receipt of payment before a predetermined time or a preset deadline.
 
-### Threshold Signature
+### Threshold Signature (TS)
 * Threshold cryptography, is a cryptosystem that protects information by encrypting it and distributing it among a cluster of fault-tolerant computers. The message is encrypted using a public key, and the corresponding private key is shared among the participating parties. With a threshold cryptosystem, in order to decrypt an encrypted message or to sign a message, several parties (more than some threshold number) must cooperate in the decryption or signature protocol.
 
 ### Threshold signature scheme (TSS)
 * Threshold signature scheme is a method for generating a single digital signature from multiple signers.
 
-### Hashed Timelock Contract + (HTLC) 
-* Hashed Timelock Activity Contract (HTLC) is a transactional agreement used to automatically unlock transfers via threshold signature. 
+### Hashed Timelock Contract (HTLC) + Threshold signature schema (TSS)
+* Hashed Timelock Activity Contract (HTLC) is a transactional agreement used to automatically unlock transfers via threshold signature schema. 
 
-#### **Validators** - Proof of Activity as a Stake
-* Validators - To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
-    * Activity timestamp hash verified on the blockchain network
-    * Operate a validator node to stake the network 
-    * Validator nodes verify proof of activity with attestation signature, timestamp validation / node validation
+#### Advantages of Hashed Timelock Contracts
+1. Time-bound transactions
+Using a hashed timelock contract system ensures time-bound transactions. It guarantees the timely execution of transactions and hence, the timely execution and receipt of payments.
 
-#### Hashing and Encrypting Activity Real Time
-* Requirements - Trackpoint Timestamp Data
-    * Attesting Activity to Generate Blocks
-    * Block Requirements for Signing Activity Live
-        * 1 min / 60 seconds - (60 trackpoints)
-        * 1 Hour Validator - 1 hour / 60 mins / 3600 seconds (3,600 timestamp signatures)
-        * 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 timestamp signatures) 
+2. Atomic swaps
+Using the HTLC system to settle transactions brings the ability to engage in atomic swaps to the table. An atomic swap is a form of smart contract technology that enables the settlement of cryptocurrency transactions without the use of central bodies, exchanges, or intermediaries. It ensures faster settlement of transactions without any middlemen.
 
-### Requirements for Flowstake Smart Contracts
-* Proof of Identity Attestation / Validation
-    * Use ZK Proofs to Attest to Identity for Activities (Drivers License + Passport)
-* Proof of Activity Attestation
-    * Activity attestation, digital threshold signatures syncronized with validators nodes. 
-* 1 Trackpoint per Second with 1:1 Sync recording at minimum of 1 TPS
-   * GPS Trackpoints
-   * Heartbeat Data
-   * Proof of Activity Attestation Signature 
+3. Minimize counterparty risk
+The primary advantage of HTLC payment settlements is the fact that it minimizes counterparty risk. Its basic function is to minimize counterparty risk by eliminating the “what ifs” of a transaction. It is done by hashlocks and timelocks, thereby ensuring that the settlement of a transaction is 100% ensured.
 
 ### Smart Contracts for Flowstake 
 * Stakeholders interacting with smart contract 
@@ -175,6 +188,19 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 
 * This code snippet demonstrates the key generation, message signing, and signature verification process using BLS threshold signatures. You can adapt this implementation to suit your specific requirements and integrate it into your application for group attestation purposes.
 
+### Example Race Performance & Data Set
+
+* **Hardware** - Smartwatch Apple Watch Series 4
+
+* Strava Activity - https://www.strava.com/activities/10037054514
+* Strava .GPX - https://www.strava.com/activities/10037054514/export_gpx
+
+* Strava Profile - https://www.strava.com/athletes/11405488
+* Strava Race Route - https://www.strava.com/routes/3149851458917954350
+
+* Run Signup [Photo Attestation](https://runsignup.com/Race/Results/134947/RaceDayPhotos?registrationId=74560064)
+
+* Run Signup [Leaderboard / Race Result](https://runsignup.com/Race/Results/134947#resultSetId-414313;perpage:100)
 
 ### Data Oracle - For example .TCX files from Strava
 
