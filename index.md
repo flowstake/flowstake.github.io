@@ -57,19 +57,8 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 ### Threshold signature scheme (TSS)
 * Threshold signature scheme is a method for generating a single digital signature from multiple signers.
 
-### Hashed Timelock Contract + Threshold Signature (HTLC + TSS) 
+### Hashed Timelock Contract + (HTLC) 
 * Hashed Timelock Activity Contract (HTLC) is a transactional agreement used to automatically unlock transfers via threshold signature. 
-
-### Realtime Activity Data Capture
-
-* Recording GPS trackpoints & accelerometer data from sensors on mobile & wearable devices (watches / rings).
-
-* Parsing activity data into trackpoints with threshold signatures built on distributed encrypted ledgers.
-
-* Staking proof of activity events into proof of activity HTLC smart contract with release of staked funds to prove consistent, reoccuring runtime / activity on timechain. 
-
-* Each second a is trackpoint required to be recorded & encrypted into a block & attested in 1 minute block segments.
-    * Analyzing data for Max Accel, Max Speed & Activity Duration
 
 #### **Validators** - Proof of Activity as a Stake
 * Validators - To ensure network consensus & validation of activity data, each node must process transactions to secure network activity.
@@ -86,7 +75,6 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
         * 1 Day Validator - 24 hours / 1440 minutes / 86,400 seconds (86,400 timestamp signatures) 
 
 ### Requirements for Flowstake Smart Contracts
-* Reputable Identity System
 * Proof of Identity Attestation / Validation
     * Use ZK Proofs to Attest to Identity for Activities (Drivers License + Passport)
 * Proof of Activity Attestation
@@ -98,15 +86,19 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
 
 ### Smart Contracts for Flowstake 
 * Stakeholders interacting with smart contract 
-    * Flowstake - non-profit beneficiary of dontations
-    * Donors - participants and contributors
-    * Bridge - bridge data from GPS + attestation to smart contract
-    * Hacker - malicious party
+    * Flowstake - non-profit organization beneficiary of donations
+    * Renat     - developer and deployer of smart contract, running the flowstake challenge
+    * Donors    - participants and contributors
+    * Oracle    - bridge data from GPS + attestation to smart contract
+    * Hacker    - malicious party
 
 #### Smart Contract Lifecycle
-* Ongoing Activity:
-* Completed / Accomplished:
-* Failed:
+* Lifecycle of the smart contract along its states. This type of application is known as a state machine: it moves from one state to the next, with specific actions being possible only at certain states. The allowed states are the following:
+* **Ongoing Activity:** the contract is open to all donations, while Flowstake and Party public state the challenge.
+* **Completed / Accomplished:** the smart contract learned from the Oracle that Party successfully ran the challenge. Flowstake can thus withdraw all donations. No additional donations are possible. This is the end state of the smart contract if the challenge is not successful.
+* **Failed:**  the smart contract learned from the Oracle that Party did not manage to run the challenge. Donors can withdraw their donations. This is the end state of the smart contract if the challenge is not successful.
+
+The state transitions are triggered via a call to the Oracle (leading to accomplished or failed state), and Flowstake to close the challenge after donations have been withdrawn.
 
 #### Smart Contract State
 * Donations lock
@@ -117,9 +109,10 @@ Creating a proof of stake (PoS) activity ledger involves documenting the various
     * Impossible for the hacker to withdraw all the ETH after successful challenge or to withdraw individua donations after a failed challenge
 * Cheating 
     * Impossible for Flowstake, to with draw all the ETH donations if the challenge is not in a complete or failed state.
-* Failing update
-* Query the bridge, 
-    * Failing database query from bridge
+* Failing update smart contract state
+    * Contract failed to update state
+* Query the Oracle, 
+    * Failing database query from oracle
 
 #### Theshold Signatures
 
@@ -175,6 +168,139 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 * This code snippet demonstrates the key generation, message signing, and signature verification process using BLS threshold signatures. You can adapt this implementation to suit your specific requirements and integrate it into your application for group attestation purposes.
 
 
+### Data Oracle - For example .TCX files from Strava
+
+Using IPFS (InterPlanetary File System) for hash-addressable content to record .TCX files from Strava is a viable option for ensuring data integrity and decentralized storage. Here's how you can go about it:
+
+#### What is IPFS?
+IPFS is a distributed system for storing and accessing files, websites, applications, and data. It works by creating a peer-to-peer network where each node stores a collection of hashed files. This means that files are addressed by their content, not by their location.
+
+### Recording .TCX Files from Strava on IPFS:
+
+#### 1. Generate .TCX Files from Strava:
+Strava provides an API that allows you to fetch activity data, including .TCX files, for individual workouts. You would need to authenticate your requests using OAuth 2.0 and then use the appropriate endpoints to download the .TCX files for the desired activities.
+
+#### 2. Install IPFS:
+You'll need to install IPFS on your local machine or set up a node on a server. IPFS provides instructions for installation and configuration on their website.
+
+#### 3. Add .TCX Files to IPFS:
+Once you have the .TCX files downloaded, you can add them to IPFS using the **ipfs add** command. This command will generate a unique hash for each file and store it in the IPFS network.
+
+```bash
+ipfs add file.tcx
+```
+
+#### 4. Record Hashes:
+Store the hashes generated by IPFS along with relevant metadata such as the activity type, date, and any other information you want to associate with the activity.
+
+#### 5. Distribute Hashes:
+You can then distribute these hashes through various means, such as storing them in a database, publishing them on a website, or sharing them through social media.
+
+#### 6. Accessing .TCX Files:
+To access the .TCX files stored on IPFS, users can use the hash provided to retrieve the content through IPFS gateways or by running their own IPFS node.
+
+Benefits of Using IPFS:
+* Decentralization: IPFS removes the reliance on centralized servers, making data more resilient and censorship-resistant.
+* Data Integrity: Files stored on IPFS are immutable and tamper-evident since any change to the file content would result in a different hash.
+* Content Addressing: Files are addressed by their content, meaning you can always retrieve the correct file as long as you have its hash.
+* By using IPFS to record .TCX files from Strava, you ensure that your workout data is securely stored, easily accessible, and resistant to censorship or data tampering.
+
+#### JSON Flowstake file format
+* The .TCX file format used by Strava for activity data can be converted into JSON format. Here's a simplified example of how you might structure the data in JSON:
+```JSON
+{
+  "activity": {
+    "id_hash": "1234567890",
+    "type": "running",
+    "start_time": "2024-01-28T08:00:00",
+    "total_time_seconds": 3600,
+    "distance_meters": 10000,
+    "calories": 500,
+    "track_points": [
+      {
+        "time": "2024-01-28T08:00:00",
+        "latitude": 40.7128,
+        "longitude": -74.0060,
+        "elevation": 10,
+        "heart_rate": 150,
+        "cadence": 160
+      },
+      {
+        "time": "2024-01-28T08:05:00",
+        "latitude": 40.7129,
+        "longitude": -74.0061,
+        "elevation": 15,
+        "heart_rate": 155,
+        "cadence": 162
+      },
+      ...
+    ]
+  }
+}
+```
+
+### **Parse this .tcx file into JSON schema
+* This JSON structure represents an activity with various attributes such as ID, type, start time, total time, distance, calories burned, and an array of track points with their respective data including time, latitude, longitude, elevation, heart rate, and cadence.
+
+* To parse the .TCX file and extract relevant data points to populate this JSON structure. Depending on the complexity of your TCX file, you might need to handle additional attributes or nested structures.
+
+* Parsing a .tcx file into JSON involves extracting relevant information from the XML-based .tcx format and converting it into a JSON structure. Here's a simplified example of how you might accomplish this using Python and the xml.etree.ElementTree module:
+
+```python
+import xml.etree.ElementTree as ET
+import json
+
+def parse_tcx_to_json(tcx_file):
+    tree = ET.parse(tcx_file)
+    root = tree.getroot()
+
+    # Initialize dictionary to hold parsed data
+    tcx_data = {
+        "activity": {
+            "id": root.find(".//Id").text,
+            "type": root.find(".//Activity").attrib.get("Sport"),
+            "track_points": []
+        }
+    }
+
+    # Parse trackpoints
+    trackpoints = root.findall(".//Trackpoint")
+    for trackpoint in trackpoints:
+        tp_data = {
+            "time": trackpoint.find(".//Time").text,
+            "position": {
+                "latitude": float(trackpoint.find(".//LatitudeDegrees").text),
+                "longitude": float(trackpoint.find(".//LongitudeDegrees").text),
+                "elevation": float(trackpoint.find(".//AltitudeMeters").text)
+            }
+        }
+
+        # Optional: Parse heart rate and cadence if available
+        heart_rate = trackpoint.find(".//HeartRateBpm")
+        if heart_rate is not None:
+            tp_data["heart_rate"] = int(heart_rate.find(".//Value").text)
+
+        cadence = trackpoint.find(".//Cadence")
+        if cadence is not None:
+            tp_data["cadence"] = int(cadence.text)
+
+        tcx_data["activity"]["track_points"].append(tp_data)
+
+    return tcx_data
+
+if __name__ == "__main__":
+    tcx_file = "your_tcx_file.tcx"
+    json_data = parse_tcx_to_json(tcx_file)
+
+    # Dump JSON data to a file
+    with open("output.json", "w") as json_file:
+        json.dump(json_data, json_file, indent=4)
+```
+* This script reads the .tcx file, extracts relevant data such as activity ID, type, trackpoints (including time, position, heart rate, and cadence if available), and structures it into a JSON format. Ensure you replace "your_tcx_file.tcx" with the path to your actual .tcx file.
+
+* This code is a basic example and may need modifications depending on the structure of your .tcx file and the specific data you want to extract. Additionally, error handling and more complex parsing might be necessary for real-world applications.
+
+
 
 ### Extra Resources & Concepts
 
@@ -188,10 +314,13 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
  Speed is the arate at which an object (or person) moves through time. It is represented mathematically s speed = d/t (in which d is distance and t is time). Bolt’s speed during his world-record run was 10.44 meters per second, 37.58 kilometers per hour or 23.35 miles per hour.
 * In 2011 Belgian scientists used lasers to measure Bolt’s performance in the different stages of a 100-meter race held in September that year. They found that, 67.13 meters into the race, Bolt reached a top speed of 43.99 kilometers per hour (27.33 miles per hour).
 
+* Reputation Identity / Activity System
 
 ### Sources 
-- https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights
-- https://en.wikipedia.org/wiki/Public_key_infrastructure
+
+[Testing the Cryptorun smart contract: a tale of obsessive perfection](https://medium.com/@vanderstraeten.thomas/testing-the-cryptorun-smart-contract-a-tale-of-obsessive-perfection-84ded25f1636)
+- [Threshold Signatures](https://eprint.iacr.org/2023/598#:~:text=Threshold%20signatures%20protect%20the%20signing,if%20signers%20have%20different%20weights)
+- [Public Key Infastructure](https://en.wikipedia.org/wiki/Public_key_infrastructure)
 
 -------------------
 
