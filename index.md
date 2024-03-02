@@ -192,11 +192,11 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 
 * **Hardware** - Smartwatch Apple Watch Series 4
 
-* Strava Activity - https://www.strava.com/activities/10037054514
-* Strava .GPX - https://www.strava.com/activities/10037054514/export_gpx
+* Strava Activity - [Activity](https://www.strava.com/activities/10037054514)
+* Strava .GPX - [/export_GPX](https://www.strava.com/activities/10037054514/export_gpx)
 
-* Strava Profile - https://www.strava.com/athletes/11405488
-* Strava Race Route - https://www.strava.com/routes/3149851458917954350
+* Strava Profile - [Athlete Profile](https://www.strava.com/athletes/11405488)
+* Strava Race Route - [Race Route](https://www.strava.com/routes/3149851458917954350)
 
 * Run Signup [Photo Attestation](https://runsignup.com/Race/Results/134947/RaceDayPhotos?registrationId=74560064)
 
