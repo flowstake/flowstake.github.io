@@ -135,6 +135,65 @@ The state transitions are triggered via a call to the Oracle (leading to accompl
 * Query the Oracle, 
     * Failing database query from oracle
 
+#### Photo Attestation 
+
+* To upload a photo to IPFS and reference its hash using key-value storage, you can use a combination of IPFS and a key-value storage system like Ethereum's smart contracts. Below is a Python script that demonstrates how you can achieve this using the **ipfshttpclient** library for interacting with IPFS and web3.py for interacting with Ethereum:
+
+```python
+from ipfshttpclient import connect
+from web3 import Web3
+from web3.middleware import geth_poa_middleware
+import json
+
+# Connect to your Ethereum node
+web3 = Web3(Web3.HTTPProvider('http://localhost:8545'))
+web3.middleware_onion.inject(geth_poa_middleware, layer=0)
+
+# Load your Ethereum contract ABI and address
+contract_address = 'YOUR_CONTRACT_ADDRESS'
+contract_abi = json.loads('YOUR_CONTRACT_ABI_JSON')
+
+# Connect to your contract
+contract = web3.eth.contract(address=contract_address, abi=contract_abi)
+
+# Connect to IPFS
+ipfs = connect('/ip4/127.0.0.1/tcp/5001/http')
+
+# Function to upload photo to IPFS and get its hash
+def upload_to_ipfs(file_path):
+    with ipfs.add(file_path) as res:
+        return res['Hash']
+
+# Function to store IPFS hash in Ethereum contract
+def store_hash_in_contract(ipfs_hash):
+    # Your Ethereum account address which will interact with the contract
+    account_address = 'YOUR_ACCOUNT_ADDRESS'
+
+    # Unlock your Ethereum account
+    web3.eth.default_account = account_address
+    web3.personal.unlockAccount(account_address, 'YOUR_ACCOUNT_PASSWORD')
+
+    # Call the smart contract function to store the IPFS hash
+    tx_hash = contract.functions.storeHash(ipfs_hash).transact()
+    tx_receipt = web3.eth.waitForTransactionReceipt(tx_hash)
+    print("Transaction receipt:", tx_receipt)
+
+# Example usage
+if __name__ == "__main__":
+    file_path = 'path_to_your_photo.jpg'
+    ipfs_hash = upload_to_ipfs(file_path)
+    print("Uploaded photo to IPFS. Hash:", ipfs_hash)
+    store_hash_in_contract(ipfs_hash)
+```
+
+Replace the placeholders with your Ethereum contract address, ABI, Ethereum account address, and password.
+
+Make sure you have an Ethereum node running locally at http://localhost:8545, IPFS daemon running at 127.0.0.1:5001, and the necessary Python libraries installed (ipfshttpclient, web3).
+
+This script uploads a photo to IPFS, retrieves its hash, and then stores the hash in an Ethereum smart contract. This way, you can reference the photo by its IPFS hash stored in the smart contract.
+
+* * *
+
 #### Theshold Signatures
 
 Threshold signatures can be included in the code to facilitate group attestation by allowing multiple parties to jointly sign a message or data point. Here's how you can integrate threshold signatures into your code:
@@ -204,7 +263,7 @@ console.log('Signature Verification:', isValid ? 'Valid' : 'Invalid');
 
 ### Data Oracle - For example .TCX files from Strava
 
-Using IPFS (InterPlanetary File System) for hash-addressable content to record .TCX files from Strava is a viable option for ensuring data integrity and decentralized storage. Here's how you can go about it:
+Using IPFS (InterPlanetary File System) for hash-addressable content to record .TCX files from Strava is a viable option for ensuring data integrity and decentralized storage. 
 
 #### What is IPFS?
 IPFS is a distributed system for storing and accessing files, websites, applications, and data. It works by creating a peer-to-peer network where each node stores a collection of hashed files. This means that files are addressed by their content, not by their location.
@@ -212,13 +271,13 @@ IPFS is a distributed system for storing and accessing files, websites, applicat
 ### Recording .TCX Files from Strava on IPFS:
 
 #### 1. Generate .TCX Files from Strava:
-Strava provides an API that allows you to fetch activity data, including .TCX files, for individual workouts. You would need to authenticate your requests using OAuth 2.0 and then use the appropriate endpoints to download the .TCX files for the desired activities.
+Strava provides an API that allows to fetch activity data, including .TCX files, for individual workouts. Requires authentication with requests using OAuth 2.0 and then use the appropriate endpoints to download the .TCX files for the desired activities.
 
 #### 2. Install IPFS:
-You'll need to install IPFS on your local machine or set up a node on a server. IPFS provides instructions for installation and configuration on their website.
+Install IPFS on local machine or set up a node on a server. IPFS provides instructions for installation and configuration on their website.
 
 #### 3. Add .TCX Files to IPFS:
-Once you have the .TCX files downloaded, you can add them to IPFS using the **ipfs add** command. This command will generate a unique hash for each file and store it in the IPFS network.
+Once the .TCX files are downloaded, add them to IPFS using the **ipfs add** command. This command will generate a unique hash for each file and store it in the IPFS network.
 
 ```bash
 ipfs add file.tcx
@@ -228,7 +287,7 @@ ipfs add file.tcx
 Store the hashes generated by IPFS along with relevant metadata such as the activity type, date, and any other information you want to associate with the activity.
 
 #### 5. Distribute Hashes:
-You can then distribute these hashes through various means, such as storing them in a database, publishing them on a website, or sharing them through social media.
+Then distribute these hashes through various means, such as storing them in a database, publishing them on a website, or sharing them through social media.
 
 #### 6. Accessing .TCX Files:
 To access the .TCX files stored on IPFS, users can use the hash provided to retrieve the content through IPFS gateways or by running their own IPFS node.
