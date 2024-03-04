@@ -239,6 +239,10 @@ Example JSON Structure (Enhanced):
 * By incorporating data from Strava, RunSignUp, and photographic attestation into the MVP, the Flowstake platform becomes a comprehensive solution for tracking performance, verifying race results, and ensuring the integrity of user submissions. 
 * This enhanced functionality adds value to the platform and enhances the user experience for participants and organizers alike.
 
+### Photo Attestation 
+
+Photo attestation for proof of human work with cryptographic consensus. 
+
 #### Photo Attestation with IPFS
 
 * To upload a photo to IPFS and reference its hash using key-value storage, you can use a combination of IPFS and a key-value storage system like Ethereum's smart contracts. Below is a Python script that demonstrates how you can achieve this using the **ipfshttpclient** library for interacting with IPFS and web3.py for interacting with Ethereum:
